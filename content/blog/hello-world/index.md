@@ -1,6 +1,7 @@
 ---
-title: How I set up my blog date: "2021-06-12T14:45:03.284Z"
-description: "An obligatory \"Hello, World\" meta-post about this blog"
+title: How I set up my blog
+date: "2021-06-12T14:45:03.284Z"
+description: 'An obligatory "Hello, World" meta-post about this blog'
 ---
 
 As with most blogs (I assume), the first post on this blog will be about the blog itself.
