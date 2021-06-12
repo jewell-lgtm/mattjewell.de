@@ -1,0 +1,55 @@
+{
+  "name": "mattjewellde",
+  "private": true,
+  "description": "Mattjewell Public Website",
+  "version": "0.1.0",
+  "author": "Matt Jewell <m@mattjewell.co.uk>",
+  "dependencies": {
+    "gatsby": "3.6.2",
+    "gatsby-plugin-feed": "3.6.0",
+    "gatsby-plugin-gatsby-cloud": "2.6.1",
+    "gatsby-plugin-google-analytics": "3.6.0",
+    "gatsby-plugin-image": "1.6.0",
+    "gatsby-plugin-manifest": "3.6.0",
+    "gatsby-plugin-offline": "4.6.0",
+    "gatsby-plugin-react-helmet": "4.6.0",
+    "gatsby-plugin-sharp": "3.6.0",
+    "gatsby-remark-copy-linked-files": "3.2.0",
+    "gatsby-remark-images": "4.2.0",
+    "gatsby-remark-prismjs": "4.2.0",
+    "gatsby-remark-responsive-iframe": "3.2.0",
+    "gatsby-remark-smartypants": "3.2.0",
+    "gatsby-source-filesystem": "3.6.0",
+    "gatsby-transformer-remark": "3.2.0",
+    "gatsby-transformer-sharp": "3.6.0",
+    "prismjs": "1.23.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-helmet": "6.1.0",
+    "typeface-merriweather": "0.0.72",
+    "typeface-montserrat": "0.0.75"
+  },
+  "devDependencies": {
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "2.2.1"
+  },
+  "license": "NONE",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jewell-lgtm/mattjewell.de.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md,graphql}": "prettier --write"
+  }
+}
