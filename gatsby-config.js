@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: `https://mattjewell.de/`,
     social: {
       twitter: `mattjewellcto`,
+      linkedin: `mattjewell1`,
     },
   },
   plugins: [

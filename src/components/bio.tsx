@@ -54,7 +54,9 @@ const Bio = () => {
           </p>
           <p>
             You can{` `}
-            <a href={`https://twitter.com/${social?.twitter || ``}`}>hire me</a>
+            <a href={`https://linkedin.com/in/${social?.linkedin || ``}`}>
+              hire me
+            </a>
             {` `}as consulting CTO, trainer or developer. I'd prefer to speak
             directly with clients, so no recruiting agencies please.
           </p>
