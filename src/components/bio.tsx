@@ -8,6 +8,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import tw from "../../generated/tw"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -35,7 +36,7 @@ const Bio = () => {
       <StaticImage
         className="bio-avatar"
         layout="fixed"
-        formats={["AUTO", "WEBP", "AVIF"]}
+        formats={["auto", "webp", "avif"]}
         src="../images/profile-pic.png"
         width={50}
         height={50}
@@ -43,7 +44,7 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <div className="space-y-3">
+        <div className={tw("space-y-3")}>
           <p>
             Written by{" "}
             <a href={`https://twitter.com/${social?.twitter || ``}`}>
@@ -55,7 +56,7 @@ const Bio = () => {
             You can{` `}
             <a href={`https://twitter.com/${social?.twitter || ``}`}>hire me</a>
             {` `}as consulting CTO, trainer or developer. I'd prefer to speak
-            directly with clients, so no recruiters please.
+            directly with clients, so no recruiting agencies please.
           </p>
         </div>
       )}
