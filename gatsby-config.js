@@ -1,17 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Matt Jewell Consulting`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Matt Jewell`,
+      summary: `CTO, Coder and Educator`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Professional blog of developer and CTO Matt Jewell`,
+    siteUrl: `https://mattjewell.de/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `mattjewellcto`,
     },
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

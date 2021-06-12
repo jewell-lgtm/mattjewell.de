@@ -43,13 +43,21 @@ const Bio = () => {
         alt="Profile picture"
       />
       {author?.name && (
-        <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
-          {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
-          </a>
-        </p>
+        <div className="space-y-3">
+          <p>
+            Written by{" "}
+            <a href={`https://twitter.com/${social?.twitter || ``}`}>
+              {author.name}
+            </a>{" "}
+            {author?.summary || null}
+          </p>
+          <p>
+            You can{` `}
+            <a href={`https://twitter.com/${social?.twitter || ``}`}>hire me</a>
+            {` `}as consulting CTO, trainer or developer. I'd prefer to speak
+            directly with clients, so no recruiters please.
+          </p>
+        </div>
       )}
     </div>
   )
