@@ -1,63 +1,68 @@
 {
-  "name": "mattjewellde",
-  "private": true,
-  "description": "Matt Jewell's Public Website",
-  "version": "0.1.0",
-  "author": "Matt Jewell <m@mattjewell.co.uk>",
-  "dependencies": {
-    "autoprefixer": "10.2.6",
-    "gatsby": "3.6.2",
-    "gatsby-plugin-feed": "3.6.0",
-    "gatsby-plugin-gatsby-cloud": "2.6.1",
-    "gatsby-plugin-google-analytics": "3.6.0",
-    "gatsby-plugin-image": "1.6.0",
-    "gatsby-plugin-manifest": "3.6.0",
-    "gatsby-plugin-offline": "4.6.0",
-    "gatsby-plugin-postcss": "4.7.1",
-    "gatsby-plugin-react-helmet": "4.6.0",
-    "gatsby-plugin-sharp": "3.6.0",
-    "gatsby-remark-copy-linked-files": "3.2.0",
-    "gatsby-remark-images": "4.2.0",
-    "gatsby-remark-prismjs": "4.2.0",
-    "gatsby-remark-responsive-iframe": "3.2.0",
-    "gatsby-remark-smartypants": "3.2.0",
-    "gatsby-source-filesystem": "3.6.0",
-    "gatsby-transformer-remark": "3.2.0",
-    "gatsby-transformer-sharp": "3.6.0",
-    "postcss": "8.3.2",
-    "prismjs": "1.23.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-helmet": "6.1.0",
-    "tailwindcss": "2.1.4",
-    "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
-  },
-  "devDependencies": {
-    "husky": ">=6",
-    "lint-staged": ">=10",
-    "prettier": "2.2.1",
-    "prop-types": "^15.7.2",
-    "tailwindcss-classnames": "2.1.3",
-    "typescript": "^4.3.2"
-  },
-  "license": "NONE",
-  "main": "n/a",
+  "name": "devii",
+  "version": "0.5.0",
+  "description": "A Medium inspired dev blog starter for Next.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jewell-lgtm/mattjewell.de.git"
+    "url": "https://github.com/colinhacks/devii"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Colin McDonnell <colin@colinhacks.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/colinhacks/devii/issues"
+  },
+  "homepage": "https://github.com/colinhacks/devii",
+  "tags": [
+    "blog template",
+    "react",
+    "nextjs",
+    "syntax highlighting",
+    "static generation"
+  ],
+  "keywords": [
+    "blog template",
+    "react",
+    "nextjs",
+    "syntax highlighting",
+    "static generation"
+  ],
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "prepare": "husky install",
-    "postinstall": "yarn generate-css-types",
-    "generate-css-types": "tailwindcss-classnames -i tailwind.config.js -o generated/tw.ts"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "deploy": "next build && next export && firebase deploy --only hosting"
   },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,md,graphql}": "prettier --write"
+  "dependencies": {
+    "fecha": "4.2.3",
+    "glob": "8.0.3",
+    "gray-matter": "4.0.3",
+    "next": "12.2",
+    "raw-loader": "4.0.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "4.3.1",
+    "react-syntax-highlighter": "15.5.0",
+    "rss": "1.2.2",
+    "showdown": "2.1.0"
+  },
+  "devDependencies": {
+    "@types/glob": "7.2.0",
+    "@types/node": "18",
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6",
+    "@types/react-syntax-highlighter": "15.5.4",
+    "@types/rss": "0.0.29",
+    "@types/showdown": "2.0.0",
+    "favicons": "6.2.2",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
+  },
+  "resolutions": {
+    "@types/react": "18.0.17",
+    "@types/react-dom": "18.0.6"
   }
 }
