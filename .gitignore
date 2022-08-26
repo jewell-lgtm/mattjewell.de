@@ -34,3 +34,5 @@ firebase.json
 .cache
 .next
 .idea
+
+.yarn/*

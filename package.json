@@ -1,13 +1,9 @@
 {
-  "name": "devii",
+  "name": "mattjewellde",
   "version": "0.5.0",
-  "description": "A Medium inspired dev blog starter for Next.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/colinhacks/devii"
-  },
+  "description": "A lovely Next.js based blog",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16.0.0"
   },
   "author": "Matt Jewell <m@mattjewell.co.uk>",
   "license": "UNLICENSED",
@@ -51,5 +47,6 @@
   "resolutions": {
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6"
-  }
+  },
+  "packageManager": "yarn@3.2.3"
 }
