@@ -1,13 +1,16 @@
-import React from 'react';
-import { Author } from './Author';
-import { Markdown } from './Markdown';
-import { PostData } from '../loader';
-import { PostMeta } from './PostMeta';
+/* eslint-disable @next/next/no-img-element,jsx-a11y/alt-text */
+// noinspection HtmlRequiredAltAttribute
+
+import React from "react"
+import { Author } from "./Author"
+import { Markdown } from "./Markdown"
+import { PostData } from "../loader"
+import { PostMeta } from "./PostMeta"
 
 export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
   post,
 }) => {
-  const { title, subtitle } = post;
+  const { title, subtitle } = post
   return (
     <div className="blog-post">
       <PostMeta post={post} />
@@ -26,5 +29,5 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
         <Markdown source={post.content} />
       </div>
     </div>
-  );
-};
+  )
+}

@@ -27,7 +27,7 @@ const Home = (props: {
           This section demonstrates the power of dynamic imports. Every Markdown
           file under <code>/md/blog</code> is automatically parsed into a
           structured TypeScript object and available in the{" "}
-          <code>props.posts</code> array. These blog post "cards" are
+          <code>props.posts</code> array. These blog post {'"cards"'} are
           implemented in the
           <code>/components/PostCard.tsx</code> component.
         </p>
