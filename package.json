@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "description": "A lovely Next.js based blog",
   "engines": {
-    "node": ">=16.0.0"
+    "node": "^16.0.0"
   },
   "author": "Matt Jewell <m@mattjewell.co.uk>",
   "license": "UNLICENSED",
