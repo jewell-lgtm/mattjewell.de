@@ -1,19 +1,22 @@
-import React from 'react';
-import Head from 'next/head';
-import { Footer } from '../components/Footer';
-import { globals } from '../globals';
-import { Header } from '../components/Header';
-import '../styles/base.css';
+import React from "react"
+import Head from "next/head"
+import { globals } from "../globals"
+import "../styles/base.css"
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
     <div className="container">
       <Head>
+        <title>Matthew Jewell Consulting</title>
         {globals.googleAnalyticsId && (
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}></script>
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
+          ></script>
         )}
         {globals.googleAnalyticsId && (
-          <script dangerouslySetInnerHTML={{
+          <script
+            dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -21,14 +24,13 @@ const App: React.FC = ({ Component, pageProps }: any) => {
 
             gtag('globals', '${globals.googleAnalyticsId}');
             `,
-          }}></script>
+            }}
+          ></script>
         )}
       </Head>
-      <Header />
       <Component {...pageProps} />
-      <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

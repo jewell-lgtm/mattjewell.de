@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 import { generateRSS } from "../rssUtil"
 import { Markdown } from "../components/Markdown"
 import { PostData, loadBlogPosts, loadMarkdownFile } from "../loader"
@@ -9,6 +10,38 @@ const Home = (props: {
   readme: string
   posts: PostData[]
 }) => {
+  if (Math.random() > 0) {
+    return (
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Image
+          src="/logo.png"
+          width={800}
+          height={200}
+          alt="Matthew Jewell Consulting"
+        />
+        <p>
+          All the codes, all the time{" "}
+          <a
+            href="https://www.linkedin.com/in/mattjewell1/details/experience/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            since 2011
+          </a>
+          . Site &copy; {new Date().getFullYear()}
+        </p>
+      </div>
+    )
+  }
   return (
     <div className="content">
       <Head>
