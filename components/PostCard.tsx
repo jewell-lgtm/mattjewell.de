@@ -25,7 +25,8 @@ export const PostCard: React.FC<{ post: PostData }> = props => {
           <div className="flex-spacer"></div>
 
           <div className="tag-container">
-            {post.tags && (post.tags || []).map(tag => <Tag tag={tag} />)}
+            {post.tags &&
+              (post.tags || []).map(tag => <Tag key={tag} tag={tag} />)}
           </div>
         </div>
       </div>

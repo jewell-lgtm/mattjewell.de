@@ -9,26 +9,10 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "author": "Colin McDonnell <colin@colinhacks.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/colinhacks/devii/issues"
-  },
-  "homepage": "https://github.com/colinhacks/devii",
-  "tags": [
-    "blog template",
-    "react",
-    "nextjs",
-    "syntax highlighting",
-    "static generation"
-  ],
-  "keywords": [
-    "blog template",
-    "react",
-    "nextjs",
-    "syntax highlighting",
-    "static generation"
-  ],
+  "author": "Matt Jewell <m@mattjewell.co.uk>",
+  "license": "UNLICENSED",
+  "tags": [],
+  "keywords": [],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -40,7 +24,7 @@
     "fecha": "4.2.3",
     "glob": "8.0.3",
     "gray-matter": "4.0.3",
-    "next": "12.2",
+    "next": "12.2.5",
     "raw-loader": "4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -50,16 +34,17 @@
     "showdown": "2.1.0"
   },
   "devDependencies": {
-    "@types/glob": "7.2.0",
-    "@types/node": "18",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "@types/react-syntax-highlighter": "15.5.4",
-    "@types/rss": "0.0.29",
-    "@types/showdown": "2.0.0",
-    "favicons": "6.2.2",
-    "prettier": "2.7.1",
-    "typescript": "4.7.4"
+    "@types/glob": "^7.2.0",
+    "@types/node": "^18.7.13",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-syntax-highlighter": "^15.5.4",
+    "@types/rss": "^0.0.29",
+    "@types/showdown": "^2.0.0",
+    "eslint": "^8.22.0",
+    "favicons": "^6.2.2",
+    "prettier": "^2.7.1",
+    "typescript": "4.8.2"
   },
   "resolutions": {
     "@types/react": "18.0.17",
