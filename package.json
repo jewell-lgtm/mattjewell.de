@@ -7,15 +7,12 @@
   },
   "author": "Matt Jewell <m@mattjewell.co.uk>",
   "license": "UNLICENSED",
-  "tags": [],
-  "keywords": [],
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "deploy": "next build && next export && firebase deploy --only hosting"
+    "export": "next export"
   },
   "dependencies": {
     "fecha": "4.2.3",
