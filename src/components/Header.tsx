@@ -4,7 +4,7 @@ import { globals } from "../globals"
 
 export const Header: React.FC = () => (
   <div className="header">
-    <Link href="/">
+    <Link href="/Users/mattisfrommars/Code/mattjewell.de/src/pages">
       <a>{globals.siteName}</a>
     </Link>
     <div className="flex-spacer" />

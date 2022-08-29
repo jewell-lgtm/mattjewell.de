@@ -5,11 +5,7 @@ import { Markdown } from "../components/Markdown"
 import { PostData, loadBlogPosts, loadMarkdownFile } from "../loader"
 import { PostCard } from "../components/PostCard"
 
-const Home = (props: {
-  introduction: string
-  readme: string
-  posts: PostData[]
-}) => {
+const Home = (props: { introduction: string; posts: PostData[] }) => {
   if (Math.random() > 0) {
     return (
       <div
@@ -30,11 +26,7 @@ const Home = (props: {
         />
         <p>
           All the codes, all the time{" "}
-          <a
-            href="https://www.linkedin.com/in/mattjewell1/details/experience/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="src/pages/index" target="_blank" rel="noreferrer">
             since 2011
           </a>
           . Site &copy; {new Date().getFullYear()}
@@ -46,7 +38,6 @@ const Home = (props: {
     <div className="content">
       <Head>
         <title>Matt Jewell</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className="introduction">
@@ -78,8 +69,6 @@ export default Home
 
 export const getStaticProps = async () => {
   const introduction = await loadMarkdownFile("introduction.md")
-  const readmeFile = await import(`../${"README.md"}`)
-  const readme = readmeFile.default
   const posts = await loadBlogPosts()
 
   // comment out to turn off RSS generation during build step.
@@ -87,7 +76,6 @@ export const getStaticProps = async () => {
 
   const props = {
     introduction: introduction.contents,
-    readme: readme,
     posts,
   }
 
