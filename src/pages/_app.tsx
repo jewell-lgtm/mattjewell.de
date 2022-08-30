@@ -2,6 +2,7 @@ import React from "react"
 import Head from "next/head"
 import { globals } from "@/globals"
 import { ChakraProvider } from "@chakra-ui/react"
+import { appTheme } from "@/styles/appTheme"
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
@@ -28,7 +29,7 @@ const App: React.FC = ({ Component, pageProps }: any) => {
           </>
         )}
       </Head>
-      <ChakraProvider>
+      <ChakraProvider theme={appTheme()}>
         <Component {...pageProps} />
       </ChakraProvider>
     </div>

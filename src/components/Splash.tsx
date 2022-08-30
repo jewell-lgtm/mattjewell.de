@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Text, VStack } from "@chakra-ui/react"
+import { Link, Text, VStack } from "@chakra-ui/react"
 
 export function Splash() {
   return (
@@ -12,13 +12,14 @@ export function Splash() {
       />
       <Text>
         All the codes, all the time{" "}
-        <a
+        <Link
           href="https://www.linkedin.com/in/mattjewell1/details/experience/"
           target="_blank"
           rel="noreferrer"
+          isExternal
         >
           since 2011
-        </a>
+        </Link>
         . Site &copy; {new Date().getFullYear()}
       </Text>
     </VStack>
