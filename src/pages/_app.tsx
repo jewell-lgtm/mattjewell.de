@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
-import { globals } from "../globals"
-import "../styles/base.css"
+import { globals } from "@/globals"
+import { ChakraProvider } from "@chakra-ui/react"
 
 const App: React.FC = ({ Component, pageProps }: any) => {
   return (
@@ -9,26 +9,28 @@ const App: React.FC = ({ Component, pageProps }: any) => {
       <Head>
         <title>Matthew Jewell Consulting</title>
         {globals.googleAnalyticsId && (
-          <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
-          ></script>
-        )}
-        {globals.googleAnalyticsId && (
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${globals.googleAnalyticsId}`}
+            ></script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
             gtag('globals', '${globals.googleAnalyticsId}');
             `,
-            }}
-          ></script>
+              }}
+            ></script>
+          </>
         )}
       </Head>
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Component {...pageProps} />
+      </ChakraProvider>
     </div>
   )
 }

@@ -15,7 +15,11 @@
     "export": "next export"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.9",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
     "fecha": "4.2.3",
+    "framer-motion": "^6",
     "glob": "8.0.3",
     "gray-matter": "4.0.3",
     "next": "12.2.5",
