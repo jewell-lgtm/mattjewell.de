@@ -15,11 +15,11 @@
     "export": "next export"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.9",
+    "@chakra-ui/react": "~2.2.9",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "fecha": "4.2.3",
-    "framer-motion": "^6",
+    "framer-motion": "~6",
     "glob": "8.0.3",
     "gray-matter": "4.0.3",
     "next": "12.2.5",
@@ -29,20 +29,21 @@
     "react-markdown": "4.3.1",
     "react-syntax-highlighter": "15.5.0",
     "rss": "1.2.2",
-    "showdown": "2.1.0"
+    "showdown": "2.1.0",
+    "zod": "~3.19.1"
   },
   "devDependencies": {
-    "@types/glob": "^7.2.0",
-    "@types/node": "^18.7.13",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@types/react-syntax-highlighter": "^15.5.4",
-    "@types/rss": "^0.0.29",
-    "@types/showdown": "^2.0.0",
-    "eslint": "^8.22.0",
+    "@types/glob": "~7.2.0",
+    "@types/node": "~18.7.13",
+    "@types/react": "~18.0.17",
+    "@types/react-dom": "~18.0.6",
+    "@types/react-syntax-highlighter": "~15.5.4",
+    "@types/rss": "~0.0.29",
+    "@types/showdown": "~2.0.0",
+    "eslint": "~8.22.0",
     "eslint-config-next": "12.2.5",
-    "favicons": "^6.2.2",
-    "prettier": "^2.7.1",
+    "favicons": "~6.2.2",
+    "prettier": "~2.7.1",
     "typescript": "4.8.2"
   },
   "resolutions": {

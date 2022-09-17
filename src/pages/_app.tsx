@@ -1,7 +1,7 @@
 import React from "react"
 import Head from "next/head"
-import { globals } from "@/globals"
 import { ChakraProvider } from "@chakra-ui/react"
+import { globals } from "@/globals"
 import { appTheme } from "@/styles/appTheme"
 
 const App: React.FC = ({ Component, pageProps }: any) => {

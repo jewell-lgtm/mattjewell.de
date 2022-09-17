@@ -6,7 +6,7 @@ import { PostCard } from "@/components/PostCard"
 import { Splash } from "@/components/Splash"
 
 const Home = (props: { introduction: string; posts: PostData[] }) => {
-  if (Math.random() > 0) {
+  if (Math.random() < 0) {
     return (
       <>
         <Head>
@@ -22,7 +22,6 @@ const Home = (props: { introduction: string; posts: PostData[] }) => {
         <title>Matt Jewell</title>
       </Head>
       <div className="introduction">
-        <h1>Introduction to Devii</h1>
         <Markdown source={props.introduction} />
       </div>
 
