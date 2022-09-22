@@ -1,8 +1,8 @@
-import { CaseStudy } from "@/data/caseStudy"
-import { Markdown } from "@/components/Markdown"
+import { CaseStudy } from "@/data/caseStudy";
+import { Markdown } from "@/components/Markdown";
 
 interface Props {
-  caseStudy: CaseStudy
+  caseStudy: CaseStudy;
 }
 
 export function ShowCaseStudy({ caseStudy: { title, subtitle, md } }: Props) {
@@ -12,5 +12,5 @@ export function ShowCaseStudy({ caseStudy: { title, subtitle, md } }: Props) {
       {subtitle && <h2>{subtitle}</h2>}
       <Markdown source={md} />
     </>
-  )
+  );
 }
