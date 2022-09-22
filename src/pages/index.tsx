@@ -1,12 +1,20 @@
 import Head from "next/head"
 import { generateRSS } from "@/rssUtil"
-import { Markdown } from "@/components/Markdown"
-import { loadBlogPosts, loadMarkdownFile, PostData } from "@/loader"
-import { PostCard } from "@/components/PostCard"
+import { loadBlogPosts, PostData } from "@/loader"
 import { Splash } from "@/components/Splash"
+import { Hero } from "@/components/landing-page"
+import { GetStaticProps } from "next"
+import { useRouter } from "next/router"
 
-const Home = (props: { introduction: string; posts: PostData[] }) => {
-  if (Math.random() < 0) {
+interface Props {
+  posts: PostData[]
+}
+
+const Home = ({ posts }: Props) => {
+  const router = useRouter()
+  console.log("router.query", router.query)
+
+  if (!router.query.new) {
     return (
       <>
         <Head>
@@ -16,30 +24,22 @@ const Home = (props: { introduction: string; posts: PostData[] }) => {
       </>
     )
   }
+
   return (
     <div className="content">
       <Head>
         <title>Matt Jewell</title>
       </Head>
-      <div className="introduction">
-        <Markdown source={props.introduction} />
-      </div>
 
-      <div className="section">
-        <h2>My blog posts</h2>
-        <p>
-          This section demonstrates the power of dynamic imports. Every Markdown
-          file under <code>/md/blog</code> is automatically parsed into a
-          structured TypeScript object and available in the{" "}
-          <code>props.posts</code> array. These blog post {'"cards"'} are
-          implemented in the
-          <code>/components/PostCard.tsx</code> component.
-        </p>
-        <div className="post-card-container">
-          {props.posts.map(post => {
-            return <PostCard post={post} key={post.path} />
-          })}
-        </div>
+      <Hero />
+
+      <div style={{ display: "none" }} aria-hidden>
+        <h3>Blog Posts</h3>
+        <ul>
+          {posts.map((post, i) => (
+            <li key={i}>{post.title}</li>
+          ))}
+        </ul>
       </div>
     </div>
   )
@@ -47,15 +47,13 @@ const Home = (props: { introduction: string; posts: PostData[] }) => {
 
 export default Home
 
-export const getStaticProps = async () => {
-  const introduction = await loadMarkdownFile("introduction.md")
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const posts = await loadBlogPosts()
 
   // comment out to turn off RSS generation during build step.
   await generateRSS(posts)
 
   const props = {
-    introduction: introduction.contents,
     posts,
   }
 

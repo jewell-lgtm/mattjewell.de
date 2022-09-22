@@ -3,8 +3,9 @@ import Head from "next/head"
 import { ChakraProvider } from "@chakra-ui/react"
 import { globals } from "@/globals"
 import { appTheme } from "@/styles/appTheme"
+import { AppProps } from "next/app"
 
-const App: React.FC = ({ Component, pageProps }: any) => {
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className="container">
       <Head>
