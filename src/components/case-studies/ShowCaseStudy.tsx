@@ -1,5 +1,5 @@
-import { CaseStudy } from "@/data/caseStudy";
 import { Markdown } from "@/components/Markdown";
+import { CaseStudy } from "@/data/caseStudy";
 
 interface Props {
   caseStudy: CaseStudy;

@@ -1,5 +1,5 @@
-import React from "react"
 import glob from "glob"
+import React from "react"
 import { BlogPost } from "@/components/BlogPost"
 import { loadPost } from "@/loader"
 

@@ -1,20 +1,20 @@
-import React from "react"
-import NextHead from "next/head"
-import { globals } from "@/globals"
+import NextHead from "next/head";
+import React from "react";
+import { globals } from "@/globals";
 
-export const Meta: React.FC<{
+export function Meta(props: {
   meta: {
-    title: string
-    link?: string
-    desc?: string
-    image?: string
-  }
-}> = props => {
-  const { meta } = props
+    title: string;
+    link?: string;
+    desc?: string;
+    image?: string;
+  };
+}) {
+  const { meta } = props;
   return (
     <NextHead>
       <title>{meta.title}</title>
-      <meta name="copyright" content="Colin McDonnell" />
+      <meta name="copyright" content={globals.yourName} />
       {meta.link && <link rel="canonical" href={meta.link} />}
       {meta.desc && <meta name="description" content={meta.desc} />}
       <meta property="og:type" content="website" />
@@ -36,5 +36,5 @@ export const Meta: React.FC<{
       {meta.image && <meta name="twitter:image" content={meta.image} />}
       {meta.image && <meta property="og:image" content={`${meta.image}`} />}
     </NextHead>
-  )
+  );
 }

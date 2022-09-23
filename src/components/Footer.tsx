@@ -1,9 +1,9 @@
+import { HStack, Link, Text, useColorMode, VStack } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { globals } from "@/globals";
-import { HStack, Link, Text, useColorMode, VStack } from "@chakra-ui/react";
 import { useTranslations } from "@/hooks";
-import { useRouter } from "next/router";
-import NextLink from "next/link";
 
 export function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();

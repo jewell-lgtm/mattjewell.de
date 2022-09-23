@@ -1,13 +1,13 @@
-import React from "react";
-import Head from "next/head";
 import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
-import { globals } from "@/globals";
-import { appTheme } from "@/styles/appTheme";
 import { AppProps } from "next/app";
-import { useSmoothScrolling } from "@/hooks/useSmoothScrolling";
+import Head from "next/head";
+import React from "react";
 import { Footer } from "@/components/Footer";
+import { globals } from "@/globals";
+import { useSmoothScrolling } from "@/hooks/useSmoothScrolling";
+import { appTheme } from "@/styles/appTheme";
 
-const App = ({ Component, pageProps }: AppProps) => {
+function App({ Component, pageProps }: AppProps) {
   useSmoothScrolling();
 
   return (
@@ -46,6 +46,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       </ChakraProvider>
     </>
   );
-};
+}
 
 export default App;

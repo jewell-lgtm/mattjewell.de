@@ -1,6 +1,6 @@
-import { PageSection } from "@/components/layout";
 import { Heading, Link, Text, VStack } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { PageSection } from "@/components/layout";
 
 export function LearnMore() {
   return (

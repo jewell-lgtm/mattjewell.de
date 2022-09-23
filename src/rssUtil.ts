@@ -1,11 +1,11 @@
-import RSS from 'rss';
-import fs from 'fs';
-import showdown from 'showdown';
-import { globals } from './globals';
-import { PostData } from './loader';
+import fs from "node:fs";
+import RSS from "rss";
+import showdown from "showdown";
+import { globals } from "./globals";
+import { PostData } from "./loader";
 
 export const generateRSS = async (posts: PostData[]) => {
-  posts.map((post) => {
+  posts.map(post => {
     if (!post.canonicalUrl)
       throw new Error(
         "Missing canonicalUrl. A canonical URL is required for RSS feed generation. If you don't care about RSS, uncomment `generateRSS(posts)` at the bottom of index.tsx."
@@ -22,7 +22,7 @@ export const generateRSS = async (posts: PostData[]) => {
     managingEditor: globals.email,
     webMaster: globals.email,
     copyright: `${new Date().getFullYear()} ${globals.yourName}`,
-    language: 'en',
+    language: "en",
     pubDate: globals.siteCreationDate,
     ttl: 60,
   });
@@ -34,16 +34,16 @@ export const generateRSS = async (posts: PostData[]) => {
     if (!post.datePublished) {
       isValid = false;
       console.warn(
-        'All posts must have a publishedDate timestamp when generating RSS feed.'
+        "All posts must have a publishedDate timestamp when generating RSS feed."
       );
-      console.warn('Not generating rss.xml.');
+      console.warn("Not generating rss.xml.");
     }
     feed.item({
       title: post.title,
       description: html,
       url: `${globals.url}/${post.path}`,
       categories: post.tags || [],
-      author: post.author || 'Colin McDonnell',
+      author: post.author || "Colin McDonnell",
       date: new Date(post.datePublished || 0).toISOString(),
     });
   }
@@ -52,6 +52,6 @@ export const generateRSS = async (posts: PostData[]) => {
 
   // writes RSS.xml to public directory
   const path = `${process.cwd()}/public/rss.xml`;
-  fs.writeFileSync(path, feed.xml(), 'utf8');
+  fs.writeFileSync(path, feed.xml(), "utf8");
   console.log(`generated RSS feed`);
 };

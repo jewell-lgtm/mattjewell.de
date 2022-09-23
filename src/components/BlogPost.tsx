@@ -1,22 +1,19 @@
 /* eslint-disable @next/next/no-img-element,jsx-a11y/alt-text */
 // noinspection HtmlRequiredAltAttribute
 
-import React from "react"
-import { Author } from "./Author"
-import { Markdown } from "./Markdown"
-import { PostData } from "../loader"
-import { PostMeta } from "./PostMeta"
+import React from "react";
+import { PostData } from "@/loader";
+import { Author } from "./Author";
+import { Markdown } from "./Markdown";
+import { PostMeta } from "./PostMeta";
 
-export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
-  post,
-}) => {
-  const { title, subtitle } = post
+type Props = { post: PostData };
+export function BlogPost({ post }: Props) {
+  const { title, subtitle, content, bannerPhoto } = post;
   return (
     <div className="blog-post">
       <PostMeta post={post} />
-      {post.bannerPhoto && (
-        <img className="blog-post-image" src={post.bannerPhoto} />
-      )}
+      {bannerPhoto && <img className="blog-post-image" src={bannerPhoto} />}
 
       <div className="blog-post-title">
         {title && <h1>{title}</h1>}
@@ -26,8 +23,8 @@ export const BlogPost: React.FunctionComponent<{ post: PostData }> = ({
       </div>
 
       <div className="blog-post-content">
-        <Markdown source={post.content} />
+        <Markdown source={content} />
       </div>
     </div>
-  )
+  );
 }

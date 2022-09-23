@@ -1,12 +1,12 @@
-import { GetStaticPaths, GetStaticProps } from "next";
+import { Link } from "@chakra-ui/react";
 import glob from "glob";
 import matter from "gray-matter";
-import { CaseStudy } from "@/data/caseStudy";
-import { ShowCaseStudy } from "@/components/case-studies";
-import { Title } from "@/components/Title";
+import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
-import { Link } from "@chakra-ui/react";
+import { ShowCaseStudy } from "@/components/case-studies";
+import { Title } from "@/components/Title";
+import { CaseStudy } from "@/data/caseStudy";
 import { useTranslations } from "@/hooks";
 
 interface CaseStudyProps {
@@ -64,7 +64,7 @@ export const getStaticProps: GetStaticProps<
   if (!slug) {
     throw new Error("No slug was provided");
   }
-  const file = (await import(`../../md/case-studies/${slug}.md`)).default;
+  const { default: file } = await import(`../../md/case-studies/${slug}.md`);
   const caseStudy = await toCaseStudy(file);
   return { props: { slug, caseStudy } };
 };

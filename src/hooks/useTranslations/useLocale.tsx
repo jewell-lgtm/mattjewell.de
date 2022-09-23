@@ -1,5 +1,5 @@
-import { Locale } from "./types";
 import { useRouter } from "next/router";
+import { Locale } from "./types";
 
 export const useLocale = (): Locale => {
   const { locale } = useRouter();

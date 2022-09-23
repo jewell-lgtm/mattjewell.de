@@ -7,9 +7,9 @@ import {
   useBreakpointValue,
   VStack,
 } from "@chakra-ui/react";
-import { useTranslations } from "@/hooks";
-import { PageSection } from "@/components/layout/PageSection";
 import Image from "next/image";
+import { PageSection } from "@/components/layout/PageSection";
+import { useTranslations } from "@/hooks";
 
 export function Hero() {
   const t = useTranslations();

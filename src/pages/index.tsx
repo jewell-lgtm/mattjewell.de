@@ -1,15 +1,15 @@
-import Head from "next/head";
-import { generateRSS } from "@/rssUtil";
-import { loadBlogPosts, PostData } from "@/loader";
-import { Hero, LearnMore } from "@/components/landing-page";
 import { GetStaticProps } from "next";
+import Head from "next/head";
+import { Hero, LearnMore } from "@/components/landing-page";
+import { loadBlogPosts, PostData } from "@/loader";
+import { generateRSS } from "@/rssUtil";
 
 interface Props {
   posts: PostData[];
 }
 
-const Home = ({ posts }: Props) => (
-  <>
+function Home({ posts }: Props) {
+  return <>
     <Head>
       <title>Matt Jewell</title>
     </Head>
@@ -26,7 +26,7 @@ const Home = ({ posts }: Props) => (
       </ul>
     </div>
   </>
-);
+}
 
 export default Home;
 

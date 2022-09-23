@@ -1,7 +1,5 @@
-import React from 'react';
+import React from "react";
 
-export const Tag: React.FC<{ tag: string }> = (props) => {
-  return (
-    <div className="tag">{props.tag}</div>
-  );
-};
+export function Tag(props: { tag: string }) {
+  return <div className="tag">{props.tag}</div>;
+}

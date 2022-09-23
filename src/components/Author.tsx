@@ -1,9 +1,9 @@
-import React from "react";
 import { format } from "fecha";
-import { PostData } from "@/loader";
 import Image from "next/image";
+import React from "react";
+import { PostData } from "@/loader";
 
-export const Author: React.FC<{ post: PostData }> = props => {
+export function Author(props: { post: PostData }) {
   return (
     <div className="author-container">
       <div className="author">
@@ -20,9 +20,9 @@ export const Author: React.FC<{ post: PostData }> = props => {
       </div>
     </div>
   );
-};
+}
 
-export const AuthorLines: React.FC<{ post: PostData }> = props => {
+export function AuthorLines(props: { post: PostData }) {
   return (
     <div>
       <p className="author-line">
@@ -44,4 +44,4 @@ export const AuthorLines: React.FC<{ post: PostData }> = props => {
       </p>
     </div>
   );
-};
+}
