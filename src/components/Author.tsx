@@ -1,15 +1,7 @@
-import React from "react"
-import { format } from "fecha"
-import { PostData } from "../loader"
-import Image from "next/image"
-
-export const FollowButton = () => {
-  return (
-    <a href="/newsletter">
-      <div className="follow-button">Follow</div>
-    </a>
-  )
-}
+import React from "react";
+import { format } from "fecha";
+import { PostData } from "@/loader";
+import Image from "next/image";
 
 export const Author: React.FC<{ post: PostData }> = props => {
   return (
@@ -27,8 +19,8 @@ export const Author: React.FC<{ post: PostData }> = props => {
         <AuthorLines post={props.post} />
       </div>
     </div>
-  )
-}
+  );
+};
 
 export const AuthorLines: React.FC<{ post: PostData }> = props => {
   return (
@@ -51,5 +43,5 @@ export const AuthorLines: React.FC<{ post: PostData }> = props => {
           : ""}
       </p>
     </div>
-  )
-}
+  );
+};

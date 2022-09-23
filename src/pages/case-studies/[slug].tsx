@@ -35,7 +35,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
     return popped.replace(/\.md$/, "").trim();
   });
 
-  const paths = slugs.map(slug => `/case-studies/${slug}`);
+  const paths = slugs.flatMap(slug =>
+    ["en", "de"].map(locale => ({
+      params: { slug },
+      locale,
+    }))
+  );
 
   return { paths, fallback: false };
 };
