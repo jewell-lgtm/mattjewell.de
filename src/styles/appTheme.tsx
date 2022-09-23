@@ -1,13 +1,17 @@
-import { ComponentSingleStyleConfig, extendTheme } from "@chakra-ui/react"
+import { extendTheme, ThemeComponents, ThemeConfig } from "@chakra-ui/react";
 
-export const appTheme = () =>
-  extendTheme({
-    components: {
-      Link: {
-        baseStyle: {
-          color: "teal.600",
-          textDecor: "underline",
-        },
-      } as ComponentSingleStyleConfig,
+const config: ThemeConfig = {
+  initialColorMode: "dark",
+  useSystemColorMode: true,
+};
+
+const components: ThemeComponents = {
+  Link: {
+    baseStyle: {
+      color: "teal.600",
+      textDecor: "underline",
     },
-  })
+  },
+};
+
+export const appTheme = () => extendTheme({ config, components });
