@@ -1,4 +1,8 @@
 import { Locale } from "./types";
+import { useRouter } from "next/router";
 
-// todo: Math.random is used to trick the compiler into thinking this is not a constant
-export const useLocale = (): Locale => (Math.random() > 0 ? "en" : "de");
+export const useLocale = (): Locale => {
+  const { locale } = useRouter();
+  if (locale === "de") return "de";
+  return "en";
+};
