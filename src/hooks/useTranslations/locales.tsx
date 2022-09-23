@@ -6,6 +6,7 @@ export const en = {
   "footer.language": "Deutsch",
   "footer.ln": "Connect on LinkedIn",
   "footer.rss": "Blog as RSS",
+  "navigation.back": "Go Back",
 };
 
 export const de: typeof en = {
@@ -16,4 +17,5 @@ export const de: typeof en = {
   "footer.language": "English",
   "footer.ln": "Auf LinkedIn verbinden",
   "footer.rss": "Blog als RSS",
+  "navigation.back": "Zurück",
 };

@@ -7,19 +7,21 @@ import { Title } from "@/components/Title";
 import Head from "next/head";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/react";
+import { useTranslations } from "@/hooks";
 
 interface CaseStudyProps {
   caseStudy: CaseStudy;
 }
 
 function CaseStudyPage({ caseStudy }: CaseStudyProps) {
+  const t = useTranslations();
   return (
     <>
       <Head>
         <Title>{caseStudy.title}</Title>
       </Head>
       <NextLink href="/" passHref>
-        <Link>Go back</Link>
+        <Link>{t("navigation.back")}</Link>
       </NextLink>
       <ShowCaseStudy caseStudy={caseStudy} />
     </>
