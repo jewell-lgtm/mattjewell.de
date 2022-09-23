@@ -5,6 +5,7 @@ import { globals } from "@/globals";
 import { appTheme } from "@/styles/appTheme";
 import { AppProps } from "next/app";
 import { useSmoothScrolling } from "@/hooks/useSmoothScrolling";
+import { Footer } from "@/components/Footer";
 
 const App = ({ Component, pageProps }: AppProps) => {
   useSmoothScrolling();
@@ -36,6 +37,7 @@ const App = ({ Component, pageProps }: AppProps) => {
 
       <ChakraProvider theme={appTheme()}>
         <Component {...pageProps} />
+        <Footer />
       </ChakraProvider>
     </div>
   );

@@ -21,7 +21,7 @@ export function Hero() {
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
         <Box>
-          <Image src="/mj.png" width={498 / 2} height={515 / 2} alt="" />
+          <Image src="/mj.png" width={498 / 3} height={515 / 3} alt="" />
         </Box>
         <VStack px={useBreakpointValue({ base: 4, md: 8 })}>
           <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>

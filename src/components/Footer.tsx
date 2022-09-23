@@ -1,12 +1,26 @@
-import React from "react"
-import { globals } from "../globals"
-import Image from "next/image"
+import React from "react";
+import { globals } from "@/globals";
+import { Link, Text, VStack, HStack } from "@chakra-ui/react";
 
 export const Footer: React.FC = () => (
-  <div className="footer">
-    <p>{`© ${globals.yourName} ${new Date().getFullYear()}`}</p>
-    <a href="/Users/mattisfrommars/Code/mattjewell.de/public/rss.xml">
-      <Image src={"/img/rss-white.svg"} alt="RSS Feed" width={30} height={30} />
-    </a>
-  </div>
-)
+  <VStack
+    as="footer"
+    width="full"
+    textAlign="center"
+    backgroundColor="gray.600"
+    bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+    color="white"
+    pt={8}
+    pb={4}
+  >
+    <Text as="p">{`© ${globals.yourName} ${new Date().getFullYear()}`}</Text>
+    <HStack>
+      <Link color="white" href="https://www.linkedin.com/in/mattjewell1/">
+        Connect on LinkedIn
+      </Link>
+      <Link color="white" href="/rss.xml">
+        Blog as RSS
+      </Link>
+    </HStack>
+  </VStack>
+);
