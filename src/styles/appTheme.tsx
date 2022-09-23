@@ -18,6 +18,15 @@ const components: ThemeComponents = {
     baseStyle: {
       color: "teal.600",
       textDecor: "underline",
+      _hover: {
+        color: "teal.900",
+      },
+      _dark: {
+        color: "teal.200",
+        _hover: {
+          color: "teal.100",
+        },
+      },
     },
   },
   Button: {
