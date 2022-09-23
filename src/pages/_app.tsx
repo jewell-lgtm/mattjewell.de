@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
 import { globals } from "@/globals";
 import { appTheme } from "@/styles/appTheme";
 import { AppProps } from "next/app";
@@ -11,7 +11,7 @@ const App = ({ Component, pageProps }: AppProps) => {
   useSmoothScrolling();
 
   return (
-    <div className="container">
+    <>
       <Head>
         <title>Matthew Jewell Consulting</title>
         {globals.googleAnalyticsId && (
@@ -36,10 +36,15 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
 
       <ChakraProvider theme={appTheme()}>
-        <Component {...pageProps} />
-        <Footer />
+        <Flex flexDirection="column" minH="100vh">
+          <Box as="main" flex={1}>
+            <Component {...pageProps} />
+          </Box>
+
+          <Footer />
+        </Flex>
       </ChakraProvider>
-    </div>
+    </>
   );
 };
 

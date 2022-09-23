@@ -33,7 +33,7 @@ export function Footer() {
       <Text as="p">{`© ${globals.yourName} ${new Date().getFullYear()}`}</Text>
       <HStack>
         <NextLink
-          href={router.pathname}
+          href={router.asPath}
           locale={router.locale === "en" ? "de" : "en"}
           passHref
         >

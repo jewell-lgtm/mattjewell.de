@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Home = ({ posts }: Props) => (
-  <div className="content">
+  <>
     <Head>
       <title>Matt Jewell</title>
     </Head>
@@ -25,7 +25,7 @@ const Home = ({ posts }: Props) => (
         ))}
       </ul>
     </div>
-  </div>
+  </>
 );
 
 export default Home;
