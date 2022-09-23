@@ -24,7 +24,7 @@ export function Footer() {
       width="full"
       textAlign="center"
       backgroundColor="gray.600"
-      bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+      bgGradient="linear(to-r, blackAlpha.600, transparent)"
       color="white"
       pt={8}
       pb={4}

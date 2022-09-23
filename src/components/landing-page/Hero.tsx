@@ -2,8 +2,6 @@ import {
   Box,
   Button,
   Heading,
-  HStack,
-  SlideFade,
   Stack,
   useBreakpointValue,
   VStack,
@@ -17,24 +15,27 @@ export function Hero() {
   const t = useTranslations();
   return (
     <PageSection
-      backgroundColor={"gray.100"}
+      backgroundColor="gray.100"
       _dark={{ backgroundColor: "gray.600" }}
     >
-      <HStack
-        w={"full"}
-        justify={"center"}
-        bgGradient={"linear(to-r, blackAlpha.200, transparent)"}
+      <Stack
+        w="full"
+        justify="center"
+        bgGradient="linear(to-r, blackAlpha.200, transparent)"
         _dark={{ bgGradient: "linear(to-r, blackAlpha.600, transparent)" }}
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "start", md: "center" }}
+        px={{ base: 4, md: 0 }}
       >
         <Box>
           <Image src="/mj.png" width={498 / 3} height={515 / 3} alt="" />
         </Box>
-        <VStack px={useBreakpointValue({ base: 4, md: 8 })}>
-          <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
+        <VStack px={useBreakpointValue({ base: 0, md: 8 })}>
+          <Stack maxW="2xl" align="flex-start" spacing={6}>
             <Heading
               fontWeight={700}
               lineHeight={1.2}
-              fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
+              fontSize={{ base: "3xl", md: "4xl" }}
             >
               {t("hero.1")}
             </Heading>
@@ -54,7 +55,7 @@ export function Hero() {
               </Heading>
             </motion.div>
 
-            <Stack direction={"row"}>
+            <Stack direction="row">
               <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
                 {t("hero.cta1")}
               </Button>
@@ -65,7 +66,7 @@ export function Hero() {
             </Stack>
           </Stack>
         </VStack>
-      </HStack>
+      </Stack>
     </PageSection>
   );
 }
