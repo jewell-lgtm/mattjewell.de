@@ -50,7 +50,8 @@ export function Hero() {
                 fontWeight={700}
                 lineHeight={1.2}
                 fontSize={useBreakpointValue({ base: "xl", md: "xl" })}
-                color="whiteAlpha.800"
+                color="blackAlpha.700"
+                _dark={{ color: "whiteAlpha.800" }}
               >
                 {t("hero.2")}
               </Heading>
