@@ -57,7 +57,7 @@ export function Hero() {
               </Heading>
             </motion.div>
 
-            <Stack direction="row">
+            <Stack direction={{ base: "column", md: "row" }} width="full">
               <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
                 {t("hero.cta1")}
               </Button>
