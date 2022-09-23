@@ -14,11 +14,15 @@ import Image from "next/image";
 export function Hero() {
   const t = useTranslations();
   return (
-    <PageSection backgroundColor={"gray.600"}>
+    <PageSection
+      backgroundColor={"gray.100"}
+      _dark={{ backgroundColor: "gray.600" }}
+    >
       <HStack
         w={"full"}
         justify={"center"}
-        bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
+        bgGradient={"linear(to-r, blackAlpha.200, transparent)"}
+        _dark={{ bgGradient: "linear(to-r, blackAlpha.600, transparent)" }}
       >
         <Box>
           <Image src="/mj.png" width={498 / 3} height={515 / 3} alt="" />
@@ -26,7 +30,6 @@ export function Hero() {
         <VStack px={useBreakpointValue({ base: 4, md: 8 })}>
           <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
             <Heading
-              color={"white"}
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
@@ -34,7 +37,6 @@ export function Hero() {
               {t("hero.1")}
             </Heading>
             <Heading
-              color={"white"}
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: "xl", md: "xl" })}
