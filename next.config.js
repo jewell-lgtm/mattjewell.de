@@ -13,6 +13,25 @@ module.exports = {
   },
   i18n: {
     locales: ["en", "de"],
+    localeDetection: false,
     defaultLocale: "en",
+    domains: [
+      {
+        domain: "www.mattjewell.co.uk",
+        defaultLocale: "en",
+      },
+      {
+        domain: "mattjewell.co.uk",
+        defaultLocale: "en",
+      },
+      {
+        domain: "mattjewell.de",
+        defaultLocale: "de",
+      },
+      {
+        domain: "www.mattjewell.de",
+        defaultLocale: "de",
+      },
+    ],
   },
 };
