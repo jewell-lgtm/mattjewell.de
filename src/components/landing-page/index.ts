@@ -1,1 +1,2 @@
-export * from "./Hero"
+export { Hero } from "./Hero";
+export { LearnMore } from "./LearnMore";

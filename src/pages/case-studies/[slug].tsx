@@ -5,6 +5,8 @@ import { CaseStudy } from "@/data/caseStudy";
 import { ShowCaseStudy } from "@/components/case-studies";
 import { Title } from "@/components/Title";
 import Head from "next/head";
+import NextLink from "next/link";
+import { Link } from "@chakra-ui/react";
 
 interface CaseStudyProps {
   caseStudy: CaseStudy;
@@ -16,6 +18,9 @@ function CaseStudyPage({ caseStudy }: CaseStudyProps) {
       <Head>
         <Title>{caseStudy.title}</Title>
       </Head>
+      <NextLink href="/" passHref>
+        <Link>Go back</Link>
+      </NextLink>
       <ShowCaseStudy caseStudy={caseStudy} />
     </>
   );

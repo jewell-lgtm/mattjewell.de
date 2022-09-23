@@ -1,4 +1,4 @@
-import { de, en } from "@/copy/locales";
+import { de, en } from "./locales";
 
 export type Copy = typeof en;
 

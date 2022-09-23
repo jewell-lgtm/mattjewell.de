@@ -1,11 +1,14 @@
-import React from "react"
-import Head from "next/head"
-import { ChakraProvider } from "@chakra-ui/react"
-import { globals } from "@/globals"
-import { appTheme } from "@/styles/appTheme"
-import { AppProps } from "next/app"
+import React from "react";
+import Head from "next/head";
+import { ChakraProvider } from "@chakra-ui/react";
+import { globals } from "@/globals";
+import { appTheme } from "@/styles/appTheme";
+import { AppProps } from "next/app";
+import { useSmoothScrolling } from "@/hooks/useSmoothScrolling";
 
 const App = ({ Component, pageProps }: AppProps) => {
+  useSmoothScrolling();
+
   return (
     <div className="container">
       <Head>
@@ -30,11 +33,12 @@ const App = ({ Component, pageProps }: AppProps) => {
           </>
         )}
       </Head>
+
       <ChakraProvider theme={appTheme()}>
         <Component {...pageProps} />
       </ChakraProvider>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

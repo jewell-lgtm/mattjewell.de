@@ -1,5 +1,6 @@
 import { CopyKey, locales } from "./types";
-import { useLocale } from "@/copy/useLocale";
+// noinspection ES6PreferShortImport
+import { useLocale } from "./useLocale";
 
 interface TranslationFn {
   (key: CopyKey): string;
