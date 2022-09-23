@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Container,
   Heading,
   Stack,
   useBreakpointValue,
@@ -27,10 +28,10 @@ export function Hero() {
         align={{ base: "start", md: "center" }}
         px={{ base: 4, md: 0 }}
       >
-        <Box>
-          <Image src="/mj.png" width={498 / 3} height={515 / 3} alt="" />
+        <Box maxW={{ base: 100, md: "100%" }}>
+          <Image src="/mj.png" width={498 / 2.5} height={515 / 2.5} alt="" />
         </Box>
-        <VStack px={useBreakpointValue({ base: 0, md: 8 })}>
+        <VStack px={{ base: 0, md: 8 }}>
           <Stack maxW="2xl" align="flex-start" spacing={6}>
             <Heading
               fontWeight={700}
