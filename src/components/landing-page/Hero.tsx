@@ -1,19 +1,18 @@
-import {
-  Box,
-  Button,
-  Container,
-  Heading,
-  Stack,
-  useBreakpointValue,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Button, Heading, Stack, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useCallback, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { useTranslations } from "@/hooks";
 
 export function Hero() {
   const t = useTranslations();
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const onImageLoadingComplete = useCallback(
+    () => setIsImageLoaded(true),
+    [setIsImageLoaded]
+  );
+
   return (
     <PageSection
       backgroundColor="gray.100"
@@ -29,7 +28,13 @@ export function Hero() {
         px={{ base: 4, md: 0 }}
       >
         <Box maxW={{ base: 100, md: "100%" }}>
-          <Image src="/mj.png" width={498 / 2.5} height={515 / 2.5} alt="" />
+          <Image
+            src="/mj.png"
+            width={498 / 2.5}
+            height={515 / 2.5}
+            alt=""
+            onLoadingComplete={onImageLoadingComplete}
+          />
         </Box>
         <VStack px={{ base: 0, md: 8 }}>
           <Stack maxW="2xl" align="flex-start" spacing={6}>
@@ -43,13 +48,14 @@ export function Hero() {
 
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              animate={{ opacity: isImageLoaded ? 1 : 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
+              aria-hidden={false}
             >
               <Heading
                 fontWeight={700}
                 lineHeight={1.2}
-                fontSize={useBreakpointValue({ base: "xl", md: "xl" })}
+                fontSize={{ base: "xl", md: "xl" }}
                 color="blackAlpha.700"
                 _dark={{ color: "whiteAlpha.800" }}
               >
