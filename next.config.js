@@ -21,14 +21,6 @@ module.exports = {
         defaultLocale: "en",
       },
       {
-        domain: "mattjewell.co.uk",
-        defaultLocale: "en",
-      },
-      {
-        domain: "mattjewell.de",
-        defaultLocale: "de",
-      },
-      {
         domain: "www.mattjewell.de",
         defaultLocale: "de",
       },
