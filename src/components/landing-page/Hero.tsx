@@ -1,40 +1,43 @@
-import { Box, Button, Heading, Stack, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  Stack,
+  useBreakpointValue,
+  useColorMode,
+  VStack,
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import { useCallback, useState } from "react";
+import { useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
+import { Logo } from "@/components/Logo";
 import { useTranslations } from "@/hooks";
 
 export function Hero() {
   const t = useTranslations();
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const onImageLoadingComplete = useCallback(
-    () => setIsImageLoaded(true),
-    [setIsImageLoaded]
-  );
+  const logoSize = useBreakpointValue({ base: 120, md: 220 });
+  const logoColor = useColorMode().colorMode === "dark" ? "white" : "#1d1d1d";
+  const [isLoaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    setIsLoaded(true);
+  }, [setIsLoaded]);
 
   return (
     <PageSection
-      backgroundColor="gray.100"
+      backgroundColor="white"
       _dark={{ backgroundColor: "gray.600" }}
     >
       <Stack
         w="full"
         justify="center"
-        bgGradient="linear(to-r, blackAlpha.200, transparent)"
+        bgGradient="linear(to-r, blackAlpha.100, transparent)"
         _dark={{ bgGradient: "linear(to-r, blackAlpha.600, transparent)" }}
         direction={{ base: "column", md: "row" }}
         align={{ base: "start", md: "center" }}
         px={{ base: 4, md: 0 }}
       >
-        <Box maxW={{ base: 100, md: "100%" }}>
-          <Image
-            src="/mj.png"
-            width={498 / 2.5}
-            height={515 / 2.5}
-            alt=""
-            onLoadingComplete={onImageLoadingComplete}
-          />
+        <Box>
+          <Logo color={logoColor} width={logoSize} />
         </Box>
         <VStack px={{ base: 0, md: 8 }}>
           <Stack maxW="2xl" align="flex-start" spacing={6}>
@@ -48,7 +51,7 @@ export function Hero() {
 
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: isImageLoaded ? 1 : 0 }}
+              animate={{ opacity: isLoaded ? 1 : 0 }}
               transition={{ duration: 0.4, delay: 0.1 }}
               aria-hidden={false}
             >

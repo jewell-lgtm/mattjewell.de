@@ -33,14 +33,14 @@ const components: ThemeComponents = {
   Button: {
     variants: {
       primary: {
-        bg: "brand.500",
+        bg: "gray.800",
         color: "white",
         _hover: {
-          bg: "brand.600",
+          bg: "gray.600",
         },
         _dark: {
           _hover: {
-            bg: "brand.300",
+            bg: "gray.300",
           },
         },
       },
@@ -59,4 +59,14 @@ const components: ThemeComponents = {
   },
 };
 
-export const appTheme = () => extendTheme({ config, components, colors });
+const fonts = {
+  heading: "'Inter', sans-serif",
+  body: "'Inter Tight', sans-serif",
+};
+
+export const appTheme = extendTheme({
+  config,
+  fonts: fonts,
+  components,
+  colors,
+});

@@ -35,7 +35,7 @@ function App({ Component, pageProps }: AppProps) {
         )}
       </Head>
 
-      <ChakraProvider theme={appTheme()}>
+      <ChakraProvider theme={appTheme}>
         <Flex flexDirection="column" minH="100vh">
           <Box as="main" flex={1}>
             <Component {...pageProps} />
