@@ -1,11 +1,9 @@
 import {
-  Box,
   Button,
   Heading,
   Stack,
   useBreakpointValue,
-  useColorMode,
-  VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -16,7 +14,7 @@ import { useTranslations } from "@/hooks";
 export function Hero() {
   const t = useTranslations();
   const logoSize = useBreakpointValue({ base: 120, md: 220 });
-  const logoColor = useColorMode().colorMode === "dark" ? "white" : "#1d1d1d";
+  const logoColor = useColorModeValue("#1d1d1d", "white");
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     setIsLoaded(true);
@@ -24,59 +22,40 @@ export function Hero() {
 
   return (
     <PageSection
-      backgroundColor="white"
-      _dark={{ backgroundColor: "gray.600" }}
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      px={4}
     >
       <Stack
-        w="full"
-        justify="center"
-        bgGradient="linear(to-r, blackAlpha.100, transparent)"
-        _dark={{ bgGradient: "linear(to-r, blackAlpha.600, transparent)" }}
         direction={{ base: "column", md: "row" }}
-        align={{ base: "start", md: "center" }}
-        px={{ base: 4, md: 0 }}
+        spacing={{ base: 4, md: 8 }}
       >
-        <Box>
-          <Logo color={logoColor} width={logoSize} />
-        </Box>
-        <VStack px={{ base: 0, md: 8 }}>
-          <Stack maxW="2xl" align="flex-start" spacing={6}>
-            <Heading
-              fontWeight={700}
-              lineHeight={1.2}
-              fontSize={{ base: "3xl", md: "4xl" }}
-            >
-              {t("hero.1")}
+        <Logo color={logoColor} width={logoSize} />
+
+        <Stack direction="column" spacing={4}>
+          <Heading as="h2" fontSize="4xl">
+            {t("hero.1")}
+          </Heading>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isLoaded ? 1 : 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+          >
+            <Heading as={motion.h3} fontSize="2xl">
+              {t("hero.2")}
             </Heading>
+          </motion.div>
+          <Stack direction={{ base: "column", md: "row" }} width="full">
+            <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
+              {t("hero.cta1")}
+            </Button>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: isLoaded ? 1 : 0 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              aria-hidden={false}
-            >
-              <Heading
-                fontWeight={700}
-                lineHeight={1.2}
-                fontSize={{ base: "xl", md: "xl" }}
-                color="blackAlpha.700"
-                _dark={{ color: "whiteAlpha.800" }}
-              >
-                {t("hero.2")}
-              </Heading>
-            </motion.div>
-
-            <Stack direction={{ base: "column", md: "row" }} width="full">
-              <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
-                {t("hero.cta1")}
-              </Button>
-
-              <Button variant="secondary" as="a" href="#more">
-                {t("hero.cta2")}
-              </Button>
-            </Stack>
+            <Button variant="secondary" as="a" href="#more">
+              {t("hero.cta2")}
+            </Button>
           </Stack>
-        </VStack>
+        </Stack>
       </Stack>
     </PageSection>
   );
