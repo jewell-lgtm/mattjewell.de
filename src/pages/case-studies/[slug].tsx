@@ -9,11 +9,11 @@ import { Title } from "@/components/Title";
 import { CaseStudy } from "@/data/caseStudy";
 import { useTranslations } from "@/hooks";
 
-interface CaseStudyProps {
+interface Props {
   caseStudy: CaseStudy;
 }
 
-function CaseStudyPage({ caseStudy }: CaseStudyProps) {
+function CaseStudyPage({ caseStudy }: Props) {
   const t = useTranslations();
   return (
     <>
@@ -57,10 +57,9 @@ async function toCaseStudy(file: string): Promise<CaseStudy> {
   });
 }
 
-export const getStaticProps: GetStaticProps<
-  CaseStudyProps,
-  { slug: string }
-> = async ({ params: { slug } = {} }) => {
+export const getStaticProps: GetStaticProps<Props, { slug: string }> = async ({
+  params: { slug } = {},
+}) => {
   if (!slug) {
     throw new Error("No slug was provided");
   }

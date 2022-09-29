@@ -30,6 +30,7 @@ export function Hero() {
       <Stack
         direction={{ base: "column", md: "row" }}
         spacing={{ base: 4, md: 8 }}
+        maxWidth="75%"
       >
         <Logo color={logoColor} width={logoSize} />
 
