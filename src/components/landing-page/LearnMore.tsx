@@ -17,6 +17,7 @@ export function LearnMore() {
       id="more"
       py={16}
       backgroundColor="gray.100"
+      _dark={{ backgroundColor: "gray.900" }}
       alignItems="center"
       justifyContent="space-around"
       flexDirection="column"
