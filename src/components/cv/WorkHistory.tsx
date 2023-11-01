@@ -12,21 +12,12 @@ import {
 } from "@chakra-ui/react";
 import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import { when } from "@/helpers/when";
-import { chunk, flatMap } from "lodash";
-import { useState } from "react";
 
 type Props = {
   resume: ResumeSchema;
 };
 
 export const WorkHistory = ({ resume: { work } }: Props) => {
-  const first = work.length > 0 ? work[0]! : null;
-  const second = work.length > 1 ? work[1]! : null;
-  const rest =
-    work.length > 2 ? (chunk(work.slice(2), 2) as ResumeWorkItem[][]) : null;
-
-  const [showAll, setShowAll] = useState(false);
-
   return (
     <VStack>
       <HStack w="full" justifyContent="space-between" px={5}>
@@ -51,24 +42,9 @@ export const WorkHistory = ({ resume: { work } }: Props) => {
       </HStack>
 
       <VStack divider={<Divider />} spacing={5} align="stretch">
-        {first && <Job job={first} />}
-        {second && <Job job={second} />}
-        {showAll &&
-          rest &&
-          rest.map((chunk, chunkI) => (
-            <HStack>
-              {chunk.map((job, jobI) => (
-                <Box key={`${chunkI}-${jobI}`} flex={1}>
-                  <Job job={job} />
-                </Box>
-              ))}
-            </HStack>
-          ))}
-        {!showAll && rest && rest.length > 2 && (
-          <Text px={5}>
-            {flatMap(rest, it => it).length} more jobs hidden.{" "}
-          </Text>
-        )}
+        {work.map((job, i) => (
+          <Job key={i} job={job as ResumeWorkItem} />
+        ))}
       </VStack>
     </VStack>
   );
