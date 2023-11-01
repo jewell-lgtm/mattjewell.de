@@ -1,4 +1,13 @@
-import { Box, Divider, Heading, Link, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Divider,
+  Heading,
+  Link,
+  ListItem,
+  Text,
+  UnorderedList,
+  VStack,
+} from "@chakra-ui/react";
 import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import { when } from "@/helpers/when";
 
@@ -34,11 +43,30 @@ function Job(props: { job: ResumeWorkItem }) {
           when(props.job.endDate, format) ?? "Present",
         ].join(" - ")}
       </Text>
-      <Text mt={2}>{props.job.summary}</Text>
+      {props.job.summary
+        .split("\n")
+        .filter(it => it?.length ?? -1 > 0)
+        .map(line => (
+          <Text mt={2}>{line}</Text>
+        ))}
+      {props.job.highlights && props.job.highlights.length > 0 && (
+        <>
+          <Heading as="h4" size="sm" mt={4} mb={2}>
+            Highlights
+          </Heading>
+          <UnorderedList spacing={2}>
+            {props.job.highlights.map((highlight, index) => (
+              <ListItem key={index}>{highlight}</ListItem>
+            ))}
+          </UnorderedList>
+        </>
+      )}
       {props.job.url && (
-        <Link href={props.job.url} isExternal color="blue.500">
-          Company Website
-        </Link>
+        <Box mt={4}>
+          <Link href={props.job.url} isExternal color="blue.500">
+            Company Website
+          </Link>
+        </Box>
       )}
     </Box>
   );
