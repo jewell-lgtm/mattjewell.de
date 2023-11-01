@@ -1,4 +1,4 @@
-import { ResumeSchema } from "@/loaders/cv";
+import { type ResumeSchema } from "@/loaders/cv";
 import {
   Box,
   Divider,

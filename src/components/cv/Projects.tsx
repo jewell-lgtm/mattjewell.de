@@ -1,4 +1,4 @@
-import { ResumeProjectItem, ResumeSchema } from "@/loaders/cv";
+import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
 import { Divider, Heading, HStack, Tag, Text, VStack } from "@chakra-ui/react";
 
 export function Projects(props: { resume: ResumeSchema }) {

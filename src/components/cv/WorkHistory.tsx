@@ -10,7 +10,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { type ResumeSchema, ResumeWorkItem } from "@/loaders/cv";
+import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import { when } from "@/helpers/when";
 import { chunk, flatMap } from "lodash";
 import { useState } from "react";
