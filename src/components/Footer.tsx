@@ -46,11 +46,15 @@ export function Footer() {
             Home
           </Link>
         </NextLink>
-        <NextLink href="/cv" passHref>
-          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
-            {t("footer.cv")}
-          </Link>
-        </NextLink>
+
+        <Link
+          color="white"
+          _hover={{ color: "whiteAlpha.800" }}
+          href="https://registry.jsonresume.org/jewell-lgtm?theme=macchiato"
+        >
+          {t("footer.cv")}
+        </Link>
+
         <Link
           color="white"
           _hover={{ color: "whiteAlpha.800" }}
