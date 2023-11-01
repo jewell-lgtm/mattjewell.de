@@ -28,7 +28,6 @@
       "name": "Matthew Jewell Consulting",
       "position": "Freelance Developer and Consultant",
       "startDate": "2020-05-31",
-      "endDate": null,
       "highlights": [
         "Steered startups from concept to launch, actively contributing code and shipping customer-centric features.",
         "Built scalable MVPs, customized software solutions, and bolstered development team performance.",
@@ -107,7 +106,6 @@
         "Promoted a culture of collaboration, ensuring alignment of the development process with strategic goals."
       ],
       "summary": "My initial role at cherryfish.me as a developer quickly evolved, and I became the essential conduit between our technical team and the founders, ensuring the product vision was realized with technical finesse and strategic insight.",
-      "url": "",
       "location": "Berlin Area, Germany"
     },
     {
@@ -335,7 +333,6 @@
       "startDate": "2023-09-30",
       "summary": "At Feebris, a digital health startup, I spearheaded the development of patient-centric functionalities for home health monitoring. By integrating AWS Lambda and GraphQL into the Node.js backend, I enhanced data management between patients and healthcare providers. I leveraged my expertise in Typescript and React to refactor the frontend, significantly boosting code modularity, testability, and readability, while also implementing new features.",
       "url": "https://feebris.com",
-      "endDate": "ongoing",
       "keySkills": ["AWS Lambda", "GraphQL", "Node.js", "Typescript", "React"]
     },
     {
@@ -358,7 +355,6 @@
       "name": "Contributor to Chino open source SDK for Ruby",
       "startDate": "2017-10-31",
       "summary": "Contributed to the Chino open source SDK for Ruby, focusing on enhancing security and performance features. This involvement demonstrated my commitment to community-driven projects and open-source collaboration.",
-      "url": "",
       "endDate": "2017-12-31",
       "keySkills": ["Ruby", "Open Source", "SDK Development", "Security", "Performance Optimization"]
     },
@@ -366,7 +362,6 @@
       "name": "Infrastructure Engineer at Kenkou",
       "startDate": "2017-07-31",
       "summary": "Revitalized Kenkou's legacy infrastructure by transitioning to a contemporary, secure setup. My contributions spanned technological exploration and prototyping across various stacks, including Node.js, Java Spring, and Elixir, shaping Kenkou's strategic technology roadmap.",
-      "url": "",
       "endDate": "2017-09-30",
       "keySkills": ["Infrastructure", "Node.js", "Java Spring", "Elixir", "Prototyping", "Technology Roadmapping"]
     },
