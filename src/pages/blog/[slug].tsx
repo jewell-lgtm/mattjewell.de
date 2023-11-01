@@ -1,9 +1,9 @@
 import { GetStaticProps } from "next";
 import React from "react";
 import { BlogPost } from "@/components/BlogPost";
-import { assertNonNull } from "@/loader";
 import { loadBlogPost, loadBlogPosts } from "@/loaders/blog";
 import { PostData } from "@/loaders/post";
+import { assertNonNull } from "@/helpers/assertNonNull";
 
 type Props = {
   post: PostData;

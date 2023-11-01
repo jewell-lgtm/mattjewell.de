@@ -5,10 +5,10 @@
     "label": "Software Development Consultant | Coder and Educator | Cloud Software Consultant",
     "image": "https://mattjewell.co.uk/Headshot.jpg",
     "url": "https://mattjewell.co.uk",
-    "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development. My journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Node.js, React, Java, Kotlin, and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German and a smattering of Agile-Coach friendly nounings.",
+    "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development.\n\nMy journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Node.js, React, Java, Kotlin, and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German and a smattering of Agile-Coach friendly nounings.",
     "location": {
       "countryCode": "DE",
-      "address": "Germany"
+      "city": "Berlin"
     },
     "profiles": [
       {
@@ -335,14 +335,16 @@
       "startDate": "2023-09-30",
       "summary": "At Feebris, a digital health startup, I spearheaded the development of patient-centric functionalities for home health monitoring. By integrating AWS Lambda and GraphQL into the Node.js backend, I enhanced data management between patients and healthcare providers. I leveraged my expertise in Typescript and React to refactor the frontend, significantly boosting code modularity, testability, and readability, while also implementing new features.",
       "url": "https://feebris.com",
-      "endDate": "ongoing"
+      "endDate": "ongoing",
+      "keySkills": ["AWS Lambda", "GraphQL", "Node.js", "Typescript", "React"]
     },
     {
       "name": "PPRO GmbH: Cloud Migration Consultant",
       "startDate": "2021-12-31",
       "summary": "I played a pivotal role at PPRO, a leading local payments provider, by orchestrating a seamless cloud migration for their financial reconciliation system. The system, handling hundreds of millions of euros daily, transitioned to AWS with zero downtime. My contribution spanned the migration process, implementation of end-to-end testing, and extensive code refactoring, resulting in heightened performance and system observability.",
       "url": "https://www.ppro.com",
-      "endDate": "2022-08-31"
+      "endDate": "2022-08-31",
+      "keySkills": ["AWS", "Cloud Migration", "End-to-End Testing", "Code Refactoring"]
     },
     {
       "name": "Node.js Developer for aHead",
@@ -350,26 +352,29 @@
       "summary": "For the aHead emotional intelligence app, I developed crucial Node.js/Typescript features including a robust notification system. This system utilized Firebase Cloud Messaging to deliver CMS-driven content, effectively bolstering user engagement through meticulously queued daily reminders.",
       "url": "https://www.ahead-app.com/",
       "endDate": "2021-08-31",
-      "keySkills": ["Typescript", "Node.js", "Firebase Cloud Messaging", "Jest/supertest for e2e testing", "RESTful API Development", "Google Cloud Platform"]
+      "keySkills": ["Typescript", "Node.js", "Firebase Cloud Messaging", "Jest", "Supertest", "RESTful API Development", "Google Cloud Platform"]
     },
     {
       "name": "Contributor to Chino open source SDK for Ruby",
       "startDate": "2017-10-31",
       "summary": "Contributed to the Chino open source SDK for Ruby, focusing on enhancing security and performance features. This involvement demonstrated my commitment to community-driven projects and open-source collaboration.",
       "url": "",
-      "endDate": "2017-12-31"
+      "endDate": "2017-12-31",
+      "keySkills": ["Ruby", "Open Source", "SDK Development", "Security", "Performance Optimization"]
     },
     {
       "name": "Infrastructure Engineer at Kenkou",
       "startDate": "2017-07-31",
       "summary": "Revitalized Kenkou's legacy infrastructure by transitioning to a contemporary, secure setup. My contributions spanned technological exploration and prototyping across various stacks, including Node.js, Java Spring, and Elixir, shaping Kenkou's strategic technology roadmap.",
       "url": "",
-      "endDate": "2017-09-30"
+      "endDate": "2017-09-30",
+      "keySkills": ["Infrastructure", "Node.js", "Java Spring", "Elixir", "Prototyping", "Technology Roadmapping"]
     },
     {
       "name": "Tech Consultant for Die Welt",
       "summary": "Served as a tech consultant for Die Welt, developing an Adobe After Effects plugin to automate trailer creation from templates. My role encompassed code contributions, including a CSV parser and state management, and optimizing the integration with Adobe Media Encoder.",
-      "url": "https://welt.de"
+      "url": "https://welt.de",
+      "keySkills": ["Adobe After Effects", "Plugin Development", "CSV Parsing", "State Management", "Adobe Media Encoder"]
     }
   ],
   "meta": {
