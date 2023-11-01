@@ -1,15 +1,4 @@
-import {
-  Box,
-  Divider,
-  FormControl,
-  FormLabel,
-  Heading,
-  HStack,
-  Link,
-  Switch,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Divider, Heading, Link, Text, VStack } from "@chakra-ui/react";
 import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import { when } from "@/helpers/when";
 
@@ -20,26 +9,9 @@ type Props = {
 export const WorkHistory = ({ resume: { work } }: Props) => {
   return (
     <VStack>
-      <HStack w="full" justifyContent="space-between" px={5}>
-        <Heading flex={1} as="h2" size="xl" w="full">
-          Work Experience
-        </Heading>
-
-        <Box>
-          <FormControl display="flex" alignItems="center">
-            <FormLabel htmlFor="showAll" mb="0" mr={2}>
-              Show All
-            </FormLabel>
-            <Switch
-              id="showAll"
-              checked={showAll}
-              onChange={e => {
-                setShowAll(e.target.checked);
-              }}
-            />
-          </FormControl>
-        </Box>
-      </HStack>
+      <Heading flex={1} as="h2" size="xl" w="full" px={5}>
+        Work Experience
+      </Heading>
 
       <VStack divider={<Divider />} spacing={5} align="stretch">
         {work.map((job, i) => (
