@@ -21,4 +21,4 @@ export type ResumeInterests = ResumeSchema["interests"];
 export type ResumeReferences = ResumeSchema["references"];
 export type ResumeProjects = ResumeSchema["projects"];
 export type ResumeProjectItem = ResumeSchema["projects"][number];
-export const jsonResume: ResumeSchema = json;
+export const jsonResume = json as ResumeSchema;
