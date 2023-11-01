@@ -1,0 +1,379 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Matthew Jewell",
+    "label": "Software Development Consultant | Coder and Educator | Cloud Software Consultant",
+    "image": "https://mattjewell.co.uk/Headshot.jpg",
+    "url": "https://mattjewell.co.uk",
+    "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development. My journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Node.js, React, Java, Kotlin, and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German and a smattering of Agile-Coach friendly nounings.",
+    "location": {
+      "countryCode": "DE",
+      "address": "Germany"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "mattjewell1",
+        "url": "https://www.linkedin.com/in/mattjewell1/"
+      },
+      {
+        "network": "GitHub",
+        "username": "jewell-lgtm",
+        "url": "https://github.com/jewell-lgtm"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Matthew Jewell Consulting",
+      "position": "Freelance Developer and Consultant",
+      "startDate": "2020-05-31",
+      "endDate": null,
+      "highlights": [
+        "Steered startups from concept to launch, actively contributing code and shipping customer-centric features.",
+        "Built scalable MVPs, customized software solutions, and bolstered development team performance.",
+        "Delivered expert Typescript training to enhance team proficiency and code quality.",
+        "Provided strategic advice to startup founders, facilitating smart scaling and market positioning."
+      ],
+      "summary": "Bringing a dynamic blend of technical expertise and business acumen, I serve as a hands-on consultant and developer, dedicated to guiding startups through their entire lifecycle. My approach is two-fold: I actively engage in writing code and crafting features that resonate with users, while also providing strategic insights that propel companies forward. Specializing in MVP construction and team development, my consultancy elevates team capabilities with a focus on Typescript, driving code excellence across projects.",
+      "url": "https://mattjewell.co.uk",
+      "location": "Berlin, Germany",
+      "technologies": [
+        "Typescript",
+        "Javascript",
+        "Python",
+        "Tensorflow",
+        "SciKit Learn",
+        "Ruby on Rails"
+      ]
+    },
+    {
+      "name": "MEMBER",
+      "position": "Full Stack Services and React Native Engineer",
+      "startDate": "2022-09-30",
+      "endDate": "2023-08-31",
+      "highlights": [
+        "Developed a high-performance React Native MVP, optimizing for 60fps animations and smooth user experience on diverse devices.",
+        "Engineered a serverless backend on Firebase/GCP, enhancing scalability and ensuring system resilience."
+      ],
+      "summary": "At MEMBER, my role as a Full Stack Services and React Native Engineer was central to creating a sophisticated MVP. I contributed to both front-end excellence and backend robustness, focusing on performance optimizations and cloud-based solutions to establish a scalable and fault-tolerant infrastructure ready for growth.",
+      "url": "https://www.linkedin.com/company/membercommunity/",
+      "location": "Berlin, Germany"
+    },
+    {
+      "name": "StartSteps",
+      "position": "Freelance Instructor",
+      "startDate": "2021-01-31",
+      "endDate": "2022-09-30",
+      "highlights": [
+        "Curated and delivered comprehensive curriculums in web development, data science, and programming principles.",
+        "Empowered students with practical skills, fostering their ability to succeed in the digital economy."
+      ],
+      "summary": "My engagement with StartSteps involved pioneering educational pathways for novices in technology, leading courses that spanned web development to data science, and imbuing first-time programmers with core computational skills.",
+      "url": "https://www.linkedin.com/school/startsteps/",
+      "location": "Berlin, Germany"
+    },
+    {
+      "name": "Equal Experts",
+      "position": "Independent Consultant",
+      "startDate": "2021-12-31",
+      "endDate": "2022-08-31",
+      "highlights": [
+        "Directed a seamless transition of PPRO's financial system to a cloud-native, serverless platform."
+      ],
+      "summary": "My consultancy with Equal Experts was marked by a pivotal migration project for PPRO, facilitating a seamless transition of their transaction-heavy financial reconciliation system to a modern, cloud-native, serverless architecture.",
+      "url": "https://www.linkedin.com/company/equal-experts/"
+    },
+    {
+      "name": "cherryfish.me",
+      "position": "CTO",
+      "startDate": "2019-01-31",
+      "endDate": "2020-04-30",
+      "highlights": [
+        "Orchestrated the development of an HR platform that revolutionizes candidate-company matchmaking.",
+        "Integrated a robust tech stack, ensuring product scalability and implementing TDD/BDD methodologies."
+      ],
+      "summary": "As CTO of cherryfish, I helmed the creation of an HR platform designed to redefine how companies discover and engage with talent. I led both strategy and execution, cultivating a product that excels in matching skill profiles with industry demands.",
+      "url": "https://www.linkedin.com/company/cherryfish.me/",
+      "location": "Berlin, Germany"
+    },
+    {
+      "name": "cherryfish.me",
+      "position": "Technology Team Lead",
+      "startDate": "2018-02-28",
+      "endDate": "2019-01-31",
+      "highlights": [
+        "Accelerated product development by effectively bridging technical execution with founder vision.",
+        "Promoted a culture of collaboration, ensuring alignment of the development process with strategic goals."
+      ],
+      "summary": "My initial role at cherryfish.me as a developer quickly evolved, and I became the essential conduit between our technical team and the founders, ensuring the product vision was realized with technical finesse and strategic insight.",
+      "url": "",
+      "location": "Berlin Area, Germany"
+    },
+    {
+      "name": "INNOVITAS VITAE",
+      "position": "Tech Lead",
+      "startDate": "2017-02-28",
+      "endDate": "2018-03-31",
+      "highlights": [
+        "Architected a comprehensive application stack, integrating advanced technologies and secure data solutions.",
+        "Drove innovation in medical data management and custom CRM integration."
+      ],
+      "summary": "As the Tech Lead at i-Vitae, I had the privilege of architecting a robust tech stack that became the cornerstone of our healthcare application. My role involved not just building, but innovating, ensuring our platform met stringent medical data security and accessibility standards.",
+      "url": "https://www.linkedin.com/company/innovitasvitae/",
+      "location": "Berlin Area, Germany"
+    },
+    {
+      "name": "Startupbootcamp",
+      "position": "Entrepreneur In Residence - Technology",
+      "startDate": "2016-10-31",
+      "endDate": "2017-02-28",
+      "highlights": [
+        "Provided comprehensive technical mentoring to 12 international startups.",
+        "Assisted in the development and scaling of tech stacks tailored to individual startup needs.",
+        "Developed and executed digital strategy initiatives for sustainable business growth.",
+        "Engaged in hands-on code development and system architecture design."
+      ],
+      "summary": "In my dynamic role as Entrepreneur In Residence for Technology at Startupbootcamp, I empowered a diverse cohort of 12 startups by guiding their technological growth and creating a resilient foundation for their businesses. I thrived on operating across multiple dimensions of their operations, from formulating high-level digital strategies to delving into code across a myriad of platforms.",
+      "technologies": ["Node.js", "Wordpress", "Swift", "Android (Java)", "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"],
+      "url": "https://www.linkedin.com/company/startupbootcamp/",
+      "location": "Berlin Area, Germany"
+    },
+    {
+      "name": "Sainsbury's",
+      "position": "Senior Software Developer",
+      "startDate": "2016-08-31",
+      "endDate": "2016-10-31",
+      "highlights": [
+        "Led internal software development projects with a focus on modernizing legacy systems.",
+        "Played a pivotal role in the transition from Waterfall to Agile methodologies.",
+        "Contributed to the formation and mentorship of Agile teams."
+      ],
+      "summary": "At Sainsbury's, I was instrumental in advancing internal software projects by leveraging contemporary technologies like Node.js, React, and GraphQL, and integrating them within the AWS ecosystem. My tenure was marked by a significant shift from traditional Waterfall to Agile methodologies, during which I helped cultivate robust, Agile teams within the Manchester Store Support Centre.",
+      "technologies": ["Javascript/Typescript (Node.js, React)", "GraphQL", "AWS"],
+      "url": "https://www.linkedin.com/company/sainsburys/",
+      "location": "Manchester"
+    },
+    {
+      "name": "The Electric Jukebox Company",
+      "position": "Web and Mobile Developer",
+      "summary": "Developed UX prototypes and front-end for custom Android devices with agile methods using Angular.js, Cordova, AWS, and Jenkins."
+    },
+    {
+      "name": "Osper",
+      "position": "Freelance Developer",
+      "summary": "Led a code refactor and feature development for youth-focused finance apps using Cordova and Backbone.js, focusing on security and user experience."
+    },
+    {
+      "name": "Five Cool Ltd",
+      "position": "UI Engineer",
+      "summary": "Created front-end components with Angular.js and D3, balancing customer feature requests with maintainable codebase in a scrum setting."
+    },
+    {
+      "name": "Maido",
+      "position": "Web Developer",
+      "summary": "Built web applications for brands like Jaguar Land Rover, Just Eat, integrating design and development with PHP and jQuery."
+    },
+    {
+      "name": "We Love Mobile",
+      "position": "Web Developer",
+      "summary": "Transitioned from intern to developer, crafting mobile experiences across diverse OS and devices, focusing on performance on low-powered devices."
+    },
+    {
+      "name": "freelance digital designer",
+      "position": "App developer",
+      "summary": "Created an iPad magazine-style application for the British Neuroscience Association, managing the project independently."
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Liverpool",
+      "area": "Anatomy and Human Biology",
+      "studyType": "BSc",
+      "startDate": "2008-12-31",
+      "endDate": "2011-12-31",
+      "score": "",
+      "courses": [
+        "Advanced Topagraphical Human Anatomy"
+      ]
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "TypeScript",
+      "keywords": []
+    },
+    {
+      "name": "PostgreSQL",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "keywords": []
+    },
+    {
+      "name": "React",
+      "keywords": []
+    },
+    {
+      "name": "DevOps",
+      "keywords": []
+    },
+    {
+      "name": "Web Development",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "keywords": []
+    },
+    {
+      "name": "Git",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "keywords": []
+    },
+    {
+      "name": "Python (Programming Language)",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "keywords": []
+    },
+    {
+      "name": "Test Driven Development",
+      "keywords": []
+    },
+    {
+      "name": "React Native",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "keywords": []
+    },
+    {
+      "name": "Jest",
+      "keywords": []
+    },
+    {
+      "name": "HTML5/CSS3",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "fluency": "Native Speaker",
+      "language": "English"
+    },
+    {
+      "fluency": "Full Professional",
+      "language": "German"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Germán Fuentes Capella",
+      "reference": "Matt joined our team for a strategic project that wasn't going the way we all wanted. He was instrumental in the efforts to turn it around to the success it is today. I am specially thankful for the engagement and ownership he displayed during our venture."
+    },
+    {
+      "name": "Christopher Schmacke",
+      "reference": "Matt has an extremely extensive and excellent specialist knowledge, which he always used very confidently and successfully to complete his tasks. He became familiar with the area of responsibility assigned to him within a very short time. Matt proved to be a very resilient person and was always goal-oriented. He always impressed with qualitatively and quantitatively excellent results. In addition, Matt has always been a role model for his team. He led his team in a goal-oriented and objective manner and achieved a good increase in performance at a consistently high level as well as a good team atmosphere. Without him, the cherryfish app simply wouldn't exist."
+    },
+    {
+      "name": "Alessandro Scozzesi",
+      "reference": "We met Matthew as digi-tech specialist at Startupbootcamp Digital Health Berlin. With his help we put our service online in less than 2 months. He does know how to work and accomplish tasks in a very fast and effective way. He's very well talented and fast learning. I explained him our \"flow\" and he gave me back technical suggestions an hour later on. Impressive. He loved get shit done rather than talking. Well done Matt."
+    },
+    {
+      "name": "George Wiscombe",
+      "reference": "Matt is a talented engineer with a \"can-do\" attitude. He has an opinion, speaks up and gets stuff done."
+    },
+    {
+      "name": "Matteo Borgato",
+      "reference": "Matthew's amazed me with his fast tempo. He's a hard working, highly-skilled and talented UI Engineer. Great ability to understand the requirements and implement flexible and maintainable solutions. He's very meticulous in meeting the criteria required.\r\n\r\nIt's been great working with Matt and I'd recommend him as an asset to any development team."
+    },
+    {
+      "name": "Will Perring",
+      "reference": "Matt came on board at Maido as a Junior Developer and quickly established himself as a valuable member of the team. His age belies his true capabilities; he grasps new concepts exceptionally quickly and soon progressed to planning and building his own large-scale projects for some big name clients, something I wouldn't normally expect from someone with twice his experience. Add to this his passion for new and emerging technologies and libraries - he always seems to know new, bleeding-edge products inside-out before anyone else - and you have not only an excellent developer but the foundations of someone who has the potential to make waves in the industry as a whole."
+    },
+    {
+      "name": "Andy Burgess",
+      "reference": "Matthew is a very thoughtful developer that always ensures a high level of quality in his work. He is a joy to work with and is constantly looking for new ways to improve our working practices."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Full Stack Engineer at Feebris",
+      "startDate": "2023-09-30",
+      "summary": "At Feebris, a digital health startup, I spearheaded the development of patient-centric functionalities for home health monitoring. By integrating AWS Lambda and GraphQL into the Node.js backend, I enhanced data management between patients and healthcare providers. I leveraged my expertise in Typescript and React to refactor the frontend, significantly boosting code modularity, testability, and readability, while also implementing new features.",
+      "url": "https://feebris.com",
+      "endDate": "ongoing"
+    },
+    {
+      "name": "PPRO GmbH: Cloud Migration Consultant",
+      "startDate": "2021-12-31",
+      "summary": "I played a pivotal role at PPRO, a leading local payments provider, by orchestrating a seamless cloud migration for their financial reconciliation system. The system, handling hundreds of millions of euros daily, transitioned to AWS with zero downtime. My contribution spanned the migration process, implementation of end-to-end testing, and extensive code refactoring, resulting in heightened performance and system observability.",
+      "url": "https://www.ppro.com",
+      "endDate": "2022-08-31"
+    },
+    {
+      "name": "Node.js Developer for aHead",
+      "startDate": "2021-07-31",
+      "summary": "For the aHead emotional intelligence app, I developed crucial Node.js/Typescript features including a robust notification system. This system utilized Firebase Cloud Messaging to deliver CMS-driven content, effectively bolstering user engagement through meticulously queued daily reminders.",
+      "url": "https://www.ahead-app.com/",
+      "endDate": "2021-08-31",
+      "keySkills": ["Typescript", "Node.js", "Firebase Cloud Messaging", "Jest/supertest for e2e testing", "RESTful API Development", "Google Cloud Platform"]
+    },
+    {
+      "name": "Contributor to Chino open source SDK for Ruby",
+      "startDate": "2017-10-31",
+      "summary": "Contributed to the Chino open source SDK for Ruby, focusing on enhancing security and performance features. This involvement demonstrated my commitment to community-driven projects and open-source collaboration.",
+      "url": "",
+      "endDate": "2017-12-31"
+    },
+    {
+      "name": "Infrastructure Engineer at Kenkou",
+      "startDate": "2017-07-31",
+      "summary": "Revitalized Kenkou's legacy infrastructure by transitioning to a contemporary, secure setup. My contributions spanned technological exploration and prototyping across various stacks, including Node.js, Java Spring, and Elixir, shaping Kenkou's strategic technology roadmap.",
+      "url": "",
+      "endDate": "2017-09-30"
+    },
+    {
+      "name": "Tech Consultant for Die Welt",
+      "summary": "Served as a tech consultant for Die Welt, developing an Adobe After Effects plugin to automate trailer creation from templates. My role encompassed code contributions, including a CSV parser and state management, and optimizing the integration with Adobe Media Encoder.",
+      "url": "https://welt.de"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
