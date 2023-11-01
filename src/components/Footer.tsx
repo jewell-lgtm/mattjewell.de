@@ -41,6 +41,16 @@ export function Footer() {
             {t("footer.language")}
           </Link>
         </NextLink>
+        <NextLink href="/" passHref>
+          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
+            Home
+          </Link>
+        </NextLink>
+        <NextLink href="/cv" passHref>
+          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
+            {t("footer.cv")}
+          </Link>
+        </NextLink>
         <Link
           color="white"
           _hover={{ color: "whiteAlpha.800" }}

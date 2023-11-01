@@ -15,6 +15,7 @@ export const en = {
   "more.5":
     "Improve developer onboarding by investing in improving your tooling, documentation and developer experience.",
   "footer.language": "Deutsch",
+  "footer.cv": "CV",
   "footer.ln": "Connect on LinkedIn",
   "footer.rss": "Blog as RSS",
   "navigation.back": "Go Back",
@@ -37,6 +38,7 @@ export const de: typeof en = {
   "more.5":
     "Verbessern Sie die Einarbeitung von Entwicklern, indem Sie in die Verbesserung Ihrer Tooling, Dokumentation und Entwicklererfahrung investieren.",
   "footer.language": "English",
+  "footer.cv": "Lebenslauf",
   "footer.ln": "Auf LinkedIn verbinden",
   "footer.rss": "Blog als RSS",
   "navigation.back": "Zurück",
