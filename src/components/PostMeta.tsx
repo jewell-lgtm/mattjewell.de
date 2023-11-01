@@ -1,8 +1,11 @@
 import React from "react";
-import { PostData } from "@/loader";
+import { PostData } from "@/loaders/post";
 import { Meta } from "./Meta";
 
-export function PostMeta({ post }: { post: PostData }) {
+type Props = { post: PostData };
+
+export function PostMeta({ post: _post }: Props) {
+  const post = _post as any;
   return (
     <Meta
       meta={{

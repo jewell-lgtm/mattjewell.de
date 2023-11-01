@@ -1,4 +1,4 @@
-import { CSSProperties } from "react";
+import type { CSSProperties } from "react";
 
 interface Props extends React.SVGProps<SVGSVGElement> {
   color?: CSSProperties["color"];

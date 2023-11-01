@@ -1,10 +1,10 @@
 import { format } from "fecha";
 import React from "react";
-import { PostData } from "@/loader";
+import { PostData } from "@/loaders/post";
 import { Tag } from "./Tag";
 
 export function PostCard(props: { post: PostData }) {
-  const post = props.post;
+  const post = props.post as any;
   return (
     <a className="post-card" href={`/${post.path}`}>
       <div className="post-card-inner">
@@ -26,7 +26,9 @@ export function PostCard(props: { post: PostData }) {
 
           <div className="tag-container">
             {post.tags &&
-              (post.tags || []).map(tag => <Tag key={tag} tag={tag} />)}
+              ((post.tags || []) as string[]).map(tag => (
+                <Tag key={tag} tag={tag} />
+              ))}
           </div>
         </div>
       </div>

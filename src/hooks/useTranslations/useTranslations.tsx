@@ -1,4 +1,5 @@
-import { CopyKey, locales } from "./types";
+import type { CopyKey} from "./types";
+import { locales } from "./types";
 // noinspection ES6PreferShortImport
 import { useLocale } from "./useLocale";
 

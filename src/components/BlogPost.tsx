@@ -2,14 +2,15 @@
 // noinspection HtmlRequiredAltAttribute
 
 import React from "react";
-import { PostData } from "@/loader";
+import { PostData } from "@/loaders/post";
 import { Author } from "./Author";
 import { Markdown } from "./Markdown";
 import { PostMeta } from "./PostMeta";
 
 type Props = { post: PostData };
 export function BlogPost({ post }: Props) {
-  const { title, subtitle, content, bannerPhoto } = post;
+  const { title, subtitle, content, bannerPhoto } = post as any;
+  console.log("content", content);
   return (
     <div className="blog-post">
       <PostMeta post={post} />

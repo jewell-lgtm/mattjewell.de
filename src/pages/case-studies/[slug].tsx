@@ -1,7 +1,7 @@
 import { Link } from "@chakra-ui/react";
 import glob from "glob";
 import matter from "gray-matter";
-import { GetStaticPaths, GetStaticProps } from "next";
+import type { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
 import { ShowCaseStudy } from "@/components/case-studies";

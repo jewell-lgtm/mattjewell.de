@@ -1,18 +1,10 @@
 import fs from "node:fs";
 import RSS from "rss";
 import showdown from "showdown";
+import { PostData } from "@/loaders/post";
 import { globals } from "./globals";
-import { PostData } from "./loader";
 
 export const generateRSS = async (posts: PostData[]) => {
-  posts.map(post => {
-    if (!post.canonicalUrl)
-      throw new Error(
-        "Missing canonicalUrl. A canonical URL is required for RSS feed generation. If you don't care about RSS, uncomment `generateRSS(posts)` at the bottom of index.tsx."
-      );
-    return post;
-  });
-
   const feed = new RSS({
     title: globals.siteName,
     description: globals.siteDescription,
@@ -42,8 +34,8 @@ export const generateRSS = async (posts: PostData[]) => {
       title: post.title,
       description: html,
       url: `${globals.url}/${post.path}`,
-      categories: post.tags || [],
-      author: post.author || "Colin McDonnell",
+      categories: /*post.tags ||*/ [],
+      author: /*post.author ||*/ globals.yourName,
       date: new Date(post.datePublished || 0).toISOString(),
     });
   }

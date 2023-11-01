@@ -1,9 +1,8 @@
 import { format } from "fecha";
 import Image from "next/image";
 import React from "react";
-import { PostData } from "@/loader";
 
-export function Author(props: { post: PostData }) {
+export function Author(props: { post: any }) {
   return (
     <div className="author-container">
       <div className="author">
@@ -22,7 +21,7 @@ export function Author(props: { post: PostData }) {
   );
 }
 
-export function AuthorLines(props: { post: PostData }) {
+export function AuthorLines(props: { post: any }) {
   return (
     <div>
       <p className="author-line">

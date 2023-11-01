@@ -1,7 +1,8 @@
-import { GetStaticProps } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 import { Hero, LearnMore } from "@/components/landing-page";
-import { loadBlogPosts, PostData } from "@/loader";
+import { loadBlogPosts } from "@/loaders/blog";
+import { PostData } from "@/loaders/post";
 import { generateRSS } from "@/rssUtil";
 
 interface Props {
@@ -9,23 +10,25 @@ interface Props {
 }
 
 function Home({ posts }: Props) {
-  return <>
-    <Head>
-      <title>Matt Jewell</title>
-    </Head>
+  return (
+    <>
+      <Head>
+        <title>Matt Jewell</title>
+      </Head>
 
-    <Hero />
-    <LearnMore />
+      <Hero />
+      <LearnMore />
 
-    <div style={{ display: "none" }} aria-hidden>
-      <h3>Blog Posts</h3>
-      <ul>
-        {posts.map((post, i) => (
-          <li key={i}>{post.title}</li>
-        ))}
-      </ul>
-    </div>
-  </>
+      <div style={{ display: "none" }} aria-hidden>
+        <h3>Blog Posts</h3>
+        <ul>
+          {posts.map((post, i) => (
+            <li key={i}>{post.title}</li>
+          ))}
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default Home;

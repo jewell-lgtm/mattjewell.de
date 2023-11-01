@@ -1,4 +1,5 @@
-import { extendTheme, ThemeComponents, ThemeConfig } from "@chakra-ui/react";
+import type { ThemeComponents, ThemeConfig } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
@@ -66,7 +67,7 @@ const fonts = {
 
 export const appTheme = extendTheme({
   config,
-  fonts: fonts,
+  fonts,
   components,
   colors,
 });

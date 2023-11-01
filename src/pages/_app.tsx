@@ -1,5 +1,5 @@
 import { Box, ChakraProvider, Flex } from "@chakra-ui/react";
-import { AppProps } from "next/app";
+import type { AppProps } from "next/app";
 import Head from "next/head";
 import React from "react";
 import { Footer } from "@/components/Footer";
