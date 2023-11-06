@@ -5,16 +5,18 @@ import {
   Divider,
   Heading,
   Text,
+  useColorMode,
   VStack,
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { FaFilePdf } from "react-icons/fa";
+import { FaFilePdf, FaMoon, FaSun } from "react-icons/fa";
 
 export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   const locale = "en"; // TODO: useLocale();
   const cvLink = locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf";
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <VStack spacing={4} align="center" pb={8} pt={8}>
@@ -41,11 +43,25 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
         </WrapItem>
       </Wrap>
 
-      <Link href={cvLink} target="_blank">
-        <Button leftIcon={<FaFilePdf />} variant="solid">
-          {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
-        </Button>
-      </Link>
+      <Wrap>
+        <WrapItem>
+          <Button
+            onClick={toggleColorMode}
+            variant="solid"
+            leftIcon={colorMode === "dark" ? <FaSun /> : <FaMoon />}
+          >
+            View in {colorMode === "dark" ? "light" : "dark"} mode
+          </Button>
+        </WrapItem>
+
+        <WrapItem>
+          <Link href={cvLink} target="_blank">
+            <Button leftIcon={<FaFilePdf />} variant="solid">
+              {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
+            </Button>
+          </Link>
+        </WrapItem>
+      </Wrap>
 
       <Divider />
       <VStack spacing={4} align="start" textAlign="left" px={12}>
