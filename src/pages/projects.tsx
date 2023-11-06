@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { jsonResume, type ResumeSchema } from "@/loaders/cv";
 import { type GetStaticProps } from "next";
-import { Divider, VStack } from "@chakra-ui/react";
+import { Divider, StackDivider, VStack } from "@chakra-ui/react";
 import { Projects } from "@/components/cv/Projects";
 import { BasicInfo } from "@/components/cv/Basics";
 import { WorkHistory } from "@/components/cv/WorkHistory";
@@ -24,12 +24,13 @@ const CvPage = ({ resume }: Props) => {
       </Head>
 
       <VStack
-        align="start"
         spacing={5}
-        maxWidth="container.xl"
+        maxWidth="container.lg"
         margin="auto"
-        divider={<Divider />}
-        m={12}
+        divider={<StackDivider />}
+        px={{ base: 4, md: 8 }}
+        py={5}
+        align="stretch"
       >
         <BasicInfo resume={resume} />
         <Projects resume={resume} />
