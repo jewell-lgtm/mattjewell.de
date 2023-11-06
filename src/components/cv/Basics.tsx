@@ -18,6 +18,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   const cvLink = locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf";
   const { colorMode, toggleColorMode } = useColorMode();
 
+  const label = basics.label.split(" | ");
   return (
     <VStack spacing={4} align="center" pb={8} pt={8}>
       {basics.image && (
@@ -35,13 +36,20 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
         {basics.name}
       </Heading>
 
-      <Wrap justify="center" mb={8}>
-        <WrapItem>
-          <Text fontSize="md" color="gray.400">
-            {basics.label}
-          </Text>
-        </WrapItem>
-      </Wrap>
+      <Text fontSize="md" color="gray.400">
+        {label.map((str, index) => {
+          return (
+            <>
+              {str}
+              {index !== label.length - 1 && (
+                <Text as="span" color="gray.200">
+                  {" | "}
+                </Text>
+              )}
+            </>
+          );
+        })}
+      </Text>
 
       <Wrap>
         <WrapItem>
