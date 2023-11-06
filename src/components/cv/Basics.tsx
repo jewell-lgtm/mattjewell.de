@@ -32,11 +32,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       <Heading as="h1" size="xl">
         {basics.name}
       </Heading>
-      <Link href={cvLink} target="_blank">
-        <Button leftIcon={<FaFilePdf />} colorScheme="teal" variant="solid">
-          {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
-        </Button>
-      </Link>
+
       <Wrap justify="center" mb={8}>
         <WrapItem>
           <Text fontSize="md" color="gray.400">
@@ -44,6 +40,13 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
           </Text>
         </WrapItem>
       </Wrap>
+
+      <Link href={cvLink} target="_blank">
+        <Button leftIcon={<FaFilePdf />} colorScheme="teal" variant="solid">
+          {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
+        </Button>
+      </Link>
+
       <Divider />
       <VStack spacing={4} align="start" textAlign="left" px={12}>
         {basics.summary &&
