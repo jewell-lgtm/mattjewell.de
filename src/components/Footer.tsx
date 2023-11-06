@@ -12,7 +12,7 @@ import React from "react";
 import { globals } from "@/globals";
 import { useTranslations } from "@/hooks/useTranslations";
 
-export function DarkMode() {
+function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
     <button onClick={() => toggleColorMode()}>
@@ -44,6 +44,7 @@ export function Footer() {
       pt={8}
       pb={8}
     >
+      <DarkMode />
       <Text as="p" color={textColor}>{`© ${
         globals.yourName
       } ${new Date().getFullYear()}`}</Text>
