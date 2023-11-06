@@ -5,6 +5,7 @@ import {
   Divider,
   Heading,
   Text,
+  useBreakpointValue,
   useColorMode,
   VStack,
   Wrap,
@@ -17,8 +18,13 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   const locale = "en"; // TODO: useLocale();
   const cvLink = locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf";
   const { colorMode, toggleColorMode } = useColorMode();
-
+  const summaryPadding = useBreakpointValue({
+    base: 0,
+    md: 4,
+    lg: 8,
+  });
   const label = basics.label.split(" | ");
+
   return (
     <VStack spacing={4} align="center" pb={8} pt={8}>
       {basics.image && (
@@ -36,7 +42,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
         {basics.name}
       </Heading>
 
-      <Text fontSize="md" color="gray.400">
+      <Text fontSize="md" color="gray.400" textAlign="center">
         {label.map((str, index) => {
           return (
             <>
@@ -72,7 +78,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       </Wrap>
 
       <Divider />
-      <VStack spacing={4} align="start" textAlign="left" px={12}>
+      <VStack spacing={4} align="start" textAlign="left" px={summaryPadding}>
         {basics.summary &&
           basics.summary.split("\n\n").map((paragraph, index) => (
             <Text px={2} key={`summary-${index}`} fontSize="lg">
