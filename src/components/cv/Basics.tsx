@@ -1,13 +1,5 @@
 import { type ResumeSchema } from "@/loaders/cv";
-import {
-  Box,
-  Divider,
-  Heading,
-  HStack,
-  Tag,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, Divider, Heading, Text, VStack, Wrap } from "@chakra-ui/react";
 
 export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   return (
@@ -26,23 +18,33 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       <Heading as="h1" size="xl">
         {basics.name}
       </Heading>
-      <HStack mb={8}>
-        {basics.label &&
-          basics.label.split(" | ").map(label => (
-            <Tag key={label} size="lg" colorScheme="blue">
-              {label}
-            </Tag>
-          ))}
-      </HStack>
+      <Wrap justify="center" mb={8}>
+        <Text fontSize="md" color="gray.400">
+          {basics.label}
+        </Text>
+      </Wrap>
       <Divider />
       <VStack spacing={4} align="start" textAlign="left" px={12}>
         {basics.summary &&
-          basics.summary.split("\n\n").map((line, i) => (
-            <Text px={2} key={`summary-${i}`} fontSize="lg">
-              {line}
+          basics.summary.split("\n\n").map((paragraph, index) => (
+            <Text px={2} key={`summary-${index}`} fontSize="lg">
+              {paragraph}
             </Text>
           ))}
       </VStack>
     </VStack>
   );
 };
+
+/*
+import React from 'react';
+import { Box, Heading, Text, VStack, HStack, Divider, Wrap, WrapItem } from '@chakra-ui/react';
+import { ResumeSchema } from './ResumeSchema'; // Import the appropriate type
+
+export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
+  return (
+
+  );
+};
+
+ */
