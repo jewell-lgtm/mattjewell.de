@@ -310,6 +310,21 @@
       ]
     },
     {
+      "name": "Freelance React Native Developer",
+      "company": "Nuri",
+      "startDate": "2021-01-01",
+      "endDate": "2021-07-01",
+      "summary": "While Bitwala was in the process of rebranding to Nuri, I functioned as a key member of a dynamic team of contractors focusing on the app's rebranding. Our mission was to seamlessly integrate a fresh visual identity into the existing application without disrupting the user experience or core functionality. The challenge was to ensure the UI overhaul complemented the ongoing delivery of new features by the core development team, thus requiring meticulous coordination and agile responsiveness to evolving project requirements.\n\nMy contribution specifically involved leveraging React Native to craft a rejuvenated user interface that resonated with the new design guidelines. While working in tandem with the core team, I helped assimilate new features and enhancements into the redesigned app, guaranteeing functional and visual coherence. This concerted effort by the contractor team played a crucial part in delivering a unified product that aligned with the strategic vision of Nuri's senior leadership, all the while supporting continuous improvement and feature expansion.",
+      "url": "https://www.bitwala.com",
+      "keySkills": [
+        "Cryptocurrencies",
+        "React Native",
+        "Team Collaboration",
+        "UI Design",
+        "Agile Methodologies"
+      ]
+    },
+    {
       "name": "Contributor to Chino open source SDK for Ruby",
       "startDate": "2017-10-31",
       "endDate": "2017-12-31",
