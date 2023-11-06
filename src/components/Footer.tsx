@@ -1,4 +1,11 @@
-import { HStack, Link, Text, useColorMode, VStack } from "@chakra-ui/react";
+import {
+  HStack,
+  Link,
+  Text,
+  useColorMode,
+  useColorModeValue,
+  VStack,
+} from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -18,50 +25,65 @@ export function Footer() {
   const router = useRouter();
   const t = useTranslations();
 
+  // Dynamic values based on color mode
+  const textColor = useColorModeValue("gray.800", "white");
+  const linkHoverColor = useColorModeValue("gray.600", "whiteAlpha.800");
+
+  const bgGradient = useColorModeValue(
+    "linear(to-r, gray.100, gray.50)",
+    "linear(to-l, gray.700, gray.600)"
+  );
+
   return (
     <VStack
       as="footer"
       width="full"
       textAlign="center"
-      backgroundColor="gray.600"
-      bgGradient="linear(to-r, blackAlpha.600, transparent)"
-      color="white"
+      bgGradient={bgGradient}
+      color={textColor}
       pt={8}
-      pb={4}
+      pb={8}
     >
-      <DarkMode />
-      <Text as="p">{`© ${globals.yourName} ${new Date().getFullYear()}`}</Text>
+      <Text as="p" color={textColor}>{`© ${
+        globals.yourName
+      } ${new Date().getFullYear()}`}</Text>
       <HStack>
         <NextLink
           href={router.asPath}
           locale={router.locale === "en" ? "de" : "en"}
           passHref
         >
-          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
+          <Link color={textColor} _hover={{ color: linkHoverColor }}>
             {t("footer.language")}
           </Link>
         </NextLink>
         <NextLink href="/" passHref>
-          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
+          <Link color={textColor} _hover={{ color: linkHoverColor }}>
             Home
           </Link>
         </NextLink>
-        <NextLink href="/cv" passHref>
-          <Link color="white" _hover={{ color: "whiteAlpha.800" }}>
+        <NextLink
+          href={router.locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf"}
+          locale={router.locale}
+          passHref
+        >
+          <Link color={textColor} _hover={{ color: linkHoverColor }}>
             {t("footer.cv")}
           </Link>
         </NextLink>
         <Link
-          color="white"
-          _hover={{ color: "whiteAlpha.800" }}
           href="https://www.linkedin.com/in/mattjewell1/"
+          isExternal
+          color={textColor}
+          _hover={{ color: linkHoverColor }}
         >
           {t("footer.ln")}
         </Link>
         <Link
-          color="white"
-          _hover={{ color: "whiteAlpha.800" }}
           href="/rss.xml"
+          isExternal
+          color={textColor}
+          _hover={{ color: linkHoverColor }}
         >
           {t("footer.rss")}
         </Link>
