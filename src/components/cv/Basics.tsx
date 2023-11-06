@@ -42,7 +42,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       </Wrap>
 
       <Link href={cvLink} target="_blank">
-        <Button leftIcon={<FaFilePdf />} colorScheme="teal" variant="solid">
+        <Button leftIcon={<FaFilePdf />} variant="solid">
           {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
         </Button>
       </Link>
