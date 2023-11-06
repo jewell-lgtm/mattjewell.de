@@ -14,10 +14,11 @@ export type ResumeWorkItem = {
 
 export type ResumeProjectItem = {
   name: string;
+  company?: string;
   startDate: string;
-  endDate: undefined | string;
+  endDate?: string;
   summary: string;
-  url: undefined | string;
+  url?: string;
   keySkills: string[];
 };
 

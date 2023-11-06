@@ -47,32 +47,6 @@
       ]
     },
     {
-      "name": "MEMBER",
-      "position": "Full Stack Services and React Native Engineer",
-      "startDate": "2022-09-30",
-      "endDate": "2023-08-31",
-      "highlights": [
-        "Developed a high-performance React Native MVP, optimizing for 60fps animations and smooth user experience on diverse devices.",
-        "Engineered a serverless backend on Firebase/GCP, enhancing scalability and ensuring system resilience."
-      ],
-      "summary": "At MEMBER, my role as a Full Stack Services and React Native Engineer was central to creating a sophisticated MVP. I contributed to both front-end excellence and backend robustness, focusing on performance optimizations and cloud-based solutions to establish a scalable and fault-tolerant infrastructure ready for growth.",
-      "url": "https://www.linkedin.com/company/membercommunity/",
-      "location": "Berlin, Germany"
-    },
-    {
-      "name": "StartSteps",
-      "position": "Freelance Instructor",
-      "startDate": "2021-01-31",
-      "endDate": "2022-09-30",
-      "highlights": [
-        "Curated and delivered comprehensive curriculums in web development, data science, and programming principles.",
-        "Empowered students with practical skills, fostering their ability to succeed in the digital economy."
-      ],
-      "summary": "My engagement with StartSteps involved pioneering educational pathways for novices in technology, leading courses that spanned web development to data science, and imbuing first-time programmers with core computational skills.",
-      "url": "https://www.linkedin.com/school/startsteps/",
-      "location": "Berlin, Germany"
-    },
-    {
       "name": "Equal Experts",
       "position": "Independent Consultant",
       "startDate": "2021-12-31",
@@ -123,7 +97,7 @@
     },
     {
       "name": "Startupbootcamp",
-      "position": "Entrepreneur In Residence - Technology",
+      "position": "Entrepreneur In Residence",
       "startDate": "2016-10-31",
       "endDate": "2017-02-28",
       "highlights": [
@@ -186,11 +160,6 @@
       "name": "We Love Mobile",
       "position": "Web Developer",
       "summary": "Transitioned from intern to developer, crafting mobile experiences across diverse OS and devices, focusing on performance on low-powered devices."
-    },
-    {
-      "name": "freelance digital designer",
-      "position": "App developer",
-      "summary": "Created an iPad magazine-style application for the British Neuroscience Association, managing the project independently."
     }
   ],
   "volunteer": [],
@@ -254,12 +223,12 @@
   ],
   "projects": [
     {
-      "name": "Full Stack Engineer at Feebris",
+      "name": "Full Stack Engineer",
+      "company": "Feebris",
       "startDate": "2023-09-30",
-      "summary": "Led the development of key patient-facing features using AWS Lambda, GraphQL, and Node.js, enhancing communication and data handling between patients and healthcare providers. Improved frontend architecture with TypeScript and React for better maintainability and performance.",
+      "summary": "Led the creation of important features directly used by patients through AWS Lambda, GraphQL, and Node.js, which significantly enhanced communication and data handling between patients and healthcare providers. I was deeply involved with refining the GraphQL API, developing efficient queries and mutations that improved data operations, and overseeing a thorough refactor of the TypeScript codebase to heighten type safety and reduce errors, thus improving maintainability.\n\nIn addition to backend improvements, I was responsible for crafting intuitive user interface components using React, focusing on a seamless user experience. I also set up a suite of comprehensive tests, including both unit and integration tests, to ensure the frontend's reliability and performance. These contributions were instrumental in bolstering the application's robustness and enhancing the overall functionality of the platform.",
       "url": "https://feebris.com",
       "keySkills": [
-        "AWS Lambda",
         "GraphQL",
         "Node.js",
         "Typescript",
@@ -271,9 +240,10 @@
       "company": "MEMBER",
       "startDate": "2022-09-01",
       "endDate": "2023-08-31",
-      "summary": "Instrumental in delivering a high-performance MVP React Native app, refining user experience with smooth animations, and spearheading the creation of a resilient serverless backend on Firebase and GCP.",
+      "summary": "Played a pivotal role in developing a high-performance MVP for a React Native app, focusing on creating fluid animations and a user experience that feels natural and engaging. My involvement covered end-to-end development, from conceptualizing the user interface to ensuring optimal performance on both iOS and Android platforms. I actively engaged in refining the app’s functionality, addressing user feedback to iteratively improve the product.\n\nI also led the charge in establishing a resilient serverless backend architecture using Firebase and Google Cloud Platform. This included setting up secure, scalable cloud functions, managing real-time data with Firestore, and ensuring robust authentication processes. My commitment to clean code and maintainable structures was demonstrated through diligent UI testing and adherence to test-driven development principles. Through collaborative efforts and a strong focus on both user needs and technical excellence, the app has emerged as a reliable and user-friendly platform.",
       "location": "Berlin, Germany",
       "workType": "Hybrid",
+      "url": "https://member.app/",
       "keySkills": [
         "Cloud Computing",
         "TypeScript",
@@ -288,10 +258,10 @@
       ]
     },
     {
-      "name": "PPRO GmbH: Cloud Migration Consultant",
+      "name": "Cloud Migration Consultant at PPRO GmbH",
       "startDate": "2021-12-31",
       "endDate": "2022-08-31",
-      "summary": "Directed a critical cloud migration for financial reconciliation systems handling massive transaction volumes, achieving a transition to AWS without downtime, and enhancing system performance and observability.",
+      "summary": "As part of a dedicated team of Equal Experts consultants, I contributed to the seamless cloud migration of PPRO's financial reconciliation systems, crucial for processing high-volume transactions. Our collective efforts enabled a successful transition to AWS with meticulous planning to avoid any downtime. This collaboration not only preserved uninterrupted service during the migration but also led to a marked improvement in system performance and observability.\n\nIn tandem with the team, I was involved in rigorous end-to-end testing to confirm the reliability of the new cloud setup. My role also extended to refactoring the codebase, optimizing application performance for cloud efficiency, and enhancing scalability. This overhaul has provided PPRO with a more agile and scalable infrastructure, laying the groundwork for sustained growth and innovation in their financial services.",
       "url": "https://www.ppro.com",
       "keySkills": [
         "AWS",
@@ -305,8 +275,9 @@
       "company": "StartSteps",
       "startDate": "2021-01-01",
       "endDate": "2022-09-30",
-      "summary": "Fostered digital literacy through engaging web development, data science, and programming courses, equipping students with practical skills in HTML, CSS, JavaScript, Python, and SQL.",
+      "summary": "As a Freelance Instructor at StartSteps, I played a pivotal role in developing digital proficiency among students through courses encompassing web development, data science, programming, and machine learning. My curriculum was thoughtfully structured to introduce front-end technologies like HTML, CSS, and JavaScript, as well as Python and SQL for backend proficiency. In the realm of data science, I focused on imparting practical knowledge of data manipulation and analysis using powerful libraries like Pandas and NumPy, establishing a strong foundation for data-driven problem solving.\n\nMy courses also delved into the essentials of machine learning, where students learned to implement predictive models with SciKit Learn and TensorFlow. I championed a dynamic learning environment that went beyond theoretical concepts, engaging students in hands-on projects that applied data science principles and machine learning techniques to real-world data sets. This approach ensured that students emerged well-equipped to venture into diverse tech sectors, with many finding success in web development, data analytics, and burgeoning AI fields, underpinned by the comprehensive programming, data science, and machine learning skills acquired through our sessions.",
       "location": "Berlin, Germany",
+      "url": "https://startsteps.org/",
       "keySkills": [
         "HTML",
         "CSS",
@@ -314,11 +285,16 @@
         "Python",
         "SQL",
         "Data Analysis",
+        "Pandas",
+        "NumPy",
+        "Machine Learning",
+        "SciKit Learn",
+        "TensorFlow",
         "Programming Fundamentals"
       ]
     },
     {
-      "name": "Node.js Developer for aHead",
+      "name": "Node.js Developer at aHead",
       "startDate": "2021-07-31",
       "endDate": "2021-08-31",
       "summary": "Engineered a sophisticated notification system using Firebase Cloud Messaging integrated with Node.js/TypeScript to drive user engagement with personalized content delivery.",
@@ -347,7 +323,8 @@
       ]
     },
     {
-      "name": "Infrastructure Engineer at Kenkou",
+      "name": "Infrastructure Engineer",
+      "company": "Kenkou GmbH",
       "startDate": "2017-07-31",
       "endDate": "2017-09-30",
       "summary": "Revamped Kenkou's infrastructure, embracing modern, secure technologies and setting a forward-thinking technological direction with tools like Node.js, Java Spring, and Elixir.",
@@ -361,7 +338,8 @@
       ]
     },
     {
-      "name": "Tech Consultant for Die Welt",
+      "name": "Tech Consultant",
+      "company": "Die Welt",
       "summary": "Crafted an innovative Adobe After Effects plugin to streamline trailer production, incorporating a custom CSV parser and enhancing the integration process with Adobe Media Encoder.",
       "url": "https://welt.de",
       "keySkills": [

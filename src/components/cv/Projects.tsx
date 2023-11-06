@@ -1,5 +1,13 @@
 import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
-import { Box, Heading, Tag, Text, VStack, Wrap } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Link as ChakraLink,
+  Tag,
+  Text,
+  VStack,
+  Wrap,
+} from "@chakra-ui/react";
 import { formatTimespan } from "@/helpers/formatTimespan";
 import { SectionHeading } from "@/components/SectionHeading";
 import { useLocale } from "@/hooks/useTranslations";
@@ -17,26 +25,41 @@ export function Projects({ resume: { projects } }: { resume: ResumeSchema }) {
   );
 }
 
-function ProjectItem(props: { project: ResumeProjectItem }) {
+function ProjectItem({
+  project: { endDate, company, keySkills, name, startDate, summary, url },
+}: {
+  project: ResumeProjectItem;
+}) {
   const locale = useLocale();
 
   return (
     <Box p={4} w="full" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Heading mb={2} size="md">
-        {props.project.name}
+        {name}
+        {company && (
+          <Text as="span" color="gray.300">
+            {" - "}
+            {company}
+          </Text>
+        )}
       </Heading>
-      {props.project.startDate && (
+      {startDate && (
         <Text fontSize="sm" color="gray.500" mb={3}>
-          {formatTimespan(
-            props.project.startDate,
-            props.project.endDate,
-            locale
-          )}
+          {formatTimespan(startDate, endDate, locale)}
         </Text>
       )}
-      <Text mb={3}>{props.project.summary}</Text>
+      {summary.split("\n\n").map((text, i) => (
+        <Text key={i} as="p" mb={3}>
+          {text}
+        </Text>
+      ))}
+      {url && (
+        <ChakraLink href={url} isExternal mb={3} display="block">
+          Visit project
+        </ChakraLink>
+      )}
       <Wrap>
-        {props.project.keySkills.map((skill, keyIndex) => (
+        {keySkills.map((skill, keyIndex) => (
           <Tag key={keyIndex} size="md" borderRadius="full" m={1}>
             {skill}
           </Tag>
