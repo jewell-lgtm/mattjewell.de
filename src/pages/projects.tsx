@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { jsonResume, type ResumeSchema } from "@/loaders/cv";
 import { type GetStaticProps } from "next";
-import { Divider, StackDivider, VStack } from "@chakra-ui/react";
+import { StackDivider, VStack } from "@chakra-ui/react";
 import { Projects } from "@/components/cv/Projects";
 import { BasicInfo } from "@/components/cv/Basics";
 import { WorkHistory } from "@/components/cv/WorkHistory";

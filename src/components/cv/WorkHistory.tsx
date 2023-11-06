@@ -12,6 +12,7 @@ import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import React from "react";
 import { formatTimespan } from "@/helpers/formatTimespan";
 import { SectionHeading } from "@/components/SectionHeading";
+import { useLocale } from "@/hooks/useTranslations";
 
 type Props = {
   resume: ResumeSchema;
@@ -31,6 +32,7 @@ export const WorkHistory = ({ resume: { work } }: Props) => {
 };
 
 function WorkItem(props: { work: ResumeWorkItem }) {
+  const locale = useLocale();
   return (
     <Box p={4} w="full" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Heading mb={2} size="md">
@@ -38,7 +40,7 @@ function WorkItem(props: { work: ResumeWorkItem }) {
       </Heading>
       {props.work.startDate && (
         <Text fontSize="sm" color="gray.500" mb={3}>
-          {formatTimespan(props.work.startDate, props.work.endDate)}
+          {formatTimespan(props.work.startDate, props.work.endDate, locale)}
         </Text>
       )}
       <Text mb={3}>{props.work.summary}</Text>

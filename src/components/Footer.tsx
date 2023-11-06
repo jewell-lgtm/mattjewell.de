@@ -3,7 +3,7 @@ import NextLink from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import { globals } from "@/globals";
-import { useTranslations } from "@/hooks";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export function DarkMode() {
   const { colorMode, toggleColorMode } = useColorMode();

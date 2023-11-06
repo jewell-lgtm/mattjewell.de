@@ -7,7 +7,7 @@ import NextLink from "next/link";
 import { ShowCaseStudy } from "@/components/case-studies";
 import { Title } from "@/components/Title";
 import { CaseStudy } from "@/data/caseStudy";
-import { useTranslations } from "@/hooks";
+import { useTranslations } from "@/hooks/useTranslations";
 
 interface Props {
   caseStudy: CaseStudy;

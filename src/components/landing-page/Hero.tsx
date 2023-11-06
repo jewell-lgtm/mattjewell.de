@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { Logo } from "@/components/Logo";
-import { useTranslations } from "@/hooks";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export function Hero() {
   const t = useTranslations();

@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { PageSection } from "@/components/layout";
-import { useTranslations } from "@/hooks";
+import { useTranslations } from "@/hooks/useTranslations";
 
 export function LearnMore() {
   const t = useTranslations();

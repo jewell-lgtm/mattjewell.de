@@ -2,6 +2,7 @@ import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
 import { Box, Heading, Tag, Text, VStack, Wrap } from "@chakra-ui/react";
 import { formatTimespan } from "@/helpers/formatTimespan";
 import { SectionHeading } from "@/components/SectionHeading";
+import { useLocale } from "@/hooks/useTranslations";
 
 export function Projects({ resume: { projects } }: { resume: ResumeSchema }) {
   return (
@@ -17,6 +18,8 @@ export function Projects({ resume: { projects } }: { resume: ResumeSchema }) {
 }
 
 function ProjectItem(props: { project: ResumeProjectItem }) {
+  const locale = useLocale();
+
   return (
     <Box p={4} w="full" borderWidth="1px" borderRadius="lg" overflow="hidden">
       <Heading mb={2} size="md">
@@ -24,7 +27,11 @@ function ProjectItem(props: { project: ResumeProjectItem }) {
       </Heading>
       {props.project.startDate && (
         <Text fontSize="sm" color="gray.500" mb={3}>
-          {formatTimespan(props.project.startDate, props.project.endDate)}
+          {formatTimespan(
+            props.project.startDate,
+            props.project.endDate,
+            locale
+          )}
         </Text>
       )}
       <Text mb={3}>{props.project.summary}</Text>
