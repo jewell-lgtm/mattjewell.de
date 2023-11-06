@@ -14,6 +14,24 @@ export default function Document(_props: DocumentProps) {
           href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Inter:wght@200&display=swap"
           rel="stylesheet"
         />
+        <style>{
+          /* CSS */ `
+            @media print {
+              body {
+                color: black !important;
+                background: white !important;
+              }
+              .chakra-ui-dark {
+                color: black !important;
+                background: white !important;
+              }
+              
+              .hide-print {
+                display: none !important;
+              }
+            }
+          `
+        }</style>
       </Head>
       <body>
         <Main />

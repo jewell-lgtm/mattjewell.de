@@ -35,60 +35,62 @@ export function Footer() {
   );
 
   return (
-    <VStack
-      as="footer"
-      width="full"
-      textAlign="center"
-      bgGradient={bgGradient}
-      color={textColor}
-      pt={8}
-      pb={8}
-    >
-      <DarkMode />
-      <Text as="p" color={textColor}>{`© ${
-        globals.yourName
-      } ${new Date().getFullYear()}`}</Text>
-      <HStack>
-        <NextLink
-          href={router.asPath}
-          locale={router.locale === "en" ? "de" : "en"}
-          passHref
-        >
-          <Link color={textColor} _hover={{ color: linkHoverColor }}>
-            {t("footer.language")}
+    <div className="hide-print">
+      <VStack
+        as="footer"
+        width="full"
+        textAlign="center"
+        bgGradient={bgGradient}
+        color={textColor}
+        pt={8}
+        pb={8}
+      >
+        <DarkMode />
+        <Text as="p" color={textColor}>{`© ${
+          globals.yourName
+        } ${new Date().getFullYear()}`}</Text>
+        <HStack>
+          <NextLink
+            href={router.asPath}
+            locale={router.locale === "en" ? "de" : "en"}
+            passHref
+          >
+            <Link color={textColor} _hover={{ color: linkHoverColor }}>
+              {t("footer.language")}
+            </Link>
+          </NextLink>
+          <NextLink href="/" passHref>
+            <Link color={textColor} _hover={{ color: linkHoverColor }}>
+              Home
+            </Link>
+          </NextLink>
+          <NextLink
+            href={router.locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf"}
+            locale={router.locale}
+            passHref
+          >
+            <Link color={textColor} _hover={{ color: linkHoverColor }}>
+              {t("footer.cv")}
+            </Link>
+          </NextLink>
+          <Link
+            href="https://www.linkedin.com/in/mattjewell1/"
+            isExternal
+            color={textColor}
+            _hover={{ color: linkHoverColor }}
+          >
+            {t("footer.ln")}
           </Link>
-        </NextLink>
-        <NextLink href="/" passHref>
-          <Link color={textColor} _hover={{ color: linkHoverColor }}>
-            Home
+          <Link
+            href="/rss.xml"
+            isExternal
+            color={textColor}
+            _hover={{ color: linkHoverColor }}
+          >
+            {t("footer.rss")}
           </Link>
-        </NextLink>
-        <NextLink
-          href={router.locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf"}
-          locale={router.locale}
-          passHref
-        >
-          <Link color={textColor} _hover={{ color: linkHoverColor }}>
-            {t("footer.cv")}
-          </Link>
-        </NextLink>
-        <Link
-          href="https://www.linkedin.com/in/mattjewell1/"
-          isExternal
-          color={textColor}
-          _hover={{ color: linkHoverColor }}
-        >
-          {t("footer.ln")}
-        </Link>
-        <Link
-          href="/rss.xml"
-          isExternal
-          color={textColor}
-          _hover={{ color: linkHoverColor }}
-        >
-          {t("footer.rss")}
-        </Link>
-      </HStack>
-    </VStack>
+        </HStack>
+      </VStack>
+    </div>
   );
 }

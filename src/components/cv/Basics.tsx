@@ -12,7 +12,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Link from "next/link";
-import { FaFilePdf, FaMoon, FaSun } from "react-icons/fa";
+import { FaFilePdf, FaMoon, FaPrint, FaSun } from "react-icons/fa";
 
 export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   const locale = "en"; // TODO: useLocale();
@@ -57,7 +57,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
         })}
       </Text>
 
-      <Wrap>
+      <Wrap className="hide-print">
         <WrapItem>
           <Button
             onClick={toggleColorMode}
@@ -74,6 +74,18 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
               {locale === "en" ? "CV in English" : "Lebenslauf auf Deutsch"}
             </Button>
           </Link>
+        </WrapItem>
+
+        <WrapItem>
+          <Button
+            leftIcon={<FaPrint />}
+            variant="solid"
+            onClick={() => {
+              window.print();
+            }}
+          >
+            Print
+          </Button>
         </WrapItem>
       </Wrap>
 

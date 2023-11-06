@@ -54,7 +54,13 @@ function ProjectItem({
         </Text>
       ))}
       {url && (
-        <ChakraLink href={url} isExternal mb={3} display="block">
+        <ChakraLink
+          href={url}
+          isExternal
+          mb={3}
+          display="block"
+          className="hide-print"
+        >
           Visit project
         </ChakraLink>
       )}
