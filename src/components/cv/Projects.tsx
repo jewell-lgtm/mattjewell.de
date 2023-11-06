@@ -1,37 +1,40 @@
 import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
-import { Divider, Heading, HStack, Tag, Text, VStack } from "@chakra-ui/react";
+import { Box, Heading, Tag, Text, VStack, Wrap } from "@chakra-ui/react";
+import { formatTimespan } from "@/helpers/formatTimespan";
+import { SectionHeading } from "@/components/SectionHeading";
 
-export function Projects(props: { resume: ResumeSchema }) {
+export function Projects({ resume: { projects } }: { resume: ResumeSchema }) {
   return (
-    <VStack align="stretch" spacing={5}>
-      <Heading as="h3" size="lg" p={5}>
-        Projects
-      </Heading>
-      {props.resume.projects.map(project => (
-        <ProjectItem key={project.name} project={project} />
-      ))}
-    </VStack>
+    <Box w="full">
+      <SectionHeading>Projects</SectionHeading>
+      <VStack spacing={4}>
+        {projects.map((project, index) => (
+          <ProjectItem key={index} project={project} />
+        ))}
+      </VStack>
+    </Box>
   );
 }
 
-function ProjectItem({ project }: { project: ResumeProjectItem }) {
+function ProjectItem(props: { project: ResumeProjectItem }) {
   return (
-    <VStack divider={<Divider />} align="stretch" p={4} spacing={3}>
-      <Heading size="sm">{project.name}</Heading>
-      <Text fontSize="sm">{project.summary}</Text>
-      {project.keySkills && (
-        <HStack spacing={2}>
-          {project.keySkills.map(skill => (
-            <Tag size="sm" key={skill}>
-              {skill}
-            </Tag>
-          ))}
-        </HStack>
+    <Box p={4} w="full" borderWidth="1px" borderRadius="lg" overflow="hidden">
+      <Heading mb={2} size="md">
+        {props.project.name}
+      </Heading>
+      {props.project.startDate && (
+        <Text fontSize="sm" color="gray.500" mb={3}>
+          {formatTimespan(props.project.startDate, props.project.endDate)}
+        </Text>
       )}
-      <Text fontSize="xs" color="gray.500">
-        <strong>Duration:</strong> {project.startDate} -{" "}
-        {project.endDate ?? "Present"}
-      </Text>
-    </VStack>
+      <Text mb={3}>{props.project.summary}</Text>
+      <Wrap>
+        {props.project.keySkills.map((skill, keyIndex) => (
+          <Tag key={keyIndex} size="md" borderRadius="full" m={1}>
+            {skill}
+          </Tag>
+        ))}
+      </Wrap>
+    </Box>
   );
 }

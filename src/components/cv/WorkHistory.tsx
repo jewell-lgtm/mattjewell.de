@@ -1,15 +1,17 @@
 import {
   Box,
-  Divider,
   Heading,
-  Link,
+  List,
   ListItem,
+  Tag,
   Text,
-  UnorderedList,
   VStack,
+  Wrap,
 } from "@chakra-ui/react";
 import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
-import { when } from "@/helpers/when";
+import React from "react";
+import { formatTimespan } from "@/helpers/formatTimespan";
+import { SectionHeading } from "@/components/SectionHeading";
 
 type Props = {
   resume: ResumeSchema;
@@ -17,64 +19,50 @@ type Props = {
 
 export const WorkHistory = ({ resume: { work } }: Props) => {
   return (
-    <VStack>
-      <Heading flex={1} as="h2" size="xl" w="full" px={5}>
-        Work Experience
-      </Heading>
-
-      <VStack divider={<Divider />} spacing={5} align="stretch">
-        {work.map((job, i) => (
-          <Job key={i} job={job as ResumeWorkItem} />
+    <Box w="full">
+      <SectionHeading>Work History</SectionHeading>
+      <VStack spacing={4}>
+        {work.map((workItem, index) => (
+          <WorkItem key={index} work={workItem} />
         ))}
       </VStack>
-    </VStack>
+    </Box>
   );
 };
 
-function Job(props: { job: ResumeWorkItem }) {
+function WorkItem(props: { work: ResumeWorkItem }) {
   return (
-    <Box p={5}>
-      <Heading as="h3" size="md">
-        {props.job.position} - {props.job.name}
+    <Box p={4} w="full" borderWidth="1px" borderRadius="lg" overflow="hidden">
+      <Heading mb={2} size="md">
+        {props.work.name} - {props.work.position}
       </Heading>
-      <Text fontSize="sm" color="gray.600">
-        {[
-          when(props.job.startDate, format),
-          when(props.job.endDate, format) ?? "Present",
-        ].join(" - ")}
-      </Text>
-      {props.job.summary
-        .split("\n")
-        .filter(it => it?.length ?? -1 > 0)
-        .map(line => (
-          <Text mt={2}>{line}</Text>
-        ))}
-      {props.job.highlights && props.job.highlights.length > 0 && (
+      {props.work.startDate && (
+        <Text fontSize="sm" color="gray.500" mb={3}>
+          {formatTimespan(props.work.startDate, props.work.endDate)}
+        </Text>
+      )}
+      <Text mb={3}>{props.work.summary}</Text>
+      {props.work.technologies && (
+        <Wrap mb={3}>
+          {props.work.technologies.map((technology, techIndex) => (
+            <Tag key={techIndex} size="md" borderRadius="full" m={1}>
+              {technology}
+            </Tag>
+          ))}
+        </Wrap>
+      )}
+      {props.work.highlights && (
         <>
-          <Heading as="h4" size="sm" mt={4} mb={2}>
+          <Heading size="sm" mb={4}>
             Highlights
           </Heading>
-          <UnorderedList spacing={2}>
-            {props.job.highlights.map((highlight, index) => (
-              <ListItem key={index}>{highlight}</ListItem>
+          <List px={8} spacing={2} mb={3} styleType="disc">
+            {props.work.highlights.map((highlight, highlightIndex) => (
+              <ListItem key={highlightIndex}>{highlight}</ListItem>
             ))}
-          </UnorderedList>
+          </List>
         </>
-      )}
-      {props.job.url && (
-        <Box mt={4}>
-          <Link href={props.job.url} isExternal color="blue.500">
-            Company Website
-          </Link>
-        </Box>
       )}
     </Box>
   );
-}
-
-function format(dateStr: string) {
-  const date = new Date(dateStr);
-  return `${date.getFullYear()}-${(date.getMonth() + 1)
-    .toString()
-    .padStart(2, "0")}`;
 }

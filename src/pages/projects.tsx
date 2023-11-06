@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { jsonResume, type ResumeSchema } from "@/loaders/cv";
 import { type GetStaticProps } from "next";
-import { Box, Container, Text, VStack } from "@chakra-ui/react";
-import { BasicInfo } from "@/components/cv/Basics";
+import { Divider, VStack } from "@chakra-ui/react";
 import { Projects } from "@/components/cv/Projects";
+import { BasicInfo } from "@/components/cv/Basics";
 import { WorkHistory } from "@/components/cv/WorkHistory";
 
 type Props = {
@@ -22,28 +22,19 @@ const CvPage = ({ resume }: Props) => {
       <Head>
         <title>Matt Jewell | Project List</title>
       </Head>
-      <Box>
-        <Container centerContent maxW="4xl" p={5}>
-          <VStack
-            shadow="md"
-            borderWidth="1px"
-            borderRadius="md"
-            w="full"
-            spacing={8}
-          >
-            <BasicInfo resume={resume} />
-            <Box>
-              <Text>
-                Please note, due to time constraints with client work, this page
-                is still under construction.
-              </Text>
-            </Box>
-            <Projects resume={resume} />
 
-            <WorkHistory resume={resume} />
-          </VStack>
-        </Container>
-      </Box>
+      <VStack
+        align="start"
+        spacing={5}
+        maxWidth="container.xl"
+        margin="auto"
+        divider={<Divider />}
+        m={12}
+      >
+        <BasicInfo resume={resume} />
+        <Projects resume={resume} />
+        <WorkHistory resume={resume} />
+      </VStack>
     </>
   );
 };

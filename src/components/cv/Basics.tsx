@@ -35,10 +35,10 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
           ))}
       </HStack>
       <Divider />
-      <VStack spacing={4}>
+      <VStack spacing={4} align="start" textAlign="left" px={12}>
         {basics.summary &&
           basics.summary.split("\n\n").map((line, i) => (
-            <Text px={5} key={`summary-${i}`} fontSize="lg">
+            <Text px={2} key={`summary-${i}`} fontSize="lg">
               {line}
             </Text>
           ))}
