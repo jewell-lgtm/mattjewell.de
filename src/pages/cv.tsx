@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { type ResumeSchema } from "@/loaders/cv";
+import { jsonResume, type ResumeSchema } from "@/loaders/cv";
 import { type GetStaticProps } from "next";
 import { Box, Container, Divider, Heading, VStack } from "@chakra-ui/react";
 import { BasicInfo } from "@/components/cv/Basics";
@@ -12,9 +12,8 @@ type Props = {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const resume = await fetch(
-    `https://gist.githubusercontent.com/jewell-lgtm/9b53e9d1aa5f4f14425ba2337620aa2e/raw`
-  ).then(result => result.json());
+  const resume = jsonResume;
+
   return { props: { resume } };
 };
 

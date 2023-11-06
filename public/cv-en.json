@@ -5,7 +5,7 @@
     "label": "Software Development Consultant | Coder and Educator | Cloud Software Consultant",
     "image": "https://mattjewell.co.uk/Headshot.jpg",
     "url": "https://mattjewell.co.uk",
-    "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development.\n\nMy journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Node.js, React, Java, Kotlin, and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German and a smattering of Agile-Coach friendly nounings.",
+    "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development. My journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Python, React, Java, Kotlin, Ruby on Rails and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German, and happy to work in either English or German-speaking teams.",
     "location": {
       "countryCode": "DE",
       "city": "Berlin"
@@ -133,7 +133,13 @@
         "Engaged in hands-on code development and system architecture design."
       ],
       "summary": "In my dynamic role as Entrepreneur In Residence for Technology at Startupbootcamp, I empowered a diverse cohort of 12 startups by guiding their technological growth and creating a resilient foundation for their businesses. I thrived on operating across multiple dimensions of their operations, from formulating high-level digital strategies to delving into code across a myriad of platforms.",
-      "technologies": ["Node.js", "Wordpress", "Swift", "Android (Java)", "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"],
+      "technologies": [
+        "Node.js",
+        "Wordpress",
+        "Swift",
+        "Android (Java)",
+        "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"
+      ],
       "url": "https://www.linkedin.com/company/startupbootcamp/",
       "location": "Berlin Area, Germany"
     },
@@ -148,7 +154,11 @@
         "Contributed to the formation and mentorship of Agile teams."
       ],
       "summary": "At Sainsbury's, I was instrumental in advancing internal software projects by leveraging contemporary technologies like Node.js, React, and GraphQL, and integrating them within the AWS ecosystem. My tenure was marked by a significant shift from traditional Waterfall to Agile methodologies, during which I helped cultivate robust, Agile teams within the Manchester Store Support Centre.",
-      "technologies": ["Javascript/Typescript (Node.js, React)", "GraphQL", "AWS"],
+      "technologies": [
+        "Javascript/Typescript (Node.js, React)",
+        "GraphQL",
+        "AWS"
+      ],
       "url": "https://www.linkedin.com/company/sainsburys/",
       "location": "Manchester"
     },
@@ -200,100 +210,15 @@
   "awards": [],
   "certificates": [],
   "publications": [],
-  "skills": [
-    {
-      "name": "TypeScript",
-      "keywords": []
-    },
-    {
-      "name": "PostgreSQL",
-      "keywords": []
-    },
-    {
-      "name": "Cloud Computing",
-      "keywords": []
-    },
-    {
-      "name": "Software Development",
-      "keywords": []
-    },
-    {
-      "name": "React",
-      "keywords": []
-    },
-    {
-      "name": "DevOps",
-      "keywords": []
-    },
-    {
-      "name": "Web Development",
-      "keywords": []
-    },
-    {
-      "name": "Agile Methodologies",
-      "keywords": []
-    },
-    {
-      "name": "Kubernetes",
-      "keywords": []
-    },
-    {
-      "name": "Git",
-      "keywords": []
-    },
-    {
-      "name": "User Experience",
-      "keywords": []
-    },
-    {
-      "name": "Python (Programming Language)",
-      "keywords": []
-    },
-    {
-      "name": "Node.js",
-      "keywords": []
-    },
-    {
-      "name": "JavaScript",
-      "keywords": []
-    },
-    {
-      "name": "Next.js",
-      "keywords": []
-    },
-    {
-      "name": "MySQL",
-      "keywords": []
-    },
-    {
-      "name": "Test Driven Development",
-      "keywords": []
-    },
-    {
-      "name": "React Native",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Web Services (AWS)",
-      "keywords": []
-    },
-    {
-      "name": "Jest",
-      "keywords": []
-    },
-    {
-      "name": "HTML5/CSS3",
-      "keywords": []
-    }
-  ],
+  "skills": [],
   "languages": [
     {
-      "fluency": "Native Speaker",
-      "language": "English"
+      "language": "English",
+      "fluency": "Native speaker"
     },
     {
-      "fluency": "Full Professional",
-      "language": "German"
+      "language": "German",
+      "fluency": "Professional"
     }
   ],
   "interests": [],
@@ -331,45 +256,121 @@
     {
       "name": "Full Stack Engineer at Feebris",
       "startDate": "2023-09-30",
-      "summary": "At Feebris, a digital health startup, I spearheaded the development of patient-centric functionalities for home health monitoring. By integrating AWS Lambda and GraphQL into the Node.js backend, I enhanced data management between patients and healthcare providers. I leveraged my expertise in Typescript and React to refactor the frontend, significantly boosting code modularity, testability, and readability, while also implementing new features.",
+      "summary": "Led the development of key patient-facing features using AWS Lambda, GraphQL, and Node.js, enhancing communication and data handling between patients and healthcare providers. Improved frontend architecture with TypeScript and React for better maintainability and performance.",
       "url": "https://feebris.com",
-      "keySkills": ["AWS Lambda", "GraphQL", "Node.js", "Typescript", "React"]
+      "keySkills": [
+        "AWS Lambda",
+        "GraphQL",
+        "Node.js",
+        "Typescript",
+        "React"
+      ]
+    },
+    {
+      "name": "Full Stack Services and React Native Engineer",
+      "company": "MEMBER",
+      "startDate": "2022-09-01",
+      "endDate": "2023-08-31",
+      "summary": "Instrumental in delivering a high-performance MVP React Native app, refining user experience with smooth animations, and spearheading the creation of a resilient serverless backend on Firebase and GCP.",
+      "location": "Berlin, Germany",
+      "workType": "Hybrid",
+      "keySkills": [
+        "Cloud Computing",
+        "TypeScript",
+        "React.js",
+        "React Native",
+        "Google Cloud Platform (GCP)",
+        "Firebase",
+        "UI Testing",
+        "JavaScript",
+        "Test Driven Development",
+        "Node.js"
+      ]
     },
     {
       "name": "PPRO GmbH: Cloud Migration Consultant",
       "startDate": "2021-12-31",
-      "summary": "I played a pivotal role at PPRO, a leading local payments provider, by orchestrating a seamless cloud migration for their financial reconciliation system. The system, handling hundreds of millions of euros daily, transitioned to AWS with zero downtime. My contribution spanned the migration process, implementation of end-to-end testing, and extensive code refactoring, resulting in heightened performance and system observability.",
-      "url": "https://www.ppro.com",
       "endDate": "2022-08-31",
-      "keySkills": ["AWS", "Cloud Migration", "End-to-End Testing", "Code Refactoring"]
+      "summary": "Directed a critical cloud migration for financial reconciliation systems handling massive transaction volumes, achieving a transition to AWS without downtime, and enhancing system performance and observability.",
+      "url": "https://www.ppro.com",
+      "keySkills": [
+        "AWS",
+        "Cloud Migration",
+        "End-to-End Testing",
+        "Code Refactoring"
+      ]
+    },
+    {
+      "name": "Freelance Instructor",
+      "company": "StartSteps",
+      "startDate": "2021-01-01",
+      "endDate": "2022-09-30",
+      "summary": "Fostered digital literacy through engaging web development, data science, and programming courses, equipping students with practical skills in HTML, CSS, JavaScript, Python, and SQL.",
+      "location": "Berlin, Germany",
+      "keySkills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Data Analysis",
+        "Programming Fundamentals"
+      ]
     },
     {
       "name": "Node.js Developer for aHead",
       "startDate": "2021-07-31",
-      "summary": "For the aHead emotional intelligence app, I developed crucial Node.js/Typescript features including a robust notification system. This system utilized Firebase Cloud Messaging to deliver CMS-driven content, effectively bolstering user engagement through meticulously queued daily reminders.",
-      "url": "https://www.ahead-app.com/",
       "endDate": "2021-08-31",
-      "keySkills": ["Typescript", "Node.js", "Firebase Cloud Messaging", "Jest", "Supertest", "RESTful API Development", "Google Cloud Platform"]
+      "summary": "Engineered a sophisticated notification system using Firebase Cloud Messaging integrated with Node.js/TypeScript to drive user engagement with personalized content delivery.",
+      "url": "https://www.ahead-app.com/",
+      "keySkills": [
+        "Typescript",
+        "Node.js",
+        "Firebase Cloud Messaging",
+        "Jest",
+        "Supertest",
+        "RESTful API Development",
+        "Google Cloud Platform"
+      ]
     },
     {
       "name": "Contributor to Chino open source SDK for Ruby",
       "startDate": "2017-10-31",
-      "summary": "Contributed to the Chino open source SDK for Ruby, focusing on enhancing security and performance features. This involvement demonstrated my commitment to community-driven projects and open-source collaboration.",
       "endDate": "2017-12-31",
-      "keySkills": ["Ruby", "Open Source", "SDK Development", "Security", "Performance Optimization"]
+      "summary": "Enhanced the Chino SDK for Ruby by contributing to its security and performance features, emphasizing my commitment to open-source excellence and community collaboration.",
+      "keySkills": [
+        "Ruby",
+        "Open Source",
+        "SDK Development",
+        "Security",
+        "Performance Optimization"
+      ]
     },
     {
       "name": "Infrastructure Engineer at Kenkou",
       "startDate": "2017-07-31",
-      "summary": "Revitalized Kenkou's legacy infrastructure by transitioning to a contemporary, secure setup. My contributions spanned technological exploration and prototyping across various stacks, including Node.js, Java Spring, and Elixir, shaping Kenkou's strategic technology roadmap.",
       "endDate": "2017-09-30",
-      "keySkills": ["Infrastructure", "Node.js", "Java Spring", "Elixir", "Prototyping", "Technology Roadmapping"]
+      "summary": "Revamped Kenkou's infrastructure, embracing modern, secure technologies and setting a forward-thinking technological direction with tools like Node.js, Java Spring, and Elixir.",
+      "keySkills": [
+        "Infrastructure",
+        "Node.js",
+        "Java Spring",
+        "Elixir",
+        "Prototyping",
+        "Technology Roadmapping"
+      ]
     },
     {
       "name": "Tech Consultant for Die Welt",
-      "summary": "Served as a tech consultant for Die Welt, developing an Adobe After Effects plugin to automate trailer creation from templates. My role encompassed code contributions, including a CSV parser and state management, and optimizing the integration with Adobe Media Encoder.",
+      "summary": "Crafted an innovative Adobe After Effects plugin to streamline trailer production, incorporating a custom CSV parser and enhancing the integration process with Adobe Media Encoder.",
       "url": "https://welt.de",
-      "keySkills": ["Adobe After Effects", "Plugin Development", "CSV Parsing", "State Management", "Adobe Media Encoder"]
+      "keySkills": [
+        "Adobe After Effects",
+        "Plugin Development",
+        "CSV Parsing",
+        "State Management",
+        "Adobe Media Encoder"
+      ]
     }
   ],
   "meta": {
