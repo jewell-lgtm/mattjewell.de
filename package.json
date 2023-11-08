@@ -20,7 +20,7 @@
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "fecha": "4.2.3",
-    "framer-motion": "~6",
+    "framer-motion": "~6.5.1",
     "glob": "8.0.3",
     "gray-matter": "4.0.3",
     "lodash": "~4.17.21",
