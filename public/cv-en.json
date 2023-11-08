@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "inspired by (does not actually follow) $schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Matthew Jewell",
     "label": "Software Development Consultant | Coder and Educator | Cloud Software Consultant",
@@ -34,28 +34,10 @@
         "Delivered expert Typescript training to enhance team proficiency and code quality.",
         "Provided strategic advice to startup founders, facilitating smart scaling and market positioning."
       ],
-      "summary": "Bringing a dynamic blend of technical expertise and business acumen, I serve as a hands-on consultant and developer, dedicated to guiding startups through their entire lifecycle. My approach is two-fold: I actively engage in writing code and crafting features that resonate with users, while also providing strategic insights that propel companies forward. Specializing in MVP construction and team development, my consultancy elevates team capabilities with a focus on Typescript, driving code excellence across projects.",
       "url": "https://mattjewell.co.uk",
       "location": "Berlin, Germany",
-      "technologies": [
-        "Typescript",
-        "Javascript",
-        "Python",
-        "Tensorflow",
-        "SciKit Learn",
-        "Ruby on Rails"
-      ]
-    },
-    {
-      "name": "Equal Experts",
-      "position": "Independent Consultant",
-      "startDate": "2021-12-31",
-      "endDate": "2022-08-31",
-      "highlights": [
-        "Directed a seamless transition of PPRO's financial system to a cloud-native, serverless platform."
-      ],
-      "summary": "My consultancy with Equal Experts was marked by a pivotal migration project for PPRO, facilitating a seamless transition of their transaction-heavy financial reconciliation system to a modern, cloud-native, serverless architecture.",
-      "url": "https://www.linkedin.com/company/equal-experts/"
+      "summary": "Guided startups from inception to launch, focusing on feature development and strategic growth.",
+      "technologies": ["Typescript", "Javascript", "Python", "Tensorflow", "SciKit Learn", "Ruby on Rails"]
     },
     {
       "name": "cherryfish.me",
@@ -64,11 +46,13 @@
       "endDate": "2020-04-30",
       "highlights": [
         "Orchestrated the development of an HR platform that revolutionizes candidate-company matchmaking.",
+        "Mentored more junior staff members, fostering a culture of knowledge sharing and collaboration.",
         "Integrated a robust tech stack, ensuring product scalability and implementing TDD/BDD methodologies."
       ],
-      "summary": "As CTO of cherryfish, I helmed the creation of an HR platform designed to redefine how companies discover and engage with talent. I led both strategy and execution, cultivating a product that excels in matching skill profiles with industry demands.",
       "url": "https://www.linkedin.com/company/cherryfish.me/",
-      "location": "Berlin, Germany"
+      "location": "Berlin, Germany",
+      "summary": "Orchestrated HR platform development.",
+      "technologies": ["Node.js", "React", "Python", "Tensorflow", "Postgres"]
     },
     {
       "name": "cherryfish.me",
@@ -77,10 +61,13 @@
       "endDate": "2019-01-31",
       "highlights": [
         "Accelerated product development by effectively bridging technical execution with founder vision.",
+        "Built a complete product from the ground up.",
+        "Mentored more junior staff members",
         "Promoted a culture of collaboration, ensuring alignment of the development process with strategic goals."
       ],
-      "summary": "My initial role at cherryfish.me as a developer quickly evolved, and I became the essential conduit between our technical team and the founders, ensuring the product vision was realized with technical finesse and strategic insight.",
-      "location": "Berlin Area, Germany"
+      "location": "Berlin Area, Germany",
+      "summary": "Bridged technical execution with company vision.",
+      "technologies": ["Node.js", "React", "Postgres"]
     },
     {
       "name": "INNOVITAS VITAE",
@@ -88,12 +75,15 @@
       "startDate": "2017-02-28",
       "endDate": "2018-03-31",
       "highlights": [
-        "Architected a comprehensive application stack, integrating advanced technologies and secure data solutions.",
+        "Conversational interface digital health platform",
+        "Architected a comprehensive application stack",
+        "Custom UI in React Native",
         "Drove innovation in medical data management and custom CRM integration."
       ],
-      "summary": "As the Tech Lead at i-Vitae, I had the privilege of architecting a robust tech stack that became the cornerstone of our healthcare application. My role involved not just building, but innovating, ensuring our platform met stringent medical data security and accessibility standards.",
       "url": "https://www.linkedin.com/company/innovitasvitae/",
-      "location": "Berlin Area, Germany"
+      "location": "Berlin Area, Germany",
+      "summary": "Architected healthcare application tech stack, with a conversational interface.",
+      "technologies": ["React Native", "Ruby on Rails", "AWS"]
     },
     {
       "name": "Startupbootcamp",
@@ -106,14 +96,8 @@
         "Developed and executed digital strategy initiatives for sustainable business growth.",
         "Engaged in hands-on code development and system architecture design."
       ],
-      "summary": "In my dynamic role as Entrepreneur In Residence for Technology at Startupbootcamp, I empowered a diverse cohort of 12 startups by guiding their technological growth and creating a resilient foundation for their businesses. I thrived on operating across multiple dimensions of their operations, from formulating high-level digital strategies to delving into code across a myriad of platforms.",
-      "technologies": [
-        "Node.js",
-        "Wordpress",
-        "Swift",
-        "Android (Java)",
-        "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"
-      ],
+      "summary": "Mentored startups on tech and digital strategy.",
+      "technologies": ["Node.js", "Wordpress", "Swift", "Android (Java)", "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"],
       "url": "https://www.linkedin.com/company/startupbootcamp/",
       "location": "Berlin Area, Germany"
     },
@@ -123,38 +107,37 @@
       "startDate": "2016-08-31",
       "endDate": "2016-10-31",
       "highlights": [
-        "Led internal software development projects with a focus on modernizing legacy systems.",
-        "Played a pivotal role in the transition from Waterfall to Agile methodologies.",
+        "Contributed my expertise in the transition from Waterfall to Agile methodologies.",
         "Contributed to the formation and mentorship of Agile teams."
       ],
-      "summary": "At Sainsbury's, I was instrumental in advancing internal software projects by leveraging contemporary technologies like Node.js, React, and GraphQL, and integrating them within the AWS ecosystem. My tenure was marked by a significant shift from traditional Waterfall to Agile methodologies, during which I helped cultivate robust, Agile teams within the Manchester Store Support Centre.",
-      "technologies": [
-        "Javascript/Typescript (Node.js, React)",
-        "GraphQL",
-        "AWS"
-      ],
+      "summary": "Created internal tools",
+      "technologies": ["Typescript", "React", "Node.js", "GraphQL", "AWS"],
       "url": "https://www.linkedin.com/company/sainsburys/",
       "location": "Manchester"
     },
     {
       "name": "The Electric Jukebox Company",
       "position": "Web and Mobile Developer",
-      "summary": "Developed UX prototypes and front-end for custom Android devices with agile methods using Angular.js, Cordova, AWS, and Jenkins."
+      "summary": "Developed a richly interactive front-end for custom built android device for TVs.",
+      "technologies": ["Angular.js", "Cordova", "AWS", "Jenkins"]
     },
     {
       "name": "Osper",
       "position": "Freelance Developer",
-      "summary": "Led a code refactor and feature development for youth-focused finance apps using Cordova and Backbone.js, focusing on security and user experience."
+      "summary": "Refactored code and developed finance app features.",
+      "technologies": ["Cordova", "Backbone.js"]
     },
     {
       "name": "Five Cool Ltd",
       "position": "UI Engineer",
-      "summary": "Created front-end components with Angular.js and D3, balancing customer feature requests with maintainable codebase in a scrum setting."
+      "summary": "Created front-end components for analytics product.",
+      "technologies": ["Angular.js", "D3"]
     },
     {
       "name": "Maido",
       "position": "Web Developer",
-      "summary": "Built web applications for brands like Jaguar Land Rover, Just Eat, integrating design and development with PHP and jQuery."
+      "summary": "Integrated development and design for for clients such as Jaguar Land Rover, Just Eat, and more.",
+      "technologies": ["PHP", "jQuery"]
     },
     {
       "name": "We Love Mobile",
@@ -226,7 +209,9 @@
       "name": "Full Stack Engineer",
       "company": "Feebris",
       "startDate": "2023-09-30",
-      "summary": "Led the creation of important features directly used by patients through AWS Lambda, GraphQL, and Node.js, which significantly enhanced communication and data handling between patients and healthcare providers. I was deeply involved with refining the GraphQL API, developing efficient queries and mutations that improved data operations, and overseeing a thorough refactor of the TypeScript codebase to heighten type safety and reduce errors, thus improving maintainability.\n\nIn addition to backend improvements, I was responsible for crafting intuitive user interface components using React, focusing on a seamless user experience. I also set up a suite of comprehensive tests, including both unit and integration tests, to ensure the frontend's reliability and performance. These contributions were instrumental in bolstering the application's robustness and enhancing the overall functionality of the platform.",
+      "endDate": "2023-11-01",
+      "summary": "Enhanced patient-care provider communication by leading feature creation and refining data operations with AWS Lambda, GraphQL, and Node.js.",
+      "description": "Led the creation of important features directly used by patients through AWS Lambda, GraphQL, and Node.js, which significantly enhanced communication and data handling between patients and healthcare providers. I was deeply involved with refining the GraphQL API, developing efficient queries and mutations that improved data operations, and overseeing a thorough refactor of the TypeScript codebase to heighten type safety and reduce errors, thus improving maintainability.\n\nIn addition to backend improvements, I was responsible for crafting intuitive user interface components using React, focusing on a seamless user experience. I also set up a suite of comprehensive tests, including both unit and integration tests, to ensure the frontend's reliability and performance. These contributions were instrumental in bolstering the application's robustness and enhancing the overall functionality of the platform.",
       "url": "https://feebris.com",
       "keySkills": [
         "GraphQL",
@@ -240,28 +225,25 @@
       "company": "MEMBER",
       "startDate": "2022-09-01",
       "endDate": "2023-08-31",
-      "summary": "Played a pivotal role in developing a high-performance MVP for a React Native app, focusing on creating fluid animations and a user experience that feels natural and engaging. My involvement covered end-to-end development, from conceptualizing the user interface to ensuring optimal performance on both iOS and Android platforms. I actively engaged in refining the app’s functionality, addressing user feedback to iteratively improve the product.\n\nI also led the charge in establishing a resilient serverless backend architecture using Firebase and Google Cloud Platform. This included setting up secure, scalable cloud functions, managing real-time data with Firestore, and ensuring robust authentication processes. My commitment to clean code and maintainable structures was demonstrated through diligent UI testing and adherence to test-driven development principles. Through collaborative efforts and a strong focus on both user needs and technical excellence, the app has emerged as a reliable and user-friendly platform.",
+      "summary": "Developed a high-performance MVP for a React Native app, optimizing the user experience and establishing a robust serverless backend.",
+      "description": "Played a pivotal role in developing a high-performance MVP for a React Native app, focusing on creating fluid animations and a user experience that feels natural and engaging. My involvement covered end-to-end development, from conceptualizing the user interface to ensuring optimal performance on both iOS and Android platforms. I actively engaged in refining the app’s functionality, addressing user feedback to iteratively improve the product.\n\nI also led the charge in establishing a resilient serverless backend architecture using Firebase and Google Cloud Platform. This included setting up secure, scalable cloud functions, managing real-time data with Firestore, and ensuring robust authentication processes. My commitment to clean code and maintainable structures was demonstrated through diligent UI testing and adherence to test-driven development principles. Through collaborative efforts and a strong focus on both user needs and technical excellence, the app has emerged as a reliable and user-friendly platform.",
       "location": "Berlin, Germany",
       "workType": "Hybrid",
       "url": "https://member.app/",
       "keySkills": [
-        "Cloud Computing",
         "TypeScript",
-        "React.js",
+        "Node.js",
         "React Native",
         "Google Cloud Platform (GCP)",
-        "Firebase",
-        "UI Testing",
-        "JavaScript",
-        "Test Driven Development",
-        "Node.js"
+        "Firebase"
       ]
     },
     {
       "name": "Cloud Migration Consultant at PPRO GmbH",
       "startDate": "2021-12-31",
       "endDate": "2022-08-31",
-      "summary": "As part of a dedicated team of Equal Experts consultants, I contributed to the seamless cloud migration of PPRO's financial reconciliation systems, crucial for processing high-volume transactions. Our collective efforts enabled a successful transition to AWS with meticulous planning to avoid any downtime. This collaboration not only preserved uninterrupted service during the migration but also led to a marked improvement in system performance and observability.\n\nIn tandem with the team, I was involved in rigorous end-to-end testing to confirm the reliability of the new cloud setup. My role also extended to refactoring the codebase, optimizing application performance for cloud efficiency, and enhancing scalability. This overhaul has provided PPRO with a more agile and scalable infrastructure, laying the groundwork for sustained growth and innovation in their financial services.",
+      "summary": "Facilitated a smooth cloud migration for financial systems to AWS, improving system performance and scalability for high-volume transactions.",
+      "description": "As part of a dedicated team of Equal Experts consultants, I contributed to the seamless cloud migration of PPRO's financial reconciliation systems, crucial for processing high-volume transactions. Our collective efforts enabled a successful transition to AWS with meticulous planning to avoid any downtime. This collaboration not only preserved uninterrupted service during the migration but also led to a marked improvement in system performance and observability.\n\nIn tandem with the team, I was involved in rigorous end-to-end testing to confirm the reliability of the new cloud setup. My role also extended to refactoring the codebase, optimizing application performance for cloud efficiency, and enhancing scalability. This overhaul has provided PPRO with a more agile and scalable infrastructure, laying the groundwork for sustained growth and innovation in their financial services.",
       "url": "https://www.ppro.com",
       "keySkills": [
         "AWS",
@@ -275,7 +257,8 @@
       "company": "StartSteps",
       "startDate": "2021-01-01",
       "endDate": "2022-09-30",
-      "summary": "As a Freelance Instructor at StartSteps, I played a pivotal role in developing digital proficiency among students through courses encompassing web development, data science, programming, and machine learning. My curriculum was thoughtfully structured to introduce front-end technologies like HTML, CSS, and JavaScript, as well as Python and SQL for backend proficiency. In the realm of data science, I focused on imparting practical knowledge of data manipulation and analysis using powerful libraries like Pandas and NumPy, establishing a strong foundation for data-driven problem solving.\n\nMy courses also delved into the essentials of machine learning, where students learned to implement predictive models with SciKit Learn and TensorFlow. I championed a dynamic learning environment that went beyond theoretical concepts, engaging students in hands-on projects that applied data science principles and machine learning techniques to real-world data sets. This approach ensured that students emerged well-equipped to venture into diverse tech sectors, with many finding success in web development, data analytics, and burgeoning AI fields, underpinned by the comprehensive programming, data science, and machine learning skills acquired through our sessions.",
+      "summary": "Educated students in web development, data science, and machine learning, fostering practical skills with a project-driven approach.",
+      "description": "As a Freelance Instructor at StartSteps, I played a pivotal role in developing digital proficiency among students through courses encompassing web development, data science, programming, and machine learning. My curriculum was thoughtfully structured to introduce front-end technologies like HTML, CSS, and JavaScript, as well as Python and SQL for backend proficiency. In the realm of data science, I focused on imparting practical knowledge of data manipulation and analysis using powerful libraries like Pandas and NumPy, establishing a strong foundation for data-driven problem solving.\n\nMy courses also delved into the essentials of machine learning, where students learned to implement predictive models with SciKit Learn and TensorFlow. I championed a dynamic learning environment that went beyond theoretical concepts, engaging students in hands-on projects that applied data science principles and machine learning techniques to real-world data sets. This approach ensured that students emerged well-equipped to venture into diverse tech sectors, with many finding success in web development, data analytics, and burgeoning AI fields, underpinned by the comprehensive programming, data science, and machine learning skills acquired through our sessions.",
       "location": "Berlin, Germany",
       "url": "https://startsteps.org/",
       "keySkills": [
@@ -297,15 +280,13 @@
       "name": "Node.js Developer at aHead",
       "startDate": "2021-07-31",
       "endDate": "2021-08-31",
-      "summary": "Engineered a sophisticated notification system using Firebase Cloud Messaging integrated with Node.js/TypeScript to drive user engagement with personalized content delivery.",
+      "summary": "Developed an advanced notification system using Firebase Cloud Messaging and Node.js to enhance user engagement through personalized content.",
+      "description": "Engineered a sophisticated notification system using Firebase Cloud Messaging integrated with Node.js/TypeScript to drive user engagement with personalized content delivery.",
       "url": "https://www.ahead-app.com/",
       "keySkills": [
         "Typescript",
         "Node.js",
         "Firebase Cloud Messaging",
-        "Jest",
-        "Supertest",
-        "RESTful API Development",
         "Google Cloud Platform"
       ]
     },
@@ -314,27 +295,12 @@
       "company": "Nuri",
       "startDate": "2021-01-01",
       "endDate": "2021-07-01",
-      "summary": "While Bitwala was in the process of rebranding to Nuri, I functioned as a key member of a dynamic team of contractors focusing on the app's rebranding. Our mission was to seamlessly integrate a fresh visual identity into the existing application without disrupting the user experience or core functionality. The challenge was to ensure the UI overhaul complemented the ongoing delivery of new features by the core development team, thus requiring meticulous coordination and agile responsiveness to evolving project requirements.\n\nMy contribution specifically involved leveraging React Native to craft a rejuvenated user interface that resonated with the new design guidelines. While working in tandem with the core team, I helped assimilate new features and enhancements into the redesigned app, guaranteeing functional and visual coherence. This concerted effort by the contractor team played a crucial part in delivering a unified product that aligned with the strategic vision of Nuri's senior leadership, all the while supporting continuous improvement and feature expansion.",
+      "summary": "Contributed to the rebranding of an app during a pivotal transition, focusing on UI redesign and feature integration with React Native.",
+      "description": "While Bitwala was in the process of rebranding to Nuri, I functioned as a key member of a dynamic team of contractors focusing on the app's rebranding. Our mission was to seamlessly integrate a fresh visual identity into the existing application without disrupting the user experience or core functionality. The challenge was to ensure the UI overhaul complemented the ongoing delivery of new features by the core development team, thus requiring meticulous coordination and agile responsiveness to evolving project requirements.\n\nMy contribution specifically involved leveraging React Native to craft a rejuvenated user interface that resonated with the new design guidelines. While working in tandem with the core team, I helped assimilate new features and enhancements into the redesigned app, guaranteeing functional and visual coherence. This concerted effort by the contractor team played a crucial part in delivering a unified product that aligned with the strategic vision of Nuri's senior leadership, all the while supporting continuous improvement and feature expansion.",
       "url": "https://www.bitwala.com",
       "keySkills": [
-        "Cryptocurrencies",
-        "React Native",
-        "Team Collaboration",
-        "UI Design",
-        "Agile Methodologies"
-      ]
-    },
-    {
-      "name": "Contributor to Chino open source SDK for Ruby",
-      "startDate": "2017-10-31",
-      "endDate": "2017-12-31",
-      "summary": "Enhanced the Chino SDK for Ruby by contributing to its security and performance features, emphasizing my commitment to open-source excellence and community collaboration.",
-      "keySkills": [
-        "Ruby",
-        "Open Source",
-        "SDK Development",
-        "Security",
-        "Performance Optimization"
+        "Typescript",
+        "React Native"
       ]
     },
     {
@@ -342,14 +308,15 @@
       "company": "Kenkou GmbH",
       "startDate": "2017-07-31",
       "endDate": "2017-09-30",
-      "summary": "Revamped Kenkou's infrastructure, embracing modern, secure technologies and setting a forward-thinking technological direction with tools like Node.js, Java Spring, and Elixir.",
+      "summary": "Resurrected a legacy system, to run on cloud infrastructure. Created Prototypes to determine tech choices.",
+      "description": "Took a project which was still being used, but had not been updated for a while. To prolong its life, without rewriting I was tasked in creating a containerised environment in which the legacy code could run unchanged, and deploy this to the cloud.\n\nI also assisted the CTO in making some tech decisions for upcoming projects, by creating the same prototype in a number of programming languages and frameworks to demonstrate functionalities of these different frameworks, in the context of Kenkou's tech stack.",
       "keySkills": [
-        "Infrastructure",
+        "Infrastructure as Code",
         "Node.js",
         "Java Spring",
-        "Elixir",
-        "Prototyping",
-        "Technology Roadmapping"
+        "Kotlin",
+        "KTOR",
+        "Elixir"
       ]
     },
     {
@@ -365,9 +332,5 @@
         "Adobe Media Encoder"
       ]
     }
-  ],
-  "meta": {
-    "version": "v1.0.0",
-    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
-  }
+  ]
 }

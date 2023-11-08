@@ -3,7 +3,7 @@
   "version": "0.5.0",
   "description": "A lovely Next.js based blog",
   "engines": {
-    "node": "^16.0.0"
+    "node": "^18.0.0"
   },
   "author": "Matt Jewell <m@mattjewell.co.uk>",
   "license": "UNLICENSED",
@@ -12,7 +12,8 @@
     "lint": "next lint",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@chakra-ui/react": "~2.2.9",
@@ -47,11 +48,16 @@
     "eslint-config-next": "12.2.5",
     "eslint-plugin-unicorn": "^43.0.2",
     "favicons": "~6.2.2",
+    "husky": ">=6",
+    "lint-staged": ">=10",
     "prettier": "~2.7.1",
     "typescript": "~5.1.6"
   },
   "resolutions": {
     "@types/react": "18.0.17",
     "@types/react-dom": "18.0.6"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,md,json,xml}": "prettier --write"
   }
 }

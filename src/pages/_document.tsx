@@ -29,6 +29,14 @@ export default function Document(_props: DocumentProps) {
               .hide-print {
                 display: none !important;
               }
+              
+              .print-block {
+                display: block !important;
+              }
+            }
+            
+            .print-block {
+              display: none;
             }
           `
         }</style>

@@ -26,7 +26,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
   const label = basics.label.split(" | ");
 
   return (
-    <VStack spacing={4} align="center" pb={8} pt={8}>
+    <VStack spacing={4} align="center" pt={8}>
       {basics.image && (
         <Box
           mb={8}
@@ -90,7 +90,13 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       </Wrap>
 
       <Divider />
-      <VStack spacing={4} align="start" textAlign="left" px={summaryPadding}>
+      <VStack
+        spacing={4}
+        align="start"
+        textAlign="left"
+        px={summaryPadding}
+        py={8}
+      >
         {basics.summary &&
           basics.summary.split("\n\n").map((paragraph, index) => (
             <Text px={2} key={`summary-${index}`} fontSize="lg">

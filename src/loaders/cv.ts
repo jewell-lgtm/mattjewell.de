@@ -18,6 +18,7 @@ export type ResumeProjectItem = {
   startDate: string;
   endDate?: string;
   summary: string;
+  description?: string;
   url?: string;
   keySkills: string[];
 };

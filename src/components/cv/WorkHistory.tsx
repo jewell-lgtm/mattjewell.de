@@ -11,23 +11,20 @@ import {
 import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import React from "react";
 import { formatTimespan } from "@/helpers/formatTimespan";
-import { SectionHeading } from "@/components/SectionHeading";
 import { useLocale } from "@/hooks/useTranslations";
 
-type Props = {
-  resume: ResumeSchema;
-};
-
-export const WorkHistory = ({ resume: { work } }: Props) => {
+export const WorkHistory = ({ resume: { work } }: { resume: ResumeSchema }) => {
   return (
-    <Box w="full">
-      <SectionHeading>Work History</SectionHeading>
+    <VStack w="full" spacing={4} pb={4}>
+      <Heading size="xl" mb={2}>
+        Work History
+      </Heading>
       <VStack spacing={4}>
         {work.map((workItem, index) => (
           <WorkItem key={index} work={workItem} />
         ))}
       </VStack>
-    </Box>
+    </VStack>
   );
 };
 
@@ -55,7 +52,7 @@ function WorkItem(props: { work: ResumeWorkItem }) {
       )}
       {props.work.highlights && (
         <>
-          <Heading size="sm" mb={4}>
+          <Heading size="sm" mb={2}>
             Highlights
           </Heading>
           <List px={8} spacing={2} mb={3} styleType="disc">
