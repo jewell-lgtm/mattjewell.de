@@ -2,7 +2,7 @@
   "inspired by (does not actually follow) $schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Matthew Jewell",
-    "label": "Software Development Consultant | Coder and Educator | Cloud Software Consultant",
+    "label": "Coder and Educator | Full Stack Developer | Software Development Consultant",
     "image": "https://mattjewell.co.uk/Headshot.jpg",
     "url": "https://mattjewell.co.uk",
     "summary": "I am an accomplished developer and software consultant, with over a decade of experience tucked under my belt, I bring a blend of enthusiasm and expertise to the world of web, application and services development. My journey has been a colourful one, from rolling up my sleeves as a hands-on developer to steering the ship as a CTO at cherryfish. What truly sparks joy in my work is sharing what I’ve learned; as a Typescript training consultant, I help development teams sharpen their skills and write more expressive, testable code.\n\nDiving into the tech world, I've developed a focus on Typescript development, alongside other programming languages/frameworks such as Javascript, Python, React, Java, Kotlin, Ruby on Rails and GraphQL.\n\nAlongside the programming languages, I'm a native English speaker, with fluent German, and happy to work in either English or German-speaking teams.",
