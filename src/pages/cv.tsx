@@ -5,8 +5,8 @@ const CvPage = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirecting to /projects
-    void router.replace("/projects");
+    // Redirecting to English CV (for now)
+    void router.replace("/cv-en.pdf");
   }, [router]);
 
   return null;
