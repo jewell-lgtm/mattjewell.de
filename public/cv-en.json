@@ -83,7 +83,7 @@
       "url": "https://www.linkedin.com/company/innovitasvitae/",
       "location": "Berlin Area, Germany",
       "summary": "Architected healthcare application tech stack, with a conversational interface.",
-      "technologies": ["React Native", "Ruby on Rails", "AWS"]
+      "technologies": ["React Native", "Ruby on Rails", "AWS", "Postgres"]
     },
     {
       "name": "Startupbootcamp",
@@ -97,7 +97,7 @@
         "Engaged in hands-on code development and system architecture design."
       ],
       "summary": "Mentored startups on tech and digital strategy.",
-      "technologies": ["Node.js", "Wordpress", "Swift", "Android (Java)", "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)"],
+      "technologies": ["Node.js", "Wordpress", "Swift", "Android (Java)", "AWS (Elastic Beanstalk, SES, S3, EC2, RDS)", "Postgres"],
       "url": "https://www.linkedin.com/company/startupbootcamp/",
       "location": "Berlin Area, Germany"
     },
@@ -111,7 +111,7 @@
         "Contributed to the formation and mentorship of Agile teams."
       ],
       "summary": "Created internal tools",
-      "technologies": ["Typescript", "React", "Node.js", "GraphQL", "AWS"],
+      "technologies": ["Typescript", "React", "Node.js", "GraphQL", "AWS", "Postgres"],
       "url": "https://www.linkedin.com/company/sainsburys/",
       "location": "Manchester"
     },
@@ -119,7 +119,7 @@
       "name": "The Electric Jukebox Company",
       "position": "Web and Mobile Developer",
       "summary": "Developed a richly interactive front-end for custom built android device for TVs.",
-      "technologies": ["Angular.js", "Cordova", "AWS", "Jenkins"]
+      "technologies": ["Angular.js", "Cordova", "AWS", "Jenkins", "Postgres"]
     },
     {
       "name": "Osper",
@@ -137,12 +137,13 @@
       "name": "Maido",
       "position": "Web Developer",
       "summary": "Integrated development and design for for clients such as Jaguar Land Rover, Just Eat, and more.",
-      "technologies": ["PHP", "jQuery"]
+      "technologies": ["PHP", "jQuery", "MySQL", "Postgres"]
     },
     {
       "name": "We Love Mobile",
       "position": "Web Developer",
-      "summary": "Transitioned from intern to developer, crafting mobile experiences across diverse OS and devices, focusing on performance on low-powered devices."
+      "summary": "Transitioned from intern to developer, crafting mobile experiences across diverse OS and devices, focusing on performance on low-powered devices.",
+      "technologies": ["PHP", "jQuery", "MySQL", "Postgres"]
     }
   ],
   "volunteer": [],
@@ -217,6 +218,7 @@
         "GraphQL",
         "Node.js",
         "Typescript",
+        "Postgres",
         "React"
       ]
     },
@@ -247,6 +249,8 @@
       "url": "https://www.ppro.com",
       "keySkills": [
         "AWS",
+        "DynamoDB",
+        "Apache Kafka",
         "Cloud Migration",
         "End-to-End Testing",
         "Code Refactoring"
