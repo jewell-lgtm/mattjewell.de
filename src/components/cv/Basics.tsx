@@ -12,6 +12,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import React from "react";
 import { FaFilePdf, FaMoon, FaPrint, FaSun } from "react-icons/fa";
 
 export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
@@ -45,14 +46,14 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       <Text fontSize="md" color="gray.400" textAlign="center">
         {label.map((str, index) => {
           return (
-            <>
+            <React.Fragment key={`label-${index}`}>
               {str}
               {index !== label.length - 1 && (
                 <Text as="span" color="gray.200">
                   {" | "}
                 </Text>
               )}
-            </>
+            </React.Fragment>
           );
         })}
       </Text>
