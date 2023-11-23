@@ -136,7 +136,7 @@ export function CoffeeForm(props: ComponentProps<typeof Container>) {
           <FormControl id="discussion" mt={4}>
             <FormLabel>Discussion Topic</FormLabel>
             <Textarea
-              placeholder="Give me a brief idea about what you'd like to discuss, as well as 2 or 3 options for when we could have a conversation for half an hour"
+              placeholder="Give me a brief idea about what you'd like to discuss, as well as 2 or 3 options for when we could have a conversation for half an hour, don't forget your timezone/location!"
               value={discussion}
               onChange={e => setDiscussion(getTargetValue(e))}
             />
