@@ -34,9 +34,9 @@ export default function CoffeePage() {
         alignItems="center"
         px={4}
         id="form"
+        ref={setFormRef}
       >
         <Container minWidth="240" maxWidth="2xl">
-          <a id="form" ref={setFormRef} />
           <CoffeeForm />
         </Container>
       </PageSection>

@@ -16,7 +16,7 @@ interface Props {
 
 function Home({ posts }: Props) {
   const t = useTranslations();
-  const [formRef, setFormRef] = React.useState<HTMLAnchorElement | null>(null);
+  const [formRef, setFormRef] = React.useState<HTMLDivElement | null>(null);
   return (
     <>
       <Head>
@@ -55,8 +55,8 @@ function Home({ posts }: Props) {
         alignItems="center"
         justifyContent="space-around"
         flexDirection="column"
+        ref={setFormRef}
       >
-        <a id="form" ref={setFormRef} />
         <CoffeeForm />
       </PageSection>
 
