@@ -1,18 +1,23 @@
 import {
-  Button,
   Heading,
   Stack,
   useBreakpointValue,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { Logo } from "@/components/Logo";
-import { useTranslations } from "@/hooks/useTranslations";
 
-export function Hero() {
-  const t = useTranslations();
+export function Hero({
+  hero1,
+  hero2,
+  buttons,
+}: {
+  hero1: string;
+  hero2: string;
+  buttons: ReactNode;
+}) {
   const logoSize = useBreakpointValue({ base: 120, md: 220 });
   const logoColor = useColorModeValue("#1d1d1d", "white");
   const [isLoaded, setIsLoaded] = useState(false);
@@ -36,7 +41,7 @@ export function Hero() {
 
         <Stack direction="column" spacing={4}>
           <Heading as="h2" fontSize="4xl">
-            {t("hero.1")}
+            {hero1}
           </Heading>
           <motion.div
             initial={{ opacity: 0 }}
@@ -44,17 +49,11 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Heading as={motion.h3} fontSize="2xl">
-              {t("hero.2")}
+              {hero2}
             </Heading>
           </motion.div>
           <Stack direction={{ base: "column", md: "row" }} width="full">
-            <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
-              {t("hero.cta1")}
-            </Button>
-
-            <Button variant="secondary" as="a" href="#more">
-              {t("hero.cta2")}
-            </Button>
+            {buttons}
           </Stack>
         </Stack>
       </Stack>

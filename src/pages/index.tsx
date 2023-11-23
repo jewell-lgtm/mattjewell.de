@@ -4,19 +4,36 @@ import { Hero, LearnMore } from "@/components/landing-page";
 import { loadBlogPosts } from "@/loaders/blog";
 import { PostData } from "@/loaders/post";
 import { generateRSS } from "@/rssUtil";
+import { useTranslations } from "@/hooks/useTranslations";
+import { Button } from "@chakra-ui/react";
 
 interface Props {
   posts: PostData[];
 }
 
 function Home({ posts }: Props) {
+  const t = useTranslations();
   return (
     <>
       <Head>
         <title>Matt Jewell</title>
       </Head>
 
-      <Hero />
+      <Hero
+        hero1={t("hero.1")}
+        hero2={t("hero.2")}
+        buttons={
+          <>
+            <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
+              {t("hero.cta1")}
+            </Button>
+
+            <Button variant="secondary" as="a" href="#more">
+              {t("hero.cta2")}
+            </Button>
+          </>
+        }
+      />
       <LearnMore />
 
       <div style={{ display: "none" }} aria-hidden>
