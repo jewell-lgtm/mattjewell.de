@@ -1,7 +1,10 @@
 import { Button } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
+import React from "react";
+import { CoffeeForm } from "@/components/CoffeeForm";
 import { Hero, LearnMore } from "@/components/landing-page";
+import { PageSection } from "@/components/layout";
 import { useTranslations } from "@/hooks/useTranslations";
 import { loadBlogPosts } from "@/loaders/blog";
 import { PostData } from "@/loaders/post";
@@ -13,6 +16,7 @@ interface Props {
 
 function Home({ posts }: Props) {
   const t = useTranslations();
+  const [formRef, setFormRef] = React.useState<HTMLAnchorElement | null>(null);
   return (
     <>
       <Head>
@@ -24,17 +28,36 @@ function Home({ posts }: Props) {
         hero2={t("hero.2")}
         buttons={
           <>
-            <Button variant="primary" as="a" href="mailto:m@mattjewell.de">
+            <Button
+              variant="secondary"
+              onClick={() => {
+                formRef?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t("hero.cta1")}
-            </Button>
-
-            <Button variant="secondary" as="a" href="#more">
-              {t("hero.cta2")}
             </Button>
           </>
         }
       />
-      <LearnMore />
+      <PageSection
+        id="more"
+        py={16}
+        backgroundColor="gray.100"
+        _dark={{ backgroundColor: "gray.900" }}
+        alignItems="center"
+        justifyContent="space-around"
+        flexDirection="column"
+      >
+        <LearnMore />
+      </PageSection>
+      <PageSection
+        alignItems="center"
+        justifyContent="space-around"
+        flexDirection="column"
+      >
+        <a id="form" ref={setFormRef} />
+        <CoffeeForm />
+      </PageSection>
 
       <div style={{ display: "none" }} aria-hidden>
         <h3>Blog Posts</h3>

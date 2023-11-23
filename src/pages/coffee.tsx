@@ -7,6 +7,7 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 export default function CoffeePage() {
   const t = useTranslations();
+  const [formRef, setFormRef] = React.useState<HTMLAnchorElement | null>(null);
 
   return (
     <>
@@ -15,7 +16,12 @@ export default function CoffeePage() {
         hero2={t("coffee.hero2")}
         buttons={
           <>
-            <Button variant="secondary" as="a" href="mailto:m@mattjewell.de">
+            <Button
+              variant="secondary"
+              onClick={() => {
+                formRef?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
               {t("hero.cta1")}
             </Button>
           </>
@@ -27,8 +33,10 @@ export default function CoffeePage() {
         justifyContent="center"
         alignItems="center"
         px={4}
+        id="form"
       >
         <Container minWidth="240" maxWidth="2xl">
+          <a id="form" ref={setFormRef} />
           <CoffeeForm />
         </Container>
       </PageSection>

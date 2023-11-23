@@ -2,6 +2,7 @@
 import {
   Box,
   Button,
+  Container,
   FormControl,
   FormLabel,
   Input,
@@ -10,7 +11,12 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import { get } from "lodash/fp";
-import { FormEventHandler, useCallback, useEffect } from "react";
+import React, {
+  ComponentProps,
+  FormEventHandler,
+  useCallback,
+  useEffect,
+} from "react";
 import { useAsyncCallback } from "react-async-hook";
 import { create } from "zustand";
 
@@ -46,7 +52,7 @@ const submitCoffeeForm = async (data: FormData) => {
   }
 };
 
-export function CoffeeForm() {
+export function CoffeeForm(props: ComponentProps<typeof Container>) {
   const {
     name,
     email,
@@ -79,7 +85,7 @@ export function CoffeeForm() {
   }, [submitForm.status]);
 
   return (
-    <>
+    <Container minWidth="240" maxWidth="2xl" {...props}>
       {submitForm.status === "success" && (
         <Box p="5" borderWidth={1} borderRadius="md">
           <p>
@@ -141,7 +147,7 @@ export function CoffeeForm() {
           </Button>
         </Box>
       )}
-    </>
+    </Container>
   );
 }
 
