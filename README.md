@@ -9,3 +9,5 @@ Sometimes I am trying out a new tech, or business idea, or just trying to learn 
 I always wish I had more time for this. But here we are. Warts, bugs, and all. CSS. etc.
 
 One day I hope to reach internet fame via commit logs from last night.
+
+Also node 12 is required. I think. I don't know. I am not a doctor.
