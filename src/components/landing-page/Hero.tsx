@@ -8,15 +8,18 @@ import { motion } from "framer-motion";
 import { ReactNode, useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { Logo } from "@/components/Logo";
+import Image from "next/image";
 
 export function Hero({
   hero1,
   hero2,
   buttons,
+  backgroundImage,
 }: {
   hero1: string;
   hero2: string;
   buttons: ReactNode;
+  backgroundImage?: string;
 }) {
   const logoSize = useBreakpointValue({ base: 120, md: 220 });
   const logoColor = useColorModeValue("#1d1d1d", "white");
@@ -31,11 +34,20 @@ export function Hero({
       justifyContent="center"
       alignItems="center"
       px={4}
+      position="relative"
     >
+      {backgroundImage && (
+        <Image
+          src={backgroundImage}
+          layout="fill"
+          objectFit="cover"
+          style={{ position: "absolute", zIndex: -1, opacity: 0.3 }}
+        />
+      )}
       <Stack
         direction={{ base: "column", md: "row" }}
         spacing={{ base: 4, md: 8 }}
-        maxWidth="75%"
+        maxWidth="4xl"
       >
         <Logo color={logoColor} width={logoSize} />
 

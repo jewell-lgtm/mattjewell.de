@@ -2,6 +2,7 @@ import { Button } from "@chakra-ui/react";
 import React from "react";
 import { Hero } from "@/components/landing-page";
 import { useTranslations } from "@/hooks/useTranslations";
+import Image from "next/image";
 
 export default function CoffeePage() {
   const t = useTranslations();
@@ -18,6 +19,7 @@ export default function CoffeePage() {
             </Button>
           </>
         }
+        backgroundImage="/coffee_shop.png"
       />
     </>
   );
