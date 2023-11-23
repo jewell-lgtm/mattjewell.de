@@ -6,7 +6,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ReactNode, useEffect, useState } from "react";
+import { ComponentProps, ReactNode, useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { Logo } from "@/components/Logo";
 
@@ -23,6 +23,7 @@ export function Hero({
 }) {
   const logoSize = useBreakpointValue({ base: 120, md: 220 });
   const logoColor = useColorModeValue("#1d1d1d", "white");
+  const bgOpacity = useColorModeValue(0.2, 0.7);
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     setIsLoaded(true);
@@ -44,7 +45,7 @@ export function Hero({
           style={{
             position: "absolute",
             zIndex: -1,
-            opacity: 0.7,
+            opacity: bgOpacity,
             mixBlendMode: "multiply",
           }}
           alt=""

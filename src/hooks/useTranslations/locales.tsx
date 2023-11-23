@@ -18,6 +18,7 @@ export const en = {
   "footer.cv": "CV",
   "footer.ln": "Connect on LinkedIn",
   "footer.rss": "Blog as RSS",
+  "footer.coffee": "Coffee and Consulting",
   "navigation.back": "Go Back",
   "coffee.hero1": "Coffee and Consulting",
   "coffee.hero2":
@@ -44,6 +45,7 @@ export const de: typeof en = {
   "footer.cv": "Lebenslauf",
   "footer.ln": "Auf LinkedIn verbinden",
   "footer.rss": "Blog als RSS",
+  "footer.coffee": "Coffee und Consulting",
   "navigation.back": "Zurück",
   "coffee.hero1": "Kaffee und Consulting",
   "coffee.hero2":

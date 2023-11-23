@@ -89,6 +89,11 @@ export function Footer() {
           >
             {t("footer.rss")}
           </Link>
+          <NextLink href="/coffee" passHref>
+            <Link color={textColor} _hover={{ color: linkHoverColor }}>
+              {t("footer.coffee")}
+            </Link>
+          </NextLink>
         </HStack>
       </VStack>
     </div>
