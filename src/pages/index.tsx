@@ -26,6 +26,7 @@ function Home({ posts }: Props) {
       <Hero
         hero1={t("hero.1")}
         hero2={t("hero.2")}
+        backgroundImage="/hero_bg.png"
         buttons={
           <>
             <Button

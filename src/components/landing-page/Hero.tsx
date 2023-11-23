@@ -41,7 +41,12 @@ export function Hero({
           src={backgroundImage}
           layout="fill"
           objectFit="cover"
-          style={{ position: "absolute", zIndex: -1, opacity: 0.3 }}
+          style={{
+            position: "absolute",
+            zIndex: -1,
+            opacity: 0.7,
+            mixBlendMode: "multiply",
+          }}
           alt=""
         />
       )}
