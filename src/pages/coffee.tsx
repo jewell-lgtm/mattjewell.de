@@ -7,7 +7,7 @@ import { useTranslations } from "@/hooks/useTranslations";
 
 export default function CoffeePage() {
   const t = useTranslations();
-  const [formRef, setFormRef] = React.useState<HTMLAnchorElement | null>(null);
+  const [formRef, setFormRef] = React.useState<HTMLDivElement | null>(null);
 
   return (
     <>
