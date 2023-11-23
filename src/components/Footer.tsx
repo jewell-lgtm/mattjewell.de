@@ -94,6 +94,16 @@ export function Footer() {
               {t("footer.coffee")}
             </Link>
           </NextLink>
+          <Link
+            href="https://github.com/jewell-lgtm/mattjewell.de/blob/main/README.md"
+            isExternal
+            color={textColor}
+            _hover={{
+              color: linkHoverColor,
+            }}
+          >
+            Source Code
+          </Link>
         </HStack>
       </VStack>
     </div>
