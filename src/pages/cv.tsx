@@ -1,7 +1,7 @@
-import { useEffect } from "react";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
-const CvPage = () => {
+function CvPage() {
   const router = useRouter();
 
   useEffect(() => {
@@ -10,6 +10,6 @@ const CvPage = () => {
   }, [router]);
 
   return null;
-};
+}
 
 export default CvPage;

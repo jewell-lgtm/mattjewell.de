@@ -1,4 +1,3 @@
-import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
 import {
   Box,
   Heading,
@@ -8,9 +7,10 @@ import {
   VStack,
   Wrap,
 } from "@chakra-ui/react";
+import { useState } from "react";
 import { formatTimespan } from "@/helpers/formatTimespan";
 import { useLocale } from "@/hooks/useTranslations";
-import { useState } from "react";
+import { type ResumeProjectItem, type ResumeSchema } from "@/loaders/cv";
 
 export function Projects({ resume: { projects } }: { resume: ResumeSchema }) {
   return (

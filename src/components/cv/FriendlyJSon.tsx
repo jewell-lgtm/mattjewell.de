@@ -1,5 +1,5 @@
-import { ResumeSchema } from "@/loaders/cv";
 import { Box } from "@chakra-ui/react";
+import { ResumeSchema } from "@/loaders/cv";
 
 export function FriendlyJSON(props: { resume: ResumeSchema }) {
   return (

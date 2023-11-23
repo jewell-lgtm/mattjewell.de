@@ -1,6 +1,8 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Container } from "@chakra-ui/react";
 import React from "react";
+import { CoffeeForm } from "@/components/CoffeeForm";
 import { Hero } from "@/components/landing-page";
+import { PageSection } from "@/components/layout";
 import { useTranslations } from "@/hooks/useTranslations";
 
 export default function CoffeePage() {
@@ -20,6 +22,16 @@ export default function CoffeePage() {
         }
         backgroundImage="/coffee_shop.png"
       />
+      <PageSection
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        px={4}
+      >
+        <Container minWidth="240" maxWidth="2xl">
+          <CoffeeForm />
+        </Container>
+      </PageSection>
     </>
   );
 }

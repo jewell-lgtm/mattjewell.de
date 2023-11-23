@@ -8,12 +8,12 @@ import {
   VStack,
   Wrap,
 } from "@chakra-ui/react";
-import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 import React from "react";
 import { formatTimespan } from "@/helpers/formatTimespan";
 import { useLocale } from "@/hooks/useTranslations";
+import { type ResumeSchema, type ResumeWorkItem } from "@/loaders/cv";
 
-export const WorkHistory = ({ resume: { work } }: { resume: ResumeSchema }) => {
+export function WorkHistory({ resume: { work } }: { resume: ResumeSchema }) {
   return (
     <VStack w="full" spacing={4} pb={4}>
       <Heading size="xl" mb={2}>
@@ -26,7 +26,7 @@ export const WorkHistory = ({ resume: { work } }: { resume: ResumeSchema }) => {
       </VStack>
     </VStack>
   );
-};
+}
 
 function WorkItem(props: { work: ResumeWorkItem }) {
   const locale = useLocale();

@@ -1,10 +1,10 @@
-import Head from "next/head";
-import { jsonResume, type ResumeSchema } from "@/loaders/cv";
-import { type GetStaticProps } from "next";
 import { Divider, VStack } from "@chakra-ui/react";
-import { Projects } from "@/components/cv/Projects";
+import { type GetStaticProps } from "next";
+import Head from "next/head";
 import { BasicInfo } from "@/components/cv/Basics";
+import { Projects } from "@/components/cv/Projects";
 import { WorkHistory } from "@/components/cv/WorkHistory";
+import { jsonResume, type ResumeSchema } from "@/loaders/cv";
 
 type Props = {
   resume: ResumeSchema;
@@ -16,7 +16,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   return { props: { resume } };
 };
 
-const CvPage = ({ resume }: Props) => {
+function CvPage({ resume }: Props) {
   return (
     <>
       <Head>
@@ -38,6 +38,6 @@ const CvPage = ({ resume }: Props) => {
       </VStack>
     </>
   );
-};
+}
 
 export default CvPage;

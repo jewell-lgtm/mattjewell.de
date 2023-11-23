@@ -1,4 +1,3 @@
-import { type ResumeSchema } from "@/loaders/cv";
 import {
   Box,
   Button,
@@ -14,8 +13,9 @@ import {
 import Link from "next/link";
 import React from "react";
 import { FaFilePdf, FaMoon, FaPrint, FaSun } from "react-icons/fa";
+import { type ResumeSchema } from "@/loaders/cv";
 
-export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
+export function BasicInfo({ resume: { basics } }: { resume: ResumeSchema }) {
   const locale = "en"; // TODO: useLocale();
   const cvLink = locale === "en" ? "/cv-en.pdf" : "/cv-de.pdf";
   const { colorMode, toggleColorMode } = useColorMode();
@@ -107,7 +107,7 @@ export const BasicInfo = ({ resume: { basics } }: { resume: ResumeSchema }) => {
       </VStack>
     </VStack>
   );
-};
+}
 
 /*
 import React from 'react';

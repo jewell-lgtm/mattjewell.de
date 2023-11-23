@@ -1,11 +1,11 @@
+import { Button } from "@chakra-ui/react";
 import type { GetStaticProps } from "next";
 import Head from "next/head";
 import { Hero, LearnMore } from "@/components/landing-page";
+import { useTranslations } from "@/hooks/useTranslations";
 import { loadBlogPosts } from "@/loaders/blog";
 import { PostData } from "@/loaders/post";
 import { generateRSS } from "@/rssUtil";
-import { useTranslations } from "@/hooks/useTranslations";
-import { Button } from "@chakra-ui/react";
 
 interface Props {
   posts: PostData[];

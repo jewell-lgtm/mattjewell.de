@@ -2,7 +2,6 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import glob from "glob";
 import { last } from "lodash";
-
 import { assertNonNull } from "@/helpers/assertNonNull";
 
 export type RawFile = { path: string; contents: string };

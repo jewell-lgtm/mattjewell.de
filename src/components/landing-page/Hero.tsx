@@ -5,10 +5,10 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { ReactNode, useEffect, useState } from "react";
 import { PageSection } from "@/components/layout/PageSection";
 import { Logo } from "@/components/Logo";
-import Image from "next/image";
 
 export function Hero({
   hero1,
@@ -42,6 +42,7 @@ export function Hero({
           layout="fill"
           objectFit="cover"
           style={{ position: "absolute", zIndex: -1, opacity: 0.3 }}
+          alt=""
         />
       )}
       <Stack
