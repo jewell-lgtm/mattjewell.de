@@ -68,7 +68,7 @@ export function Hero({
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <Heading as={motion.h3} fontSize="2xl">
-              {hero2}
+              {preventOrphans(hero2)}
             </Heading>
           </motion.div>
           <Stack direction={{ base: "column", md: "row" }} width="full">
@@ -78,4 +78,13 @@ export function Hero({
       </Stack>
     </PageSection>
   );
+}
+
+function preventOrphans(text: string, n = 3) {
+  const words = text.split(" ");
+  if (words.length <= n) return text;
+  return [
+    ...words.slice(0, words.length - n),
+    words.slice(-n).join("\u00A0"),
+  ].join(" ");
 }
