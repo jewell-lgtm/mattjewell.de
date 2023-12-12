@@ -13,7 +13,7 @@ export default function CoffeePage() {
   return (
     <>
       <Head>
-        <title>{t("coffee.title")}</title>
+        <title>Matt Jewell - {t("coffee.title")}</title>
         <meta name="description" content={t("coffee.hero2")} />
       </Head>
       <Hero
