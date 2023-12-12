@@ -20,6 +20,7 @@ export const en = {
   "footer.rss": "Blog as RSS",
   "footer.coffee": "Coffee and Consulting",
   "navigation.back": "Go Back",
+  "coffee.title": "Coffee and Consulting",
   "coffee.hero1": "Coffee and Consulting",
   "coffee.hero2":
     "Discuss your tech stack or whatever's on your mind. Request a free call today.",
@@ -47,6 +48,7 @@ export const de: typeof en = {
   "footer.rss": "Blog als RSS",
   "footer.coffee": "Coffee und Consulting",
   "navigation.back": "Zurück",
+  "coffee.title": "Kaffee und Consulting",
   "coffee.hero1": "Kaffee und Consulting",
   "coffee.hero2":
     "Diskutieren Sie Ihren Tech-Stack oder was auch immer Ihnen auf dem Herzen liegt. Fordern Sie noch heute einen kostenlosen Anruf an.",

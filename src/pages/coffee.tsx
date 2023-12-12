@@ -1,4 +1,5 @@
 import { Button, Container } from "@chakra-ui/react";
+import Head from "next/head";
 import React from "react";
 import { CoffeeForm } from "@/components/CoffeeForm";
 import { Hero } from "@/components/landing-page";
@@ -11,6 +12,10 @@ export default function CoffeePage() {
 
   return (
     <>
+      <Head>
+        <title>{t("coffee.title")}</title>
+        <meta name="description" content={t("coffee.hero2")} />
+      </Head>
       <Hero
         hero1={t("coffee.hero1")}
         hero2={t("coffee.hero2")}
