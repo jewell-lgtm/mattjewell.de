@@ -207,6 +207,27 @@
   ],
   "projects": [
     {
+      "name": "Lead Front End Engineer",
+      "company":"Paulina24",
+      "startDate": "2023-11-01",
+      "summary": "Front end, with some backend work, for a platform that sources elderly care in Germany",
+      "description": "Lead developer on a front end application written in SvelteKit, with some backend work in Kotlin. The application, which is provided in 5 languages, uses a variety of APIs to allow users to find jobs in the care sector in Germany.",
+      "url": "https://paulina24.de",
+      "keySkills": [
+        "Svelte",
+        "SvelteKit",
+        "Kotlin",
+        "Vitest",
+        "cypress",
+        "E2E testing",
+        "Firebase",
+        "GraphQL",
+        "DigitalOcean",
+        "Vercel",
+        "Serverless"
+      ]
+    },
+    {
       "name": "Full Stack Engineer",
       "company": "Feebris",
       "startDate": "2023-09-30",
